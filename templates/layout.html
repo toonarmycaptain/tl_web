@@ -20,7 +20,11 @@
       </ul>
     </nav>
   </header>
-  <div class="page">
+  <div class="page">  
+	{% set image = this.attachments.images.first() %}
+      {% if image %}
+        <img src="{{ image.thumbnail(320)|url }}" alt="">
+      {% endif %}
     {% block body %}{% endblock %}
   </div>
   <footer>
