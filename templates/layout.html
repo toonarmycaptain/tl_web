@@ -9,22 +9,30 @@
       <ul class="nav navbar-nav">
         <li{% if this._path == '/' %} class="active"{% endif
           %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
+        {% for href, title, icon in [
+          ['/projects', 'Projects', 'icon'],
+          ['/about', 'About', 'icon']
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>
+            
         {% endfor %}
       </ul>
     </nav>
   </header>
-  <div class="page">  
-	{% set image = this.attachments.images.first() %}
-      {% if image %}
-        <img src="{{ image.thumbnail(320)|url }}" alt="">
-      {% endif %}
+  <div class="page">
+	{% set root = site.get('/') %}
+
+	{{ root.title  }}
+	{% for child in root.children %}
+		{{ child.icon }}
+	{% endfor %}
+
+	{% set image = this.attachments.images.get('attachment.png') %}
+	{% if image %}
+		<img src="{{ image.thumbnail(180)|url }}" alt="">
+	{% endif %}
+
     {% block body %}{% endblock %}
   </div>
   <footer>
