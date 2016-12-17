@@ -1,41 +1,50 @@
 <!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — tl_web_lektor</title>
-<body>
-  <header>
-    <h1>tl_web_lektor</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title, icon in [
-          ['/projects', 'Projects', 'icon'],
-          ['/about', 'About', 'icon']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-            
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-	{% set root = site.get('/') %}
-
-	{{ root.title  }}
-	{% for child in root.children %}
-		{{ child.icon }}
-	{% endfor %}
-
-	{% set image = this.attachments.images.get('attachment.png') %}
-	{% if image %}
-		<img src="{{ image.thumbnail(180)|url }}" alt="">
-	{% endif %}
-
-    {% block body %}{% endblock %}
-  </div>
-  <footer>
-    &copy; Copyright 2016 by Terminal Labs.
-  </footer>
-</body>
+<html>
+  <head>
+    {% include "header.html" %}
+    <title>{% block meta_title %}Terminal Labs{% endblock %}</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="top_row">
+	{% include "logo.html" %}
+      </div>
+      <div class='nav_menu_bar'>
+      </div>
+      <div class="content_box">
+	<div class="row_text_left">{Your Idea}</div>
+	<div class="row_text_one_third font_2 font_24">+</div>
+	<div id="tech_term" class="row_text_center">{Technology}</div>
+	<div class="row_text_two_thirds font_24">=</div>
+	<div class="row_text_right">{Our solution}</div>
+      </div>
+      <div class="content_box">
+	<div class="row_text_left">
+	  <div id="your_idea_image"></div>
+	</div>
+	<div class="row_text_one_third font_2 font_24">
+	  <div class="plus_and__equals_signs">+</div>
+	</div>
+	<div class="row_text_center">
+	  <div class="tree_image_box">
+	    <div class="tree_image_box_image"></div>
+	    <div class="tree_image_box_target" id="tree_image_box_python">Python</div>
+	    <div class="tree_image_box_target" id="tree_image_box_jquery">jQuery</div>
+	    <div class="tree_image_box_target" id="tree_image_box_django">Django</div>
+	    <div class="tree_image_box_target" id="tree_image_box_ubuntu">Ubuntu</div>
+	    <div class="tree_image_box_target" id="tree_image_box_mysql">MySQL</div>
+	    <div class="tree_image_box_target" id="tree_image_box_linux">Linux</div>
+	  </div>
+	</div>
+	<div class="row_text_two_thirds font_24">
+	  <div class="plus_and__equals_signs">=</div>
+	</div>
+	<div class="row_text_right">
+	  <div id="our_solution_image"></div>
+	</div>
+      </div>
+      <div>
+      </div><!-- /content_box -->
+    </div><!-- /body -->
+  </body>
+  </html>
