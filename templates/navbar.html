@@ -1,0 +1,12 @@
+<nav>
+  {% for project in site.get('/').children %}
+    <a draggable="false" href="{{ project|url }}">
+      <div class='nav_menu green_border'>
+        {{ project.title }}
+	{% if this == project %}
+	  <div class="link_underline"></div>
+	{% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</nav>
