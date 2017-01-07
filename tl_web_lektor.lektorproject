@@ -1,0 +1,7 @@
+[project]
+name = tl_web_lektor
+url = http://127.0.0.1:8003
+url_style = external
+
+[packages]
+lektor-htmlmin = 1.0
