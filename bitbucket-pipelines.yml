@@ -22,7 +22,7 @@ pipelines:
             - . venv/bin/activate
             - pip install Lektor
             - cd build
-            - lektor server
+            - lektor build
   default:
     - step:
       script:
