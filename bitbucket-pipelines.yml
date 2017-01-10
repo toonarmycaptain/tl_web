@@ -6,6 +6,11 @@
 # image: docker-tag
 
 pipelines:
+  custom: # Pipelines that are triggered manually
+    test:
+      - step:
+          script:
+            - echo "Manual triggers for Sonar are awesome!"
   default:
     - step:
       script:
