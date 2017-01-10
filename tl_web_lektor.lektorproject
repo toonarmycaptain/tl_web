@@ -1,0 +1,5 @@
+[project]
+name = tl_web_lektor
+
+[packages]
+lektor-htmlmin = 1.0

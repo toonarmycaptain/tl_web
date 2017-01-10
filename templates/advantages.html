@@ -1,0 +1,25 @@
+{% extends "subnavbar.html" %}
+
+{% block subnavbar %}
+  <div class="nav_menu_bar_tier_2 green_border width_960">
+    <div class="table">
+      {% for project in site.get("/advantages").children %}
+        <a draggable="false" href="{{ project|url }}">
+	  <div class='nav_menu_tier_2'>
+	    <img draggable="false" src="{{ project.attachments.images.first()|url }}">
+	      <div class="nav_menu_tier_2_text">
+		{{ project.title }}
+	      </div>
+	      {% if this == project %}
+	        <div class="link_underline"></div><br>
+	      {% endif %}
+	  </div>
+	</a>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock subnavbar %}
+
+{% block body_content %}
+    {{ this.body }}
+{% endblock body_content %}
