@@ -11,6 +11,9 @@ pipelines:
       - step:
           script:
             - cd ..
+            - sudo apt-get install python-pip
+            - sudo pip install virtualenv
+            - virtualenv venv
             - ls
   default:
     - step:
