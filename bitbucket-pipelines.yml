@@ -14,7 +14,10 @@ pipelines:
             - sudo apt-get -y install python-pip
             - sudo pip install virtualenv
             - virtualenv venv
-            - ls
+            - . venv/bin/activate
+            - pip install Lektor
+            - cd build
+            - lektor server
   default:
     - step:
       script:
