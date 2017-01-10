@@ -3,7 +3,7 @@
 {% block subnavbar %}
   <div class="nav_menu_bar_tier_2 green_border width_960">
     <div class="table">
-      {% for project in site.get("/advantages").children %}
+      {% for project in site.get("/advantages").children|sort(attribute='position') %}
         <a draggable="false" href="{{ project|url }}">
 	  <div class='nav_menu_tier_2'>
 	    <img draggable="false" src="{{ project.attachments.images.first()|url }}">
