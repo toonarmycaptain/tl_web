@@ -10,7 +10,6 @@ pipelines:
     test:
       - step:
           script:
-            - cd tl_web_lektor
             - ls
   default:
     - step:
