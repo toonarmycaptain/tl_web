@@ -10,6 +10,7 @@ pipelines:
     test:
       - step:
           script:
+            - cd ..
             - ls
   default:
     - step:
