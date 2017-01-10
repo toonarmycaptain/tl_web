@@ -10,7 +10,8 @@ pipelines:
     test:
       - step:
           script:
-            - echo "Manual triggers for Sonar are awesome!"
+            - cd tl_web_lektor
+            - ls
   default:
     - step:
       script:
