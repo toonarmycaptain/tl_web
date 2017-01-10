@@ -15,7 +15,6 @@
       </div>
       {% block content %}
         {% if this._path == '/' %} {# display homepage art #}
-          {% include "homepage_art.html" %}
           {% include "homepage_body.html" %}
         {% endif %}
       {% endblock content %}

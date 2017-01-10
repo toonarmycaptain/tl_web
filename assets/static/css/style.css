@@ -213,7 +213,6 @@ a.logo_div {
 html,
 body {
     color: #c0c0c0;
-    user-select: none;
     background-color: black;
     font: 16px prime_regular;
 }
@@ -727,9 +726,24 @@ body {
 .content_padding {
     padding: 5px 25px;
 }
-.code_snippet {
-    background-color: #444444;
-    padding: 0px 5px;
+.code_snippet .tl_green {
+  color: #2f9a41;
+}
+.code_snippet .host {
+  color: #8ae234;
+}
+.code_snippet .path {
+  color: #729fcf;
+}
+.code_snippet .quote {
+  color: #ff5f87;
+}
+.code_snippet .method {
+  color: #af5f00;
+}
+.code_snippet .protected {
+  font-weight: bold;
+  color: white;
 }
 .slideshow_menu {
     width: 940px;
@@ -759,6 +773,31 @@ body {
     padding-top: 15px;
     padding-right: 10px;
     padding-left: 10px;
+}
+.testimonials {
+
+  width: 100%;
+
+  text-align: left;
+
+  display: block;
+
+  overflow: hidden;
+
+  padding-top: 30px;
+
+  line-height: 1.2;
+
+}
+
+#testimonial_link {
+  width: 100%;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 25px;
+  line-height: 1.2;
+  font-size: 20px;
 }
 .margin_auto {
     margin-left: auto;
