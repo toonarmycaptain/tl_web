@@ -6,4 +6,6 @@ icon: alarm-clock.png
 ---
 _slug: how-we-are-different
 ---
-_template: advantages.html
+_template: standard.html
+---
+position: 1

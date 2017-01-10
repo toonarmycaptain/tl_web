@@ -3,7 +3,16 @@
 {% block subnavbar %}
   <div class="nav_menu_bar_tier_2 green_border width_960">
     <div class="table">
-      {% for project in site.get("/advantages").children|sort(attribute='position') %}
+      {# This finds the correct main nav page to generate the subnav
+      whether we're on a main nav or subnav page #}
+      {% if this.parent._path == '/' %} {# direct child of root #}
+        {% set child = site.get(this._id) %}
+      {% else %} {# grandchild of root #}
+        {% set child = site.get(this.parent._id) %}
+      {% endif %}
+
+      {# generate subnav #}
+      {% for project in child.children|sort(attribute='position') %}
         <a draggable="false" href="{{ project|url }}">
 	  <div class='nav_menu_tier_2'>
 	    <img draggable="false" src="{{ project.attachments.images.first()|url }}">

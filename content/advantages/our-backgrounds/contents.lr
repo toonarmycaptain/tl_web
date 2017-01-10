@@ -2,7 +2,7 @@ _model: page
 ---
 title: Our Backgrounds
 ---
-_template: advantages.html
+_template: standard.html
 ---
 body:
 

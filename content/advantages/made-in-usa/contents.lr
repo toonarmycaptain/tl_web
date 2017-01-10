@@ -2,7 +2,7 @@ _model: page
 ---
 title: Made in U.S.A.
 ---
-_template: advantages.html
+_template: standard.html
 ---
 body: Everyone here at Terminal Labs lives and works in the United States of America.  We are American citizens who take pride in building technology domestically.  We don’t outsource our coding.  This allows us to assure quality results. With English as our primary language, we can better explain the technical aspects of your project.
 ---

@@ -1,0 +1,11 @@
+_model: page
+---
+title: Our Services
+---
+body: We, Terminal Labs, are a full-service, technical firm that produces, maintains, and expands software that is key to our clients' businesses. Our technical skills allow us to be flexible.  We can work with you in a variety of ways to do what needs to be done.
+---
+body_html: 
+---
+position: 2
+---
+_template: standard.html
