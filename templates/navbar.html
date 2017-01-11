@@ -1,5 +1,5 @@
 <nav>
-  {% for project in site.get('/').children %}
+  {% for project in site.get('/').children.order_by('position') %}
     <a draggable="false" href="{{ project|url }}">
       <div class='nav_menu green_border'>
         {{ project.title }}

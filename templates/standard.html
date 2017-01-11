@@ -13,7 +13,7 @@
 	{% endif %}
 
 	{# generate subnav #}
-	{% for project in child.children|sort(attribute='position') %}
+	{% for project in child.children.order_by('position') %}
           <a draggable="false" href="{{ project|url }}">
 	    <div class='nav_menu_tier_2'>
 	      <img draggable="false" src="{{ project.attachments.images.first()|url }}">
