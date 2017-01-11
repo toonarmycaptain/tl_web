@@ -1,0 +1,15 @@
+_model: page
+---
+title: Full-Stack Development
+---
+_template: standard.html
+---
+body:
+
+All computers are comprised of multiple components that work together to complete tasks.  For example, hard drives store data while CPUs (Central Processing Units) process data.
+
+Full-stack development is important because it allows a programmer to see the whole picture of a technological solution.   Due to our broad and detailed understanding of the interconnectivity of each component of computers and software, we are able to create custom solutions where we work directly with each individual piece of the solution.  
+
+This allows us to build everything from the ground up.  First, we can buy hardware components and assemble them into working computers.  We can install operating systems on the computers we just built.  We can install your software solution onto the operating system.  We can take the computer and store it in an offsite data center which provides internet access from anywhere in the world to your custom-assembled computer.
+---
+position: 3
