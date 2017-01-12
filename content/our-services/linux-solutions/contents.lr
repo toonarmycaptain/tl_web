@@ -1,0 +1,13 @@
+_model: page
+---
+title: Linux Solutions
+---
+_template: standard.html
+---
+body:
+
+Linux is a free, open-source operating system.  Linux has been around for decades.  It is extremely stable, well supported, and used worldwide.  As an open-source operating system, virtually all aspects of Linux can be customized.
+
+We use Linux as the primary operating system for the computer systems which run clients’ software.  We use Linux as our primary operating system for development and day-to-day tasks.
+---
+position: 2
