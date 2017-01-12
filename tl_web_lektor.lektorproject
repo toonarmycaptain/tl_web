@@ -1,6 +1,6 @@
 [project]
 name = tl_web_lektor
-url = http://127.0.0.1:8003
+url = http://local.terminallabs.com:5000
 url_style = external
 
 [packages]
