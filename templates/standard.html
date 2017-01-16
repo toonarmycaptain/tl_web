@@ -18,8 +18,6 @@
           {# set thumbnail with a loading gif backup #}
           {% if project.attachments.images.first() %}
             {% set thumbnail = project.attachments.images.first()|url %}
-          {% else %}
-            {% set thumbnail = '/static/images/loading.gif'|asseturl %}
           {% endif %}
 
           <a draggable="false" href="{{ project|url }}">
