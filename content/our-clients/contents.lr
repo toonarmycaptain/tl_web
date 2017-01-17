@@ -1,7 +1,41 @@
-_model: page
+_model: clients
 ---
 title: Our Clients
 ---
-_template: standard.html
----
 position: 5
+---
+body: Our clients body
+---
+body_html: 
+---
+client:
+
+#### client ####
+title: Modavanti
+----
+body: moda markdown
+----
+body_html: 
+----
+select-images:
+
+##### select-images #####
+title: 
+-----
+client_images: modavanti_home_page.png
+-----
+caption: 
+##### select-images #####
+title: 
+-----
+client_images: modavani_mission.png
+-----
+caption: 
+#### client ####
+title: 
+----
+body: 
+----
+body_html: 
+----
+select-images: 
