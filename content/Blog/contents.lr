@@ -1,0 +1,7 @@
+_model: blog
+---
+_template: blog.html
+---
+NavTitle: Blog
+---
+position: 7
