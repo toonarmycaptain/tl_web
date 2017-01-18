@@ -8,96 +8,25 @@ body:
 ---
 body_html: 
 ---
-client:
+clients:
 
 #### client ####
 title: Modavanti
 ----
-body:
-
-Modavanti is a sustainable fashion retailer. Modavanti markets organic and fairtrade clothing and cosmetics made by artisans around the world. 
-
-Technically, Modavanti’s e-commerce platform is made using Python Django and runs on a small cluster on Rackspace. Terminal Labs assisted Modavanti by adding features, expanding their user-interface system, optimizing performance, and maintaining servers.
+body: moda markdown
 ----
-body_html: <a href="https://modavanti.com/" target="_blank">modavanti.com</a>
+body_html: 
 ----
-select-images:
+images:
 
-##### select-images #####
-client_images: modavanti_home_page.png
+##### select-image #####
+image: modavanti_home_page.png
 -----
 title: 
 -----
 caption: 
-##### select-images #####
-client_images: modavani_mission.png
------
-title: 
------
-caption: 
-#### client ####
-title: agYield
-----
-body: Agyield is a revenue management platform for agriculture. Terminal Labs assisted AgYield with importing third-party data, implementing crop insurance algorithms, and adding cross-browser compatibility.
-----
-body_html: <a href="https://agyield.com/" target="_blank">agyield.com</a>
-----
-select-images:
-
-##### select-images #####
-client_images: agyield_home.png
------
-title: 
------
-caption: 
-##### select-images #####
-client_images: agyield_profit.png
------
-title: 
------
-caption: 
-#### client ####
-title: Mobius
-----
-body: Mobius Medical Systems is a medical technology company that focuses on radiation oncology software solutions. Mobius develops and markets a Treatment Planning System.  Terminal Labs assisted Mobius with the addition of many new features to their sophisticated code base.
-----
-body_html: <a href="https://mobiusmed.com/" target="_blank">mobiusmed.com</a>
-----
-select-images:
-
-##### select-images #####
-client_images: mobius_3d.png
------
-title: 
------
-caption: 
-##### select-images #####
-client_images: mobius_fx.png
------
-title: 
------
-caption: 
-#### client ####
-title: Cox Media
-----
-body:
-
-Cox Media Group is a media company that operates radio stations, television stations, newspapers, and magazines around the United States. Their internal Django project is one of the largest in the world. 
-
-Terminal Labs has used Python, Django, HTML/CSS/Javascript, and Linux to create full-stack solutions. 
-----
-body_html: <a href="https://coxmediagroup.com/" target="_blank">coxmediagroup.com</a>
-----
-select-images:
-
-##### select-images #####
-client_images: cox_media_markets_1920x1080.png
------
-title: 
------
-caption: 
-##### select-images #####
-client_images: cox_media_about_1920x1080.png
+##### select-image #####
+image: modavani_mission.png
 -----
 title: 
 -----

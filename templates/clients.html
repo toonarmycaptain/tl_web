@@ -9,16 +9,24 @@
     <div id="slides">
       <div class="client_slide" id="client">
         <div class="ajax_insert">
-          <div class="client_image_left">{% set img = this.client.blocks[0]._attachment_type %}
-            <a draggable="false" src="{{ img }}" alt width="250" height="141"></a>
-            ############################
-            {{ img }}
-            ############################
-            {#% for image in record.attachments.images %
-              {{ image }}
-            {% endfor %}#}
+          <div class="client_image_left">
+            {% set img = this.clients.blocks[0].images.blocks[0].image %}
+            {% if img.caption %}{% set alt = img.caption %}{% endif %}
+            <a draggable="false" src="{{ img|url }}" alt="{{ alt }}">
+              <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}" width="250" height="141">
+            </a>
           </div>
         </div>
+          <div class="client_image_right">
+            {% set img = this.clients.blocks[0].images.blocks[1].image %}
+            {% if img.caption %}{% set alt = img.caption %}{% endif %}
+            <a draggable="false" src="{{ img|url }}" alt="{{ alt }}">
+              <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}" width="250" height="141">
+            </a>
+          </div>
+          <div class="client_text_box">
+            {{ this.clients.blocks[0].body }}{{ this.clients.blocks[0].body_html }}
+          </div>
       </div>
       <div id="our_clients">
         <div class="slideshow_menu" id="slideshow_menu">
@@ -40,7 +48,6 @@
     load_modavanti();
      // ]]></script>
   </div>
-  {{ this.body }}{{ this.body_html }}
 {% endblock body_content %}
 
 
