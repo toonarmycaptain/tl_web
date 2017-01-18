@@ -2,5 +2,7 @@
 {% from "macros/blog.html" import render_blog_post %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block content %}
-    {{ render_blog_post(this) }}
+    <div class="content_box">
+      {{ render_blog_post(this) }}
+    </div>
 {% endblock content %}

@@ -4,10 +4,12 @@
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}{{ this.NavTitle }}{% endblock %}
 {% block content %}
-  {% for child in this.pagination.items %}
-    <a href="{{ child.path }}"> {{ child._data.title }}</a>
-    <br>
-    <br>
-  {% endfor %}
-  {{ render_pagination(this.pagination) }}
+  <div class="content_box">
+    {% for child in this.pagination.items %}
+      <a href="{{ child.path }}"> {{ child._data.title }}</a>
+      <br>
+      <br>
+    {% endfor %}
+    {{ render_pagination(this.pagination) }}
+  </div>
 {% endblock content %}
