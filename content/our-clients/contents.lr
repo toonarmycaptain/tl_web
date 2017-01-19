@@ -31,3 +31,66 @@ image: modavani_mission.png
 title: 
 -----
 caption: 
+#### client ####
+title: agYield
+----
+body: ag markdown
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: agyield_home.png
+-----
+title: 
+-----
+caption: 
+##### select-image #####
+image: agyield_profit.png
+-----
+title: 
+-----
+caption: 
+#### client ####
+title: Mobius
+----
+body: Mobius markdown
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: mobius_3d.png
+-----
+title: 
+-----
+caption: 
+##### select-image #####
+image: mobius_fx.png
+-----
+title: 
+-----
+caption: 
+#### client ####
+title: Cox Media Group
+----
+body: CMG markdown
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: cox_media_markets_1920x1080.png
+-----
+title: 
+-----
+caption: 
+##### select-image #####
+image: cox_media_about_1920x1080.png
+-----
+title: 
+-----
+caption: 

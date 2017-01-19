@@ -1,7 +1,8 @@
 {% extends "flat.html" %}
 
 {% block header_scripts %}
-  <script type="text/javascript" src='https://terminallabs.com/static/js/slideshow_events.js'></script>
+  <script type="text/javascript" src="{{ '/static/js/jquery-1.11.0.min.js'|asseturl }}"></script>
+  <script type="text/javascript" src="{{ '/static/js/slideshow_events.js'|asseturl }}"></script>
 {% endblock header_scripts %}
 
 {% block body_content %}
@@ -25,21 +26,26 @@
             </a>
           </div>
           <div class="client_text_box">
-            {{ this.clients.blocks[0].body }}{{ this.clients.blocks[0].body_html }}
+            {{ this.clients.blocks[0].body }}{{ this.clients.blocks[0].body_html }}<br>
+            ###############<br>
+            {{ this.clients.blocks[0].title|slug }}
+            {{ "dsajkhl jd  jkd  dsf "|slug }}
           </div>
       </div>
       <div id="our_clients">
         <div class="slideshow_menu" id="slideshow_menu">
           <ul>
-            <li class="menu_item green_border unselectable" id="modavanti">
+            {% for client in this.clients.blocks %}
+            <li class="menu_item green_border unselectable" id="modavanti">{{ client.title }}
               <div class="link_underline client_underline" id="modavanti_underline"></div>
             </li>
-            <li class="menu_item green_border unselectable" id="agyield">agYield
-	      <div class="link_underline client_underline" id="agyield_underline"></div></li>
-            <li class="menu_item green_border unselectable" id="mobius">Mobius
-	      <div class="link_underline client_underline" id="mobius_underline"></div></li>
-            <li class="menu_item green_border unselectable" id="cox_media">Cox Media
-	      <div class="link_underline client_underline"  id="cox_media_underline"></div></li>
+            {# <li class="menu_item green_border unselectable" id="agyield">{{ client.title }}
+	    <div class="link_underline client_underline" id="agyield_underline"></div></li>
+            <li class="menu_item green_border unselectable" id="mobius">{{ client.title }}
+	    <div class="link_underline client_underline" id="mobius_underline"></div></li>
+            <li class="menu_item green_border unselectable" id="cox_media">{{ client.title }}
+	    <div class="link_underline client_underline"  id="cox_media_underline"></div></li> #}
+            {% endfor %}
           </ul>
         </div>
       </div>

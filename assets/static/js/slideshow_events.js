@@ -11,10 +11,10 @@ function load_modavanti()
     $('#projects_underline').hide();
     hide_client_underlines();
     $("#modavanti_underline").show();
-/*    $.get("/ajax_get_client_modavanti", function(data) {
+    $.get("/ajax_get_client_modavanti", function(data) {
         var div = $(".ajax_insert", data);
         $('#client').html(div);
-    });*/
+    });
 }
 function load_picloud_app()
 {
