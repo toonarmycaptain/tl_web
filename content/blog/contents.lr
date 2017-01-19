@@ -1,7 +1,7 @@
-_model: page
+_model: blog
+---
+_template: blog.html
 ---
 title: Blog
----
-_template: standard.html
 ---
 position: 7
