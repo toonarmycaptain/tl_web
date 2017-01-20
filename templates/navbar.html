@@ -1,6 +1,6 @@
 <nav>
   {% for child in site.get('/').children.order_by('position') %}
-    {% if child.title %}
+    {% if child.nav_bar %}
       <a draggable="false" href="{{ child|url }}">
         <div class='nav_menu green_border'>
           {{ child.title }}
