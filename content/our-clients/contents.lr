@@ -5,3 +5,5 @@ title: Our Clients
 _template: standard.html
 ---
 position: 5
+---
+nav_bar: yes

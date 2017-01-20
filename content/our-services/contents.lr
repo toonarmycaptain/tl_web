@@ -9,3 +9,5 @@ body_html: <p>A full description of all the services we provide can be downloade
 position: 2
 ---
 _template: standard.html
+---
+nav_bar: yes

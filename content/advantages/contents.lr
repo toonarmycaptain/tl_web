@@ -9,3 +9,5 @@ _slug: how-we-are-different
 _template: standard.html
 ---
 position: 1
+---
+nav_bar: yes

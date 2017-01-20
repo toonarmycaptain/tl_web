@@ -7,3 +7,5 @@ _template: standard.html
 body: We are Terminal Labs.  Founded in 2007, we strive to create, through the usage of modern, open-source technologies,  solutions to complex and challenging problems.
 ---
 position: 4
+---
+nav_bar: yes
