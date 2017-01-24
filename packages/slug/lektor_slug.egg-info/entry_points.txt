@@ -1,0 +1,3 @@
+[lektor.plugins]
+slug = lektor_slug:SlugPlugin
+

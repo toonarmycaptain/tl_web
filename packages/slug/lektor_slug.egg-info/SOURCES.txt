@@ -1,0 +1,7 @@
+lektor_slug.py
+lektor_slug.egg-info/PKG-INFO
+lektor_slug.egg-info/SOURCES.txt
+lektor_slug.egg-info/dependency_links.txt
+lektor_slug.egg-info/entry_points.txt
+lektor_slug.egg-info/requires.txt
+lektor_slug.egg-info/top_level.txt

@@ -1,0 +1,49 @@
+{% extends "flat.html" %}
+
+{% block header_scripts %}
+  <script type="text/javascript" src="{{ '/static/js/jquery-1.11.0.min.js'|asseturl }}"></script>
+{% endblock header_scripts %}
+
+{% block body_content %}
+  <div id="gallery">
+    <div id="slides">
+      {% for client in this.clients.blocks %}
+        <div class="client_slide" id="client_{{ client.title|slug }}">
+          <div class="client_image_left">
+            {% set img = client.images.blocks[0].image %}
+            {% if img.caption %}{% set alt = img.caption %}{% endif %}
+            <a draggable="false" src="{{ img|url }}" alt="{{ alt }}">
+              <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}" width="250" height="141">
+            </a>
+          </div>
+          <div class="client_image_right">
+            {% set img = client.images.blocks[1].image %}
+            {% if img.caption %}{% set alt = img.caption %}{% endif %}
+            <a draggable="false" src="{{ img|url }}" alt="{{ alt }}">
+              <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}" width="250" height="141">
+            </a>
+          </div>
+          <div class="client_text_box" id="{{ client.title|slug }}_body">
+            {{ client.body }}{{ client.body_html }}<br>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div id="our_clients">
+      <div class="slideshow_menu" id="slideshow_menu">
+        <ul>
+          {% for client in this.clients.blocks %}
+            <li class="menu_item green_border unselectable" id="{{ client.title|slug }}">{{ client.title }}
+              <div class="link_underline client_underline" id="{{ client.title|slug }}_underline"></div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript" src="{{ '/static/js/slideshow_events.js'|asseturl }}"></script>
+    <script type="text/javascript">// <![CDATA[
+     load_modavanti();
+     init_slideshow_events();
+     // ]]></script>
+  </div>
+{% endblock body_content %}
