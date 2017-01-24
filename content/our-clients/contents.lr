@@ -13,9 +13,13 @@ clients:
 #### client ####
 title: Modavanti
 ----
-body: moda markdown
+body:
+
+Modavanti is a sustainable fashion retailer. Modavanti markets organic and fairtrade clothing and cosmetics made by artisans around the world. 
+
+Technically, Modavanti’s e-commerce platform is made using Python Django and runs on a small cluster on Rackspace. Terminal Labs assisted Modavanti by adding features, expanding their user-interface system, optimizing performance, and maintaining servers.
 ----
-body_html: 
+body_html: <a href="https://modavanti.com/" target="_blank">modavanti.com</a>
 ----
 images:
 
