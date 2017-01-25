@@ -8,7 +8,6 @@ function hide_clients() {
 }
 
 function load_modavanti() {
-  hide_clients();
   $("#modavanti_underline").show();
   $("#client_modavanti").show();
 }
