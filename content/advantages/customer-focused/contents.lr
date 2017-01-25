@@ -1,0 +1,17 @@
+_model: page
+---
+title: Customer Focused
+---
+_template: standard.html
+---
+body:
+
+At Terminal Labs, we put people before technology.  
+
+We spend time working with clients through the entire process of creating custom-tailored, technological solutions. As our client, you will have direct access to each of us.  This means that you will be given the names, phone numbers, and email addresses of everyone who is working on your project.  You can reach out to any of us with ideas or questions.  When questions arise, we will not make up answers.  We take the time to find complete and truthful answers.  
+
+Communication and understanding are vital components to our process.  Before we write any code, we ensure that we fully understand the desires and goals of each of our clients.  Once we understand your goals, we create a technological “road map” which outlines our understanding of what the client wants and how we will implement it at a technological level.
+
+Once we have collaborated on the design, we begin the process of creation.  The entire time we are building your solution, we communicate the progress of developing your project, as well as questions or ideas that come to our minds as we work.  As project goals often change mid-way through a project, communication is paramount.  
+---
+position: 5

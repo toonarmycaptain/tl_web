@@ -1,0 +1,13 @@
+_model: page
+---
+title: Python Programming
+---
+_template: standard.html
+---
+body:
+
+Python is our language of choice. Python's extreme power, natural security, and flexibility allows us to write code at maximum speed and interface with any tool we need to use.  Python can operate with nearly all modern operating systems.
+
+We use Python to code the core logic for the solutions we create.  When compared to other languages, Python allows us to quickly add new features and revise and rework old software components.
+---
+position: 1

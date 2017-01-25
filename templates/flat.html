@@ -1,0 +1,11 @@
+{% extends "page.html" %}
+
+{% block content %}
+  <div class="content_box">
+    {% block body_content %}
+      {{ this.body }}{{ this.body_html }}
+    {% endblock body_content %}
+  </div>
+{% endblock content %}
+
+

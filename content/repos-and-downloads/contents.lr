@@ -1,0 +1,49 @@
+_model: page
+---
+title: Repos and Downloads
+---
+body_html:
+
+<p>Testimonials:</p>
+<ul>
+<li><a href="/testimonials/">https://terminallabs.com/testimonials/</a></li>
+</ul>
+<p>Repos:</p>
+<ul>
+<li><a href="https://bitbucket.org/terminal_labs" target="_blank">https://bitbucket.org/terminal_labs</a></li>
+<li><a href="https://github.com/terminallabs0" target="_blank">https://github.com/terminallabs0</a></li>
+<li><a href="https://www.behance.net/terminal_labs" target="_blank">https://www.behance.net/terminal_labs</a></li>
+</ul>
+<p>Gists:</p>
+<ul>
+<li><a class="external" title="Webpage download speed tester" href="https://gist.github.com/nixjdm/190eee9ccd7b25c9b433" target="_blank">https://gist.github.com/nixjdm/190eee9ccd7b25c9b433</a></li>
+</ul>
+<div>Curricula Vitae:</div>
+<div>
+<ul>
+<li><a href="https://dclbdhr5sfbt6.cloudfront.net/JosephNixCV.pdf" target="_blank">Joseph Nix</a></li>
+<li><a href="https://dclbdhr5sfbt6.cloudfront.net/ChrisSmithCV.pdf" target="_blank">Chris Smith</a></li>
+<li><a href="https://dclbdhr5sfbt6.cloudfront.net/MichaelVerhulstCV.pdf" target="_blank">Michael Verhulst</a></li>
+</ul>
+</div>
+<p>Presentations:</p>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/15OiTPO-z-9l8Yhk2abqzJ2O0t-XwWHnCy3_XU__XziA/pub?start=false&amp;loop=false&amp;delayms=3000" target="_blank">What is full-stack</a></li>
+</ul>
+<p>Downloads:</p>
+<ul>
+<li><a href="https://dclbdhr5sfbt6.cloudfront.net/terminal_labs_dossier.pdf" target="_blank">Terminal_Labs_Dossier.pdf</a></li>
+<li><a href="https://dclbdhr5sfbt6.cloudfront.net/python_brochure.pdf" target="_blank">Python_Brochure.pdf</a></li>
+</ul>
+<p>LinkedIn:</p>
+<ul>
+<li><a style="text-decoration: none;" href="https://www.linkedin.com/in/josephnix" target="_blank"><span style="font: 80% Arial,sans-serif; color: #0783b6;"><img style="vertical-align: middle;" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" alt="View Joseph Nix's LinkedIn profile" width="20" height="15" border="0" />&nbsp;View Joseph Nix's profile</span></a></li>
+<li><a style="text-decoration: none;" href="https://www.linkedin.com/pub/christopher-smith/8/785/81b" target="_blank"><span style="font: 80% Arial,sans-serif; color: #0783b6;"><img style="vertical-align: middle;" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" alt="View Christopher Smith's LinkedIn profile" width="20" height="15" border="0" />&nbsp;View Christopher Smith's profile</span></a></li>
+<li><a style="text-decoration: none;" href="https://www.linkedin.com/in/mikeverhulst" target="_blank"><span style="font: 80% Arial,sans-serif; color: #0783b6;"><img style="vertical-align: middle;" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" alt="View Michael Verhulst's LinkedIn profile" width="20" height="15" border="0" />&nbsp;View Michael Verhulst's profile</span></a></li>
+</ul>
+---
+nav_bar: no
+---
+_template: flat.html
+---
+_slug: repos_and_downloads

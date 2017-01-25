@@ -1,0 +1,9 @@
+_model: page
+---
+title: Contact Us
+---
+_template: standard.html
+---
+position: 6
+---
+nav_bar: yes

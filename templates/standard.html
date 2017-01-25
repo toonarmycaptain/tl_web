@@ -1,0 +1,46 @@
+{% extends "page.html" %}
+
+{% block content %}
+  {% block subnavbar %}
+    <div class="nav_menu_bar_tier_2 green_border width_960">
+      <div class="table">
+        {# This finds the correct main nav page to generate the subnav
+        whether we're on a main nav or subnav page #}
+        {% if this.parent._path == '/' %} {# direct child of root #}
+          {% set child = site.get(this._id) %}
+        {% else %} {# grandchild of root #}
+          {% set child = site.get(this.parent._id) %}
+        {% endif %}
+
+        {# generate subnav #}
+        {% for project in child.children.order_by('position') %}
+
+          {# set thumbnail with a loading gif backup #}
+          {% if project.attachments.images.first() %}
+            {% set thumbnail = project.attachments.images.first()|url %}
+          {% endif %}
+
+          <a draggable="false" href="{{ project|url }}">
+            <div class='nav_menu_tier_2'>
+              <img draggable="false" src="{{ thumbnail }}">
+              <div class="nav_menu_tier_2_text">
+                {{ project.title }}
+              </div>
+              {% if this == project %}
+                <div class="link_underline"></div><br>
+              {% endif %}
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endblock subnavbar %}
+
+  <div class="content_box">
+    {% block body_content %}
+      {{ this.body }}{{ this.body_html }}
+    {% endblock body_content %}
+  </div>
+{% endblock content %}
+
+

@@ -1,0 +1,13 @@
+_model: page
+---
+title: Thorough
+---
+_template: standard.html
+---
+body:
+
+We are dogmatically thorough and cautious.  What this means in creating a custom solution for you is that we will not cut corners.  We will not race to create insufficiently engineered solutions just to show results.  We will not knowingly sacrifice long-term benefits for short-term gains.
+
+We are not concerned about fashionability.  Instead, we focus on functionality and reliability, gained by understanding and utilizing technological best practices.  We use the right tool for the job.  We use modern revision control.  Our code is backed up in multiple, redundant, off-site storage systems.  Since it is your project, you will always have access to view your code base.
+---
+position: 6

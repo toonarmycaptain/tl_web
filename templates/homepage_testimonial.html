@@ -1,0 +1,21 @@
+<span class="code_snippet">
+    (tl_website)<span class="host">tl_webserver@debian</span>:<span class="path">~/tl_website/testimonials</span>$ python<br>
+    Python 2.7.9 (default, Oct  5 2016, 17:31:46)<br>
+    [GCC 4.9.2] on linux2<br>
+    Type "help", "copyright", "credits" or "license" for more information.<br>
+    <span class="tl_green">>>></span><span class="protected"> from</span> os <span class="protected">import</span> getcwd, listdir<br>
+    <span class="tl_green">>>></span> path = getcwd() <span class="protected">+</span><span class="quote"> "/testimonials/"</span><br>
+    <span class="tl_green">>>></span><span class="protected"> for</span> testimonial <span class="protected">in</span> listdir(path): <span class="protected">print</span> testimonial, <span class="quote">":\n\n"</span>, <span class="method">open</span>(path + testimonial, <span class="quote">'r'</span>).read(), <span class="quote">"\n--------"</span><br>
+    ...<br>
+    Jesse.txt :<br>
+    <br>
+    Terminal Labs has been an integral partner and instrumental to our embedded teams at Cox Media Group for nearly 2 years. In particular, they have provided a wealth of knowledge and expertise at a crucial time to our efforts around performance engineering and tooling for existing and emerging products. They have also helped us establish new standards and best practices in our engineering of secure, stable, and performant web applications.<br>
+    <br>
+    Their expertise in python/django application performance and also deep understanding of front end technologies including complex JavaScript web applications has been invaluable to our team. Terminal Labs have assisted us across various project teams in our digital media business, delivering many features and improvements to our existing and developing platforms.<br>
+    <br>
+    Terminal Labs works flawlessly in a high demand, agile environment with “in the weeds” tactical aptitude and high-level architectural and strategic thinking. I highly value our relationship and would recommend them without reservation to any project seeking professional and team oriented consultation. These guys all kick some serious ass.<br>
+    <br>
+    --Jesse Heady, Lead Performance Engineer at Cox Media Group<br>
+    <br>
+    --------<br>
+</Span>

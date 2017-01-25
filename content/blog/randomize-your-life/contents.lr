@@ -1,0 +1,11 @@
+title: Randomize Your Life
+---
+author: Chris Smith
+---
+body:
+
+<p>Do you ever find that your entropy pool is to low? I know we've all been there! Most modern servers come with a hardware random number generator with their TPM, but if you have an older server or are running a crypto heavy service (like an SSL proxy) then you might want to try out the ol' entropy key.&nbsp;<br /><br />To check out how much entropy you have on your Linux box do this:&nbsp;</p>
+<blockquote>cat /proc/sys/kernel/random/entropy_avail</blockquote>
+<p>If it's less than 100 then you might have an issue, all depending on what you are doing at the time of course. The Linux kernel actually blocks reading from /dev/random if the entropy pool isn't entropic enough, and some programs will demand to get their randomness from&nbsp;/dev/randam&nbsp;(as they should!). So a lack of entropy can sometimes cause a process to hang, or, you know, not give strong random numbers.&nbsp;<br /><br />The entropy key also lets you setup a entropy server that you can use to serve entropy to other computers on a network, which I think is really cool.&nbsp;<br /><br />So, if you need more randomness in you life, check out the entropy key!&nbsp;<br /><br /><a href="http://www.entropykey.com/" target="_blank">http://www.entropykey.co.uk/</a></p>
+---
+pub_date: 2014-05-02
