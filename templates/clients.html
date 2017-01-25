@@ -9,20 +9,24 @@
     <div id="slides">
       {% for client in this.clients.blocks %}
         <div class="client_slide" id="client_{{ client.title|slug }}">
-          <div class="client_image_left">
-            {% set img = client.images.blocks[0].image %}
-            {% if img.caption %}{% set alt = img.caption %}{% endif %}
-            <a draggable="false" src="{{ img|url }}" alt="{{ alt }}">
-              <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}" width="250" height="141">
-            </a>
-          </div>
-          <div class="client_image_right">
-            {% set img = client.images.blocks[1].image %}
-            {% if img.caption %}{% set alt = img.caption %}{% endif %}
-            <a draggable="false" src="{{ img|url }}" alt="{{ alt }}">
-              <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}" width="250" height="141">
-            </a>
-          </div>
+          {% if client.images.blocks[0].image %}
+            <div class="client_image_left">
+              {% set img = client.images.blocks[0].image %}
+              {% if img.caption %}{% set alt = img.caption %}{% endif %}
+              <a draggable="false" src="{{ img|url }}" alt="{{ alt }}">
+                <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}" width="250" height="141">
+              </a>
+            </div>
+          {% endif %}
+          {% if client.images.blocks[1].image %}
+            <div class="client_image_right">
+              {% set img = client.images.blocks[1].image %}
+              {% if img.caption %}{% set alt = img.caption %}{% endif %}
+              <a draggable="false" src="{{ img|url }}" alt="{{ alt }}">
+                <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}" width="250" height="141">
+              </a>
+            </div>
+          {% endif %}
           <div class="client_text_box" id="{{ client.title|slug }}_body">
             {{ client.body }}{{ client.body_html }}<br>
           </div>
