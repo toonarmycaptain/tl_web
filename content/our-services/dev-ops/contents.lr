@@ -1,0 +1,14 @@
+_model: page
+---
+title: DevOps
+---
+body:
+
+DevOps is a method of software creation that emphasizes communication and workflow optimization.
+
+
+We can analyze and optimize your business’s current models of workflow and development.  We can implement revision control.  We can set up servers that automatically test code for bugs. We can help you make sure that your code is safely stored and backed-up. We can work with your developers to streamline your release schedule. We can establish a procedure for testing your code on many different mobile devices and in multiple web browsers.
+---
+_template: standard.html
+---
+position: 5
