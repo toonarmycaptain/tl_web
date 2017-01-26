@@ -9,24 +9,15 @@
     <div id="slides">
       {% for client in this.SubNav.blocks %} {# finds all blocks in SubNav model #}
         <div class="client_slide" id="client_{{ client.title|slug }}">
-          {% if client.images.blocks[0] %}
+          {% for block in client.images.blocks %}
+            {% set img = block.image %}
             <div class="client_image">
-              {% set img = client.images.blocks[0].image %}
               {% if img.caption %}{% set alt = img.caption %}{% endif %}
               <a draggable="false" src="{{ img|url }}" alt="{{ alt }}">
                 <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}">
               </a>
             </div>
-          {% endif %}
-          {% if client.images.blocks[1] %}
-            <div class="client_image">
-              {% set img = client.images.blocks[1].image %}
-              {% if img.caption %}{% set alt = img.caption %}{% endif %}
-              <a draggable="false" src="{{ img|url }}" alt="{{ alt }}">
-                <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}">
-              </a>
-            </div>
-          {% endif %}
+          {% endfor %}
           <div class="client_text_box" id="{{ client.title|slug }}_body">
             {{ client.body }}{{ client.body_html }}<br>
           </div>
