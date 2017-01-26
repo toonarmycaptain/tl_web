@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    {% include "header.html" %}
+    <title>{% block meta_title %}Terminal Labs{% endblock %}</title>
+    {% block header_scripts %}{% endblock header_scripts %}
+  </head>
+  <body>
+    <div id="container">
+      <div class="top_row">
+	{% include "logo.html" %}
+	{% include "social_box.html" %}
+      </div>
+      <div class='nav_menu_bar'>
+        {% include "navbar.html" %}
+      </div>
+      {% block content %}
+        {% if this._path == '/' %} {# display homepage art #}
+          {% include "homepage_body.html" %}
+        {% endif %}
+      {% endblock content %}
+    </div>
+  </body>
+  {% block footer_scripts %}{% endblock footer_scripts %}
+</html>
+
+

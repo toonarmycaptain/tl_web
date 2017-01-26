@@ -1,0 +1,9 @@
+_model: blog
+---
+_template: blog.html
+---
+title: Blog
+---
+position: 7
+---
+nav_bar: yes
