@@ -3,6 +3,7 @@
   <head>
     {% include "header.html" %}
     <title>{% block meta_title %}Terminal Labs{% endblock %}</title>
+    {% block header_scripts %}{% endblock header_scripts %}
   </head>
   <body>
     <div id="container">
@@ -20,6 +21,7 @@
       {% endblock content %}
     </div>
   </body>
+  {% block footer_scripts %}{% endblock footer_scripts %}
 </html>
 
 
