@@ -1,4 +1,8 @@
 pipelines:
+  default:
+    - step:
+      script:
+        - echo "Everything is awesome!"
   custom: # Pipelines that are triggered manually
     test:
       - step:
@@ -16,7 +20,3 @@ pipelines:
           - pip install Lektor
           - cd build
           - lektor build
-  default:
-    - step:
-      script:
-        - echo "Everything is awesome!"
