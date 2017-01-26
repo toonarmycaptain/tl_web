@@ -1,11 +1,11 @@
 pipelines:
   default:
-    - step:
+    step:
       script:
         - echo "Everything is awesome!"
   custom: # Pipelines that are triggered manually
     test:
-      - step:
+      step:
         script:
           - cd ..
           - sudo apt-get update
