@@ -1,7 +1,7 @@
 {% extends "flat.html" %}
 
 {% block header_scripts %}
-  <script type="text/javascript" src="{{ '/static/js/jquery-1.11.0.min.js'|asseturl }}"></script>
+  <script src="{{ '/static/js/jquery-1.11.0.min.js'|asseturl }}"></script>
 {% endblock header_scripts %}
 
 {% block body_content %}
@@ -35,10 +35,13 @@
         </ul>
       </div>
     </div>
-    <script type="text/javascript" src="{{ '/static/js/slideshow_events.js'|asseturl }}"></script>
-    <script type="text/javascript">// <![CDATA[
-     load_modavanti();
-     init_slideshow_events();
-     // ]]></script>
   </div>
 {% endblock body_content %}
+
+{% block footer_scripts %}
+  <script src="{{ '/static/js/slideshow_events.js'|asseturl }}"></script>
+  <script>
+    load_modavanti();
+    init_slideshow_events();
+  </script>
+{% endblock footer_scripts %}
