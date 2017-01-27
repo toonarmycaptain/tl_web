@@ -3,10 +3,10 @@
 {% block body_content %}
   {% for tool in this.SubNav.blocks %} {# finds all blocks in SubNav model #}
     <div class="tool_item">
-      {% set block = tool.images.blocks[0] %}
+      {% set img = tool.images.blocks[0] %}
       <div class="tool_item_img">
-        <a target="_blank" href="{{ block.caption }}" >
-          <img src="{{ this.record.attachments.images.get(block.image)|url }}">
+        <a target="_blank" href="{{ img.caption }}" >
+          <img src="{{ this.record.attachments.images.get(img.image)|url }}">
         </a>
         <div class="tool_item_text">
           {{ tool.body }}{{ tool.body_html }}
