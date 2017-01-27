@@ -13,7 +13,7 @@
             {% set img = block.image %}
             <div class="client_image">
               {% if img.caption %}{% set alt = img.caption %}{% endif %}
-              <a draggable="false" src="{{ img|url }}" alt="{{ alt }}">
+              <a draggable="false" href="{{ img|url }}" alt="{{ alt }}" data-lightbox="image-{{ client.title|slug }}">
                 <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}">
               </a>
             </div>
@@ -40,6 +40,7 @@
 
 {% block footer_scripts %}
   <script src="{{ '/static/js/slideshow_events.js'|asseturl }}"></script>
+  <script src="{{ '/static/js/lightbox.js'|asseturl }}"></script>
   <script>
     load_modavanti();
     init_slideshow_events();
