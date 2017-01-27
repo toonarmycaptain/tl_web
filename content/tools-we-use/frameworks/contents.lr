@@ -1,0 +1,49 @@
+_model: subnav
+---
+title: Frameworks
+---
+SubNav:
+
+#### subnav-item ####
+body: Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: django_logo_200x200.png
+-----
+title: 
+-----
+caption: https://www.djangoproject.com/
+#### subnav-item ####
+body: The PySide project provides LGPL-licensed Python bindings for the Qt cross-platform application and UI framework, as well as a complete toolchain for rapidly generating bindings for any Qt-based C++ class hierarchies.iki/PySide" target="_blank">http://qt-project.org/wiki/PySide
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: pyside_logo_200x200.png
+-----
+title: 
+-----
+caption: http://wiki.qt.io/PySide
+#### subnav-item ####
+body: jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: jquery_logo_200x200.png
+-----
+title: 
+-----
+caption: http://jquery.com/
+---
+_template: tool_list.html
+---
+position: 4
