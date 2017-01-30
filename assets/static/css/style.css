@@ -762,17 +762,16 @@ body {
 }
 .testimonials {
   width: 100%;
-  text-align: left;
   display: block;
   overflow: hidden;
   padding-top: 30px;
   line-height: 1.2;
 }
 #testimonial_link {
-  width: 100%;
+  margin: 0 auto;
+  width: 200px;
   text-align: center;
   display: block;
-  overflow: hidden;
   padding-bottom: 25px;
   line-height: 1.2;
   font-size: 20px;
@@ -792,16 +791,6 @@ body {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
-}
-.tree_image_box_image {
-  position: absolute;
-  left: 0px;
-  height: 237px;
-  width: 300px;
-  display: inline-block;
-  background-image: url('/static/images/tech_tree.png');
-  background-size: 300px 237px;
-  background-repeat: no-repeat;
 }
 .tech_box_common {
   position: absolute;
