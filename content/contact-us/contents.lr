@@ -1,9 +1,24 @@
-_model: page
+_model: contacts
 ---
 title: Contact Us
 ---
-_template: standard.html
+_template: contact_us.html
 ---
 position: 6
 ---
 nav_bar: yes
+---
+body:
+
+Ready to start? The solutions start here. Let’s talk, and do.
+
+Please feel free to reach out to us.
+---
+Contacts:
+
+#### contact ####
+name: Chris Smith
+----
+phone: (512) 920-3141
+----
+email: smith@terminallabs.com

@@ -1,0 +1,46 @@
+{% extends "flat.html" %}
+
+{% block body_content %}
+  <div class="content_col_left">
+    {{ this.body }}{{ this.body_html }}
+    <div class="general_row_75h">
+      <img src="{{ this.record.attachments.images.get('email.png').thumbnail(70)|url }}">
+      <div class="general_row_text">solutions@terminallabs.com</div>
+    </div>
+    <div class="general_row_75h">
+      <img src="{{ this.record.attachments.images.get('phone.png').thumbnail(70)|url }}">
+      <div class="general_row_text">(512) 270-8665</div>
+    </div>
+  </div>
+  <div class="content_col_right">
+    <div class="general_row_32h">
+      <div class="general_row_text_left">
+        Contact Us By Name
+        <br><br>
+      </div>
+    </div>
+    <div class="general_row_32h">
+      <div id="chris_contact" class="general_row_text_left contact">Chris Smith</div>
+    </div>
+    <div id="chris_info" class="accordion_rows" style="display: none;">
+      <div class="general_row_32h">
+        <img src="{{ this.record.attachments.images.get('email.png').thumbnail(32)|url }}">
+        <div class="general_row_text">smith@terminallabs.com</div>
+      </div>
+      <div class="general_row_32h">
+        <img src="{{ this.record.attachments.images.get('phone.png').thumbnail(32)|url }}">
+        <div class="general_row_text">(512) 920-3141</div>
+      </div>
+    </div>
+    <div class="general_row_32h"></div>
+    <div class="general_row_32h"></div>
+    <div class="general_row_32h"></div>
+  </div>
+{% endblock body_content %}
+
+{% block footer_scripts %}
+  <script src="{{ '/static/js/contacts_accordion.js'|asseturl }}"></script>
+  <script>
+    init_contacts_accordion()
+  </script>
+{% endblock footer_scripts %}
