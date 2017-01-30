@@ -8,13 +8,27 @@ body: We are so confident that our quality and abilities stand out that we are w
 ---
 position: 7
 ---
-SubNav:
+links:
 
 #### link-item ####
-test: google
+text: The Nerdery
 ----
-url: www.google.com
+url: http://nerdery.com
 #### link-item ####
-test: apple
+text: Tivix
 ----
-url: www.apple.com
+url: http://www.tivix.com
+#### link-item ####
+text: Egrove Systems
+----
+url: http://www.egrovesys.com
+#### link-item ####
+text: Rocksauce Studios
+----
+url: http://rocksaucestudios.com
+#### link-item ####
+text: Parthenon Software
+----
+url: http://www.parthenonsoftware.com
+---
+body_html: 

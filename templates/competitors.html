@@ -3,5 +3,16 @@
 {% block body_content %}
 {{ this.body }}{{ this.body_html }}
 
-links go here
+
+<p>&nbsp;</p>
+<div class="competitor_boxes">
+  {% for link in this.links.blocks %}
+  <div class="client_button green_border">
+    <a href="{{ link.url }}" target="_blank" rel="nofollow">
+      <br>{{ link.text }}<br>
+    </a>
+  </div>
+{% endfor %}
+</div>
+
 {% endblock body_content %}
