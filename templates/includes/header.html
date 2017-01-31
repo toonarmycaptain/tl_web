@@ -1,4 +1,13 @@
 <head>
+  <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
+  <!--[if IE]><link rel="shortcut icon" href="{{ 'static/images/favicon.png'|asseturl }}"><![endif]-->
+  <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+  <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+  <link rel="icon" href="{{ 'static/images/favicon.png'|asseturl }}">
+  <link rel="stylesheet" href="{{ '/static/css/style.css'|asseturl }}" type="text/css" media="all">
+
   <link rel="stylesheet" href="{{ '/static/css/style.css'|asseturl }}" type="text/css" media="all">
   <title>{% block meta_title %}Terminal Labs{% endblock %}</title>
   <meta charset="UTF-8">
@@ -8,18 +17,18 @@
   {% block header_scripts %}
     <script src="{{ '/static/js/jquery-1.11.0.min.js'|asseturl }}"></script>
     <script>
-      var _gaq = _gaq || [];
-      var pluginUrl =
-        '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-      _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-      _gaq.push(['_setAccount', 'UA-36783686-1']);
-      _gaq.push(['_trackPageview']);
+     var _gaq = _gaq || [];
+     var pluginUrl =
+       '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+     _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+     _gaq.push(['_setAccount', 'UA-36783686-1']);
+     _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
     </script>
   {% endblock header_scripts %}
 </head>
