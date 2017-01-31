@@ -9,6 +9,23 @@
 .contact {
   cursor: pointer;
 }
+.row {
+  position: relative;
+}
+.row_32 {
+  position: relative;
+  height: 32px;
+}
+.row_border {
+  line-height: 30px;
+  border-bottom: 1px solid @std_green;
+}
+.contact_info {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  line-height: 30px;
+}
 #gallery {
   left: 0px;
   width: @main_width;
@@ -300,23 +317,19 @@ body
   overflow: hidden;
 }
 .content_col {
-  position: relative;
-  float:left;
+  display: inline-block;
+  vertical-align: top;
   width: 440px;
-  margin-top:10px;
   padding: 10px;
-  overflow: hidden;
   min-height: 300px;
 }
 .content_col_left {
   .content_col;
-  left: 0px;
   border-right: 1px solid @std_green;
 }
 .content_col_right {
   .content_col;
-  right:0px;
-  margin-top: 20px;
+  margin-top:10px;
 }
 .content_row {
   position: relative;
