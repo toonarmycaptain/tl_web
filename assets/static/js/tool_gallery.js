@@ -8,13 +8,11 @@ function hide_slides()
 
 $( document ).ready(function() {
     hide_slides();
+    $(".slide").hide()
     $(".gallery_tool").click(function() {
-        console.log('clicked');
-         var id = this.id;
-         var pos = $('#' + id).prevAll(".gallery_tool").length;
-         var row = Math.floor(pos/10);
-         hide_slides();
-         $("#"+id).children(".gallery_tool_text").show()
-//         $('#' + row).show();
+        var id = this.id;
+        hide_slides();
+        $(".large_tech_text_upper").html($("#" + id).children(".gallery_tool_text").html());
+        $(".slide").show()
     });
 });
