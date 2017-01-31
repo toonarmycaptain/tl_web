@@ -1,22 +1,24 @@
 <!doctype html>
 <html>
   <head>
-    {% include "header.html" %}
+    {% include "includes/header.html" %}
     <title>{% block meta_title %}Terminal Labs{% endblock %}</title>
-    {% block header_scripts %}{% endblock header_scripts %}
+    {% block header_scripts %}
+      <script src="{{ '/static/js/jquery-1.11.0.min.js'|asseturl }}"></script>
+    {% endblock header_scripts %}
   </head>
   <body>
     <div id="container">
       <div class="top_row">
-	{% include "logo.html" %}
-	{% include "social_box.html" %}
+	{% include "includes/logo.html" %}
+	{% include "includes/social_box.html" %}
       </div>
       <div class='nav_menu_bar'>
-        {% include "navbar.html" %}
+        {% include "includes/navbar.html" %}
       </div>
       {% block content %}
         {% if this._path == '/' %} {# display homepage art #}
-          {% include "homepage_body.html" %}
+          {% include "includes/homepage_body.html" %}
         {% endif %}
       {% endblock content %}
     </div>
