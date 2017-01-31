@@ -16,31 +16,30 @@
     <div class="general_row_32h">
       <div class="general_row_text_left">
         Contact Us By Name
-        <br><br>
       </div>
     </div>
-    <div class="general_row_32h">
-      <div id="chris_contact" class="general_row_text_left contact">Chris Smith</div>
-    </div>
-    <div id="chris_info" class="accordion_rows" style="display: none;">
+    <br><br>
+    {% for contact in this.Contacts.blocks %} {# finds all blocks in Contacts model #}
       <div class="general_row_32h">
-        <img src="{{ this.record.attachments.images.get('email.png').thumbnail(32)|url }}">
-        <div class="general_row_text">smith@terminallabs.com</div>
+        <div id="contact-{{ contact.name|slug }}" class="general_row_text_left contact">{{ contact.name }}</div>
       </div>
-      <div class="general_row_32h">
-        <img src="{{ this.record.attachments.images.get('phone.png').thumbnail(32)|url }}">
-        <div class="general_row_text">(512) 920-3141</div>
+      <div id="info-{{ contact.name|slug }}" class="accordion_rows" style="display: none;">
+        <div class="general_row_32h">
+          <img src="{{ this.record.attachments.images.get('email.png').thumbnail(32)|url }}">
+          <div class="general_row_text">{{ contact.email }}</div>
+        </div>
+        <div class="general_row_32h">
+          <img src="{{ this.record.attachments.images.get('phone.png').thumbnail(32)|url }}">
+          <div class="general_row_text">{{ contact.phone }}</div>
+        </div>
       </div>
-    </div>
-    <div class="general_row_32h"></div>
-    <div class="general_row_32h"></div>
-    <div class="general_row_32h"></div>
+    {% endfor %}
   </div>
 {% endblock body_content %}
 
 {% block footer_scripts %}
   <script src="{{ '/static/js/contacts_accordion.js'|asseturl }}"></script>
   <script>
-    init_contacts_accordion()
+   init_contacts_accordion()
   </script>
 {% endblock footer_scripts %}

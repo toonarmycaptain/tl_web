@@ -420,6 +420,7 @@ body {
   overflow: hidden;
   min-height: 300px;
   right: 0px;
+  margin-top: 20px;
 }
 .content_row {
   position: relative;

@@ -10,7 +10,9 @@ function init_contacts_accordion()
   hide_accordion_rows();
   $(".contact").click(function() {
     var id = this.id;
-    var target = id.replace("_contact","") + "_info";
+    console.log(id);
+    var target = "info-" + id.replace("contact-","");
+    console.log(target);
     if ($("#" + target).css('display') == 'none') {
       $("#" + target).show();
     }
