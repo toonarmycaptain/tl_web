@@ -1,0 +1,21 @@
+{% extends "standard.html" %}
+
+{% block body_content %}
+  {% for tool in this.SubNav.blocks %} {# finds all blocks in SubNav model #}
+    {% set img = tool.images.blocks[0] %}
+    {% set tool_id = img.image.split('.')[0] %}
+    {% if loop.index == 11 %}
+      <div class="slide green_border">
+        <div class="large_tech_text_upper"></div>
+      </div>
+    {% endif %}
+    <div class="tech_boxes">
+      <div class="gallery_tool" id={{ tool_id }}>
+        <img class="gallery_tool_img green_border" src="{{ this.record.attachments.images.get(img.image)|url }}">
+        <div class="gallery_tool_text">
+          {{ tool.body }}{{ tool.body_html }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock body_content %}

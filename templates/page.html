@@ -23,7 +23,9 @@
       {% endblock content %}
     </div>
   </body>
-  {% block footer_scripts %}{% endblock footer_scripts %}
+  {% block footer_scripts %}
+    <script src="{{ "/static/js/tool_gallery.js"|asseturl }}"></script>
+  {% endblock footer_scripts %}
 </html>
 
 

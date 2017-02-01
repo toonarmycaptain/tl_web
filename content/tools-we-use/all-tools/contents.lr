@@ -4,6 +4,345 @@ title: All Tools
 ---
 position: 1
 ---
-_template: tool_list.html
+_template: tool_gallery.html
 ---
-SubNav: 
+SubNav:
+
+#### subnav-item ####
+body:
+
+Django is a high-level Python Web framework.
+
+We use it to create feature-rich web apps for clients.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: django_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+Debian is a free operating system (OS) for your computer.
+
+We run Debian on many of our servers. It is well supported and stable.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: debian_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+jQuery is a fast, small, and feature-rich JavaScript library. 
+
+We use this in all our web-based projects. It makes development much faster.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: jquery_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+PySide project provides LGPL-licensed Python bindings for the Qt.
+
+We use this toolkit to create cross-platform desktop applications in Python.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: pyside_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+Mercurial is a distributed version control system. It is written in Python.
+
+We use this to keep track of, log, and share our code
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: mercurial_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+Python is a programming language that lets you work quickly and effectively.
+
+While creating solutions, we use Python as much as we can.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: python_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+Nginx is a free, open-source, high-performance HTTP server and reverse proxy.
+
+Nginx is a core part of most of our full-stack solutions.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: nginx_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+Ubuntu is the most popular desktop Linux distribution.
+
+We use Ubuntu (and its descendant Mint) on our personal workstations.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: ubuntu_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+Lighttpd is a web server designed for high performance environments.
+
+We have worked with Lighttpd for load balancing and serving static files.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: lighttpd_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+The world's most popular open source database.
+
+MySQL has good performance and is well supported, we use it in many of our projects.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: mysql_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+Tornado is a high performance web server and application framework.
+
+With Python Tornado, we have created complex, high performance web apps.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: tornado_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+BitTorrent Sync is a peer-to-peer file synchronization tool. 
+
+We use BitTorrent Sync internally to store and share our files and code.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: bittorrent_sync_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+PostgreSQL is a database server. 
+
+PostgreSQL is a stable and reliable system. In fact, we are using it to support this website.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: postgresql_logo_75x75-1-.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+Pyramid is a minimalistic, platform-independent MVC object publishing web framework.
+
+We use it to create feature-rich web apps for clients.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: pyramid_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+Virtualbox is a virtualization software package for x86 and AMD64/Intel64-based computers.
+
+We use Virtualbox for development every day.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: virtualbox_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+SQLite is a relational database management system. 
+
+It is small, lightweight, and great for storing data in desktop applications.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: sqlite_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+Flask is a lightweight web application framework written in Python. 
+
+We use it to create feature-rich web apps for clients.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: flask_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+Javascript is a dynamic computer programming language. 
+
+Javascript allows us to create interactive web apps.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: javascript_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+HTML5 is a markup language used for structuring and presenting content for the WorldWide Web and a core technology of the Internet. 
+We use HTML5 extensively in our web-based projects.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: html_logo_75x75.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+CSS3 is a style sheet language used for describing the look and formatting of a document written in a markup language.
+We use CSS3 to create the core look and feel of our web-based projects.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: css_logo_75x75.png
+-----
+title: 
+-----
+caption: 
