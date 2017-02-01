@@ -47,3 +47,5 @@ caption: http://jquery.com/
 _template: tool_list.html
 ---
 position: 4
+---
+page_thumb: tools-we-use-frameworks.png
