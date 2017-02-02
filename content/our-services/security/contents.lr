@@ -12,3 +12,5 @@ Security is vital to create software that doesn't cause problems and cost money 
 We prefer to start thinking about the security of a system well before we write our first line of code.  Security is not just thinking about what a hacker would do if they were attempting to hack a computer.  It involves thinking about the inherent stability of a system.  We are constantly thinking about and researching new tools and vulnerabilities.  We try to use the industry-wide best practices.
 ---
 position: 6
+---
+page_thumb: our-services-security.png

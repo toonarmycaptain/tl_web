@@ -12,3 +12,5 @@ We can analyze and optimize your business’s current models of workflow and dev
 _template: standard.html
 ---
 position: 5
+---
+page_thumb: our-services-devops.png
