@@ -241,7 +241,7 @@ body {
   margin-right: auto;
   z-index: 1;
 }
-.nav_menu_bar {
+#nav_menu_bar {
   position: relative;
   width: 964px;
   height: 40px;
@@ -282,7 +282,7 @@ body {
 }
 .nav_menu {
   float: left;
-  width: 134.28571429px;
+  width: 133.14285714px;
   height: 40px;
   text-align: center;
   line-height: 40px;

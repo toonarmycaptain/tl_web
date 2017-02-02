@@ -219,7 +219,7 @@ body
   margin-right: auto;
   z-index: 1;
 }
-.nav_menu_bar {
+#nav_menu_bar {
   position: relative;
   width: @grid_width + 2 * @border_width;
   height: 40px;
@@ -259,7 +259,7 @@ body
 }
 .nav_menu {
   float: left;
-  width: @main_width / @nav_tabs;
+  width: (@grid_width - 2* @border_width * @nav_tabs) / @nav_tabs;
   height: 40px;
   text-align:center;
   line-height: @default_line_height;
