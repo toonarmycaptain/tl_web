@@ -1,9 +1,54 @@
-_model: page
+_model: linkbox
 ---
 title: Competitors
 ---
-_template: standard.html
+_template: competitors.html
 ---
 body: We are so confident that our quality and abilities stand out that we are willing to share links to our competitors. Please feel free to browse--the more you do, the more you will like what we offer!
 ---
 position: 7
+---
+links:
+
+#### link-item ####
+text: The Nerdery
+----
+url: http://nerdery.com
+#### link-item ####
+text: Tivix
+----
+url: http://www.tivix.com
+#### link-item ####
+text: Egrove Systems
+----
+url: http://www.egrovesys.com
+#### link-item ####
+text: Rocksauce Studios
+----
+url: http://rocksaucestudios.com
+#### link-item ####
+text: Parthenon Software
+----
+url: http://www.parthenonsoftware.com
+#### link-item ####
+text: Art and Logic
+----
+url: http://www.artandlogic.com
+#### link-item ####
+text: Bixly
+----
+url: http://bixly.com
+#### link-item ####
+text: Experts From India
+----
+url: http://www.expertsfromindia.com
+#### link-item ####
+text: Sphere Consulting
+----
+url: http://www.sphereinc.com
+#### link-item ####
+text: The Penguin and the Python
+----
+url: http://penguinpython.com
+---
+body_html: 
