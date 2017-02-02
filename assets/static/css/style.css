@@ -243,8 +243,7 @@ body {
 }
 .nav_menu_bar {
   position: relative;
-  left: 6px;
-  width: 960px;
+  width: 964px;
   height: 40px;
   margin-top: 10px;
 }
@@ -283,7 +282,7 @@ body {
 }
 .nav_menu {
   float: left;
-  width: 132px;
+  width: 134.28571429px;
   height: 40px;
   text-align: center;
   line-height: 40px;

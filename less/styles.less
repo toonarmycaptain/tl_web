@@ -4,7 +4,8 @@
 @logo_box_width: 29px;
 @main_width: 940px;
 @grid_width: 960px;
-
+@border_width: 2px;
+@nav_tabs: 7;
 
 .contact {
   cursor: pointer;
@@ -112,7 +113,7 @@
 .link_underline {
   position: relative;
   top: -8px;
-  height: 2px;
+  height: @border_width;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -220,8 +221,7 @@ body
 }
 .nav_menu_bar {
   position: relative;
-  left: 6px;
-  width: @grid_width;
+  width: @grid_width + 2 * @border_width;
   height: 40px;
   margin-top: 10px;
 }
@@ -259,7 +259,7 @@ body
 }
 .nav_menu {
   float: left;
-  width: 132px;
+  width: @main_width / @nav_tabs;
   height: 40px;
   text-align:center;
   line-height: @default_line_height;
@@ -299,19 +299,19 @@ body
   vertical-align: top;
 }
 .green_box {
-  border:2px solid @std_green;
+  border: @border_width solid @std_green;
   background: rgba(0, 0, 0, 0.5);
-  padding: 2px 25px;
+  padding: @border_width 25px;
 }
 .green_border {
-  border:2px solid @std_green;
+  border: @border_width solid @std_green;
 }
 .content_box {
   position: relative;
   display: block;
   width: @main_width;
   left: 0px;
-  border: 2px solid @std_green;
+  border: @border_width solid @std_green;
   margin-top:10px;
   padding: 10px;
   overflow: hidden;
