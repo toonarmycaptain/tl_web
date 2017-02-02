@@ -18,6 +18,8 @@
           {# set thumbnail with a loading gif backup #}
           {% if sub_page.page_thumb %}
             {% set sub_page_thumb = sub_page.record.attachments.images.get(sub_page.page_thumb) %}
+          {% else %}
+            {% set sub_page_thumb = "" %}
           {% endif %}
           <a draggable="false" href="{{ sub_page|url }}">
             <div class='nav_menu_tier_2'>

@@ -7,3 +7,5 @@ body: We have one central location in Austin, Texas.  We find that communication
 _template: standard.html
 ---
 position: 2
+---
+page_thumb: how-we-are-different-one-location.png
