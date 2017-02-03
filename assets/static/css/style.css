@@ -784,18 +784,15 @@ body {
   line-height: 1.2;
   font-size: 20px;
 }
-.tool_item {
-  position: relative;
-  width: 100%;
-  padding-top: 10px;
-  overflow: hidden;
+.item_spacing {
+  height: 30px;
 }
-.tool_item_image {
-  position: relative;
+.item_image {
+  display: inline-block;
+  padding-top: 1em;
 }
-.tool_item_text {
-  margin-left: 15px;
-  width: 715px;
+.item_text {
+  margin-left: 30px;
   vertical-align: top;
   display: inline-block;
 }

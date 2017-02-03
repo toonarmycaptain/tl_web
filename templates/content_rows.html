@@ -1,0 +1,13 @@
+{% extends "standard.html" %}
+
+{% block body_content %}
+  {% if this.image_width %}
+    {% with width= this.image_width %}
+      {% include "includes/subnav_rows.html" %}
+    {% endwith %}
+  {% else %}
+    {% with width= "300" %}
+      {% include "includes/subnav_rows.html" %}
+    {% endwith %}
+  {% endif %}
+{% endblock body_content %}

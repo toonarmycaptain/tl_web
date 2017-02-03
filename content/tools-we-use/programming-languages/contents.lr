@@ -31,8 +31,10 @@ title:
 -----
 caption: http://www.wolfram.com/mathematica/
 ---
-_template: tool_list.html
+_template: content_rows.html
 ---
 position: 4
 ---
 page_thumb: tools-we-use-programming-languages.png
+---
+image_width: 200

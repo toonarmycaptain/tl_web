@@ -44,8 +44,10 @@ title:
 -----
 caption: http://jquery.com/
 ---
-_template: tool_list.html
+_template: content_rows.html
 ---
 position: 4
 ---
 page_thumb: tools-we-use-frameworks.png
+---
+image_width: 200
