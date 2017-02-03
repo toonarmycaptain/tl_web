@@ -1,4 +1,4 @@
-<nav>
+<nav id='nav_menu_bar'>
   {% for child in site.get('/').children.order_by('position') %}
     {% if child.nav_bar %}
       <a draggable="false" href="{{ child|url }}">
@@ -7,7 +7,7 @@
           {% if this == child %}
             <div class="link_underline"></div>
           {% endif %}
-        </div>      
+        </div>
       </a>
     {% endif %}
   {% endfor %}
