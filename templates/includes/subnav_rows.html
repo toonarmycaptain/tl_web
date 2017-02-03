@@ -1,3 +1,5 @@
+{# needs to have 'width' passed in from the include #}
+
 {% for subnav_item in this.SubNav.blocks %} {# finds all blocks in SubNav model #}
   <div>
     {% if not loop.index == 1 %}
@@ -5,8 +7,8 @@
     {% endif %}
 
     {% set img = subnav_item.images.blocks[0] %}
+    {% set thumb = this.record.attachments.images.get(img.image) %}
     <div class="item_image" style="width: {{ width|string }}px;">
-      {% set thumb = this.record.attachments.images.get(img.image) %}
       {% if thumb.width >= width %}
         {% set thumb = thumb.thumbnail(width) %}
       {% endif %}
