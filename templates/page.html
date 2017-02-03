@@ -1,12 +1,6 @@
 <!doctype html>
 <html>
-  <head>
-    {% include "includes/header.html" %}
-    <title>{% block meta_title %}Terminal Labs{% endblock %}</title>
-    {% block header_scripts %}
-      <script src="{{ '/static/js/jquery-1.11.0.min.js'|asseturl }}"></script>
-    {% endblock header_scripts %}
-  </head>
+  {% include "includes/header.html" %}
   <body>
     <div id="container">
       <div class="top_row">
@@ -21,16 +15,5 @@
       {% endblock content %}
     </div>
   </body>
-  {% block footer_scripts %}
-    <script src="{{ '/static/js/navbar.js'|asseturl }}"></script>
-    <script src="{{ "/static/js/tool_gallery.js"|asseturl }}"></script>
-    <script src="{{ '/static/js/contacts_accordion.js'|asseturl }}"></script>
-    <script src="{{ '/static/js/slideshow_events.js'|asseturl }}"></script>
-    <script src="{{ '/static/js/lightbox.js'|asseturl }}"></script>
-    <script>
-     init_contacts_accordion();
-     load_modavanti();
-     init_slideshow_events();
-    </script>
-  {% endblock footer_scripts %}
+  {% include "includes/footer.html" %}
 </html>
