@@ -53,6 +53,8 @@ caption: https://www.freebsd.org/
 ---
 position: 3
 ---
-_template: tool_list.html
+_template: content_rows.html
 ---
 page_thumb: tools-we-use-operating-systems.png
+---
+image_width: 200

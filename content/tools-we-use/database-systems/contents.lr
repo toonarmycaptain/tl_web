@@ -46,6 +46,8 @@ caption: https://www.postgresql.org/
 ---
 position: 2
 ---
-_template: tool_list.html
+_template: content_rows.html
 ---
 page_thumb: tools-we-use-database-systems.png
+---
+image_width: 200

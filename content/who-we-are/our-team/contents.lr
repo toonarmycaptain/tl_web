@@ -1,0 +1,65 @@
+_model: subnav
+---
+title: Our Team
+---
+page_thumb: who-we-are-our-team.png
+---
+SubNav:
+
+#### subnav-item ####
+body:
+
+I'm Joseph Nix. I grew up in Fort Wayne, Indiana.  At a very young age, I was mesmerized with the stars and the night sky. Following this curiosity, I found myself at the University of Alabama in Huntsville, studying physics and math. Rocket City was great fun!  I learned a lot. It didn't take long for me to meet Mike and Chris and many other very supportive friends. In our downtime from actual school work, we would play cards (quite competitively), volleyball, hockey in the dorm hallways.  In addition, we would code, do math, physics, and rocket science just for fun. Now, I've turned that last part into a living.
+
+Coding, math, and physics provide ample ways to be useful and help the world, and I get to have fun doing it as my career. If we do a good job together, one day I'll get to travel into space.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: joe.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+Hi, I'm Chris Smith. Being young, I have tinkered with computers most of my life. I studied Physics and rocket propulsion at the University of Alabama in Huntsville. There I got to use all kinds of fun tools for all sorts of delightful tasks. I took a single programing class (intro to C) and went from there. I taught myself FORTRAN later on and loved it as it seemed far more intuitive than C. I got to use FORTRAN for numerical analysis on stars and rocket components. I even wrote a friendly little innocuous virus for a friend's computer once. We both enjoyed it very much. 
+
+I started using Linux one day after my xp machine was incapacitated by a nasty virus. I fell in love with Linux, not for any of the technical or philosophical reasons that most would attribute to their Linux love, but because of the community. I loved being able to get into the guts of the operating system and feel like I was really doing something fancy. At the time I had no idea what was going on, but I loved that I could Google the solution to a problem and copy in some gangly command into the terminal and BOOM problem solved. Over time, I solved enough problems that way to get a feel for what I was actually being instructed to do by the community and understand it. I'm at the point now where the solutions to most of my problems are not so easy to find, and instead I often get the pleasure grokking these problems out more or less on my own. I feel that I am at a point where I have come full circle, in the past I would marvel at the wealth of seemingly god-like expertise that was out there to help me along, and now I can contribute to that vast body of knowledge. 
+
+Community is what I love the most about this field. There is no barrier to entry for the knowledge you need, you simply reach out and grab it. What you will find is a community of people eager to help you and eager for your contributions.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: chris.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
+My name is Michael Verhulst, 
+
+I have a passion for building advanced solutions for complex problems. I am fascinated by systems of all kinds, and love the art and science of engineering software solutions in python. I studied Mechanical and Aerospace Engineering at the University of Alabama In Huntsville. I also studied Liberal and Integrative Studies emphasizing Commercial Spaceflight and Astrophysics at the University of Illinois at Springfield. I am interested in algorithms, data-storage paradigms, security, high performance computing, innovative business models, physics, mathematics, spaceflight, rock climbing, swimming, linux and all things python.
+----
+body_html: 
+----
+images:
+
+##### select-image #####
+image: mike.png
+-----
+title: 
+-----
+caption: 
+---
+_template: content_rows.html
+---
+image_width: 300
