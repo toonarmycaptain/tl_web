@@ -1,7 +1,7 @@
 @std_green: #2F9A41;
 @std_gray: #C0C0C0;
 @default_line_height: 40px;
-@logo_box_width: 29px;
+@logo_box_width: 28px;
 @main_width: 940px;
 @grid_width: 960px;
 @border_width: 2px;
@@ -502,9 +502,10 @@ body
 }
 .logo_box {
   position: absolute;
-  top: 0px;
   height: @logo_box_width;
   width: @logo_box_width;
+  border-left: 2px solid @std_green;
+  background: rgba(0, 0, 0, 0.5); 
 }
 .twitter_logo_box {
   .logo_box;

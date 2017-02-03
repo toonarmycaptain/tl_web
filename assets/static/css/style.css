@@ -10,7 +10,7 @@
 }
 .row_border {
   line-height: 30px;
-  border-bottom: 1px solid #2F9A41;
+  border-bottom: 1px solid #2f9a41;
 }
 .contact_info {
   position: absolute;
@@ -134,7 +134,7 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #2F9A41;
+  background-color: #2f9a41;
 }
 .client_underline {
   display: none;
@@ -200,12 +200,12 @@ img.img_center {
 }
 a:link,
 a:visited {
-  color: #C0C0C0;
+  color: #c0c0c0;
   text-decoration: none;
 }
 a:hover,
 a:active {
-  color: #C0C0C0;
+  color: #c0c0c0;
 }
 a.active,
 a.active a:hover {
@@ -220,7 +220,7 @@ a.logo_div {
 }
 html,
 body {
-  color: #C0C0C0;
+  color: #c0c0c0;
   background-color: black;
   font: 16px prime_regular;
 }
@@ -390,19 +390,19 @@ body {
   vertical-align: top;
 }
 .green_box {
-  border: 2px solid #2F9A41;
+  border: 2px solid #2f9a41;
   background: rgba(0, 0, 0, 0.5);
   padding: 2px 25px;
 }
 .green_border {
-  border: 2px solid #2F9A41;
+  border: 2px solid #2f9a41;
 }
 .content_box {
   position: relative;
   display: block;
   width: 940px;
   left: 0px;
-  border: 2px solid #2F9A41;
+  border: 2px solid #2f9a41;
   margin-top: 10px;
   padding: 10px;
   overflow: hidden;
@@ -420,7 +420,7 @@ body {
   width: 440px;
   padding: 10px;
   min-height: 300px;
-  border-right: 1px solid #2F9A41;
+  border-right: 1px solid #2f9a41;
 }
 .content_col_right {
   display: inline-block;
@@ -548,7 +548,7 @@ body {
   overflow: hidden;
   line-height: 30px;
   text-align: left;
-  border-bottom: 1px solid #2F9A41;
+  border-bottom: 1px solid #2f9a41;
 }
 .general_row_text {
   position: absolute;
@@ -629,36 +629,41 @@ body {
 }
 .logo_box {
   position: absolute;
-  top: 0px;
-  height: 29px;
-  width: 29px;
+  height: 28px;
+  width: 28px;
+  border-left: 2px solid #2f9a41;
+  background: rgba(0, 0, 0, 0.5);
 }
 .twitter_logo_box {
   position: absolute;
-  top: 0px;
-  height: 29px;
-  width: 29px;
-  right: 58px;
+  height: 28px;
+  width: 28px;
+  border-left: 2px solid #2f9a41;
+  background: rgba(0, 0, 0, 0.5);
+  right: 56px;
 }
 .pinterest_logo_box {
   position: absolute;
-  top: 0px;
-  height: 29px;
-  width: 29px;
-  right: 29px;
+  height: 28px;
+  width: 28px;
+  border-left: 2px solid #2f9a41;
+  background: rgba(0, 0, 0, 0.5);
+  right: 28px;
 }
 .linkedin_logo_box {
   position: absolute;
-  top: 0px;
-  height: 29px;
-  width: 29px;
-  right: 87px;
+  height: 28px;
+  width: 28px;
+  border-left: 2px solid #2f9a41;
+  background: rgba(0, 0, 0, 0.5);
+  right: 84px;
 }
 .facebook_logo_box {
   position: absolute;
-  top: 0px;
-  height: 29px;
-  width: 29px;
+  height: 28px;
+  width: 28px;
+  border-left: 2px solid #2f9a41;
+  background: rgba(0, 0, 0, 0.5);
   right: 0px;
 }
 .social_box {
@@ -722,7 +727,7 @@ body {
   padding: 5px 25px;
 }
 .code_snippet .tl_green {
-  color: #2F9A41;
+  color: #2f9a41;
 }
 .code_snippet .host {
   color: #8ae234;
