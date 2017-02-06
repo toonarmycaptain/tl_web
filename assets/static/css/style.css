@@ -632,14 +632,12 @@ body {
   height: 28px;
   width: 28px;
   border-left: 2px solid #2f9a41;
-  background: rgba(0, 0, 0, 0.5);
 }
 .twitter_logo_box {
   position: absolute;
   height: 28px;
   width: 28px;
   border-left: 2px solid #2f9a41;
-  background: rgba(0, 0, 0, 0.5);
   right: 56px;
 }
 .pinterest_logo_box {
@@ -647,7 +645,6 @@ body {
   height: 28px;
   width: 28px;
   border-left: 2px solid #2f9a41;
-  background: rgba(0, 0, 0, 0.5);
   right: 28px;
 }
 .linkedin_logo_box {
@@ -655,7 +652,6 @@ body {
   height: 28px;
   width: 28px;
   border-left: 2px solid #2f9a41;
-  background: rgba(0, 0, 0, 0.5);
   right: 84px;
 }
 .facebook_logo_box {
@@ -663,7 +659,6 @@ body {
   height: 28px;
   width: 28px;
   border-left: 2px solid #2f9a41;
-  background: rgba(0, 0, 0, 0.5);
   right: 0px;
 }
 .social_box {
