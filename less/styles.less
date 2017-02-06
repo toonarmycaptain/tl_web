@@ -7,9 +7,6 @@
 @border_width: 2px;
 @nav_tabs: 7;
 
-.contact {
-  cursor: pointer;
-}
 .row {
   position: relative;
 }
@@ -34,72 +31,15 @@
 #slides {
   height: 310px;
 }
-.ajax_insert {
-  overflow: hidden;
-}
-.client_slide {
-  float: left;
-  text-align: center;
-  display: none;
-}
-.client_tabs {
-  position: relative;
-  height: 40px;
-  width: @main_width;
-  top: 0px;
-  left: 0px;
-  margin-bottom: 20px;  
-}
 .blog_navigation {
   position: relative;
   height: 40px;
   width: 100%;
 }
-.blog_content {
-  padding-top: 10px;
-}
-.blog_header {
-  position: absolute;
-  width: 470px;
-}
-.blog_header_left {
-  .blog_header;
-  left: 10px;
-}
-.blog_header_right {
-  .blog_header;
-  right: 10px;
-  text-align: right;
-}
-.blog_entry {
-   position: absolute;
-   height: 40px;
-   width: ( @main_width - 20)/2;
-   top: 0px;
-   line-height: @default_line_height;
-}
-.next_blog_entry {
-  .blog_entry;
-  right: 0px;
-  text-align: right;
-}
-.previous_blog_entry {
-  .blog_entry;
-  left: 0px;
-  text-align: left;
-}
-.client_tab {
-  .blog_entry;
+.client_slide {
+  float: left;
   text-align: center;
-  cursor: pointer;				
-}
-.client_tab_left {
-  .client_tab;
-  left: 0px;
-}
-.client_tab_right {
-  .client_tab;
-  right: 0px;
+  display: none;
 }
 .client_image {
   top: 0px;
@@ -116,8 +56,7 @@
   top: -8px;
   height: @border_width;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-color: @std_green;
 }
 .client_underline {
@@ -130,36 +69,8 @@
   float: left;
   margin-left: 67px;
 }
-.text {
-  position: absolute;
-  height: 300px;
-  width: ( @main_width - 20 )/2;
-  left: 50px;
-  top: 50px;
-}
 a img {
   border:none;
-}
-#main {
-  text-align: center;
-  width: @main_width - 20;
-  position: relative;
-}
-#content{
-  position: absolute;
-  top: 0px;
-  height: 100%;
-  width: 100%;
-  left: 0px;
-  background-color: #111;
-  overflow-y: scroll;
-  display: none;  
-}
-#content img{
-  float:left;
-  margin:2px;
-  cursor:pointer;
-  opacity:0.4;
 }
 .tech_boxes {
   position: relative;
@@ -174,13 +85,9 @@ a img {
   width: 740px;
   cursor:pointer;
 }
-img.img_center { 
-  display: block; 
-  margin-left: auto; 
-  margin-right: auto;
-}
-.center {
+.logo_subtext {
   text-align:center;
+  font-size: 12px;
 }
 a:link, a:visited {
   color: @std_gray;
@@ -194,10 +101,6 @@ a.active, a.active a:hover {
 }
 a.inactive {
    text-decoration: none;
-}
-a.logo_div {
-  display: block;
-  width: 450px;
 }
 html,
 body
@@ -214,14 +117,10 @@ body
   user-select: none;
 }
 #container {
-  position: relative;
   width: @grid_width;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
+  margin: 0 auto;
 }
 #nav_menu_bar {
-  position: relative;
   width: @grid_width + 2 * @border_width;
   height: 40px;
   margin-top: 10px;
@@ -235,28 +134,19 @@ body
   left: 0px;
   width: @grid_width;
   overflow: hidden;
-  margin-top:10px;
+  margin-top: 10px;
   text-align: center;
 }
 .nav_menu_tier_2 {
   float: left;
   width: 137px;
-  height: 148px;
-  display: inline-block;
-  overflow: hidden;  
 }
 .nav_menu_tier_2_text {
   width: 80%;
-  height: 42px;
-  line-height: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 10px;
 }
 .menu_item {
   cursor: pointer;
-}
-.width_960 {
-  width: @grid_width;
 }
 .nav_menu {
   float: left;
@@ -264,16 +154,6 @@ body
   height: 40px;
   text-align:center;
   line-height: @default_line_height;
-}
-.generate-fonts();
-.generate-fonts(@i: 8) when (@i =< 32) {
-  .font_@{i} {
-  font-size: unit(@i, px);
-  }
-  .generate-fonts((@i + 1));
-}
-.vertical_top {
-  vertical-align:text-top;
 }
 .gallery_tool_img {
   float: left;
@@ -287,33 +167,13 @@ body
   height: 50px;
   line-height: 20px;
 }
-.bio_image {
-  top:0px;
-  width:200px;
-  height:100%;
-}
-.software_image {
-  width:280px;
-}
-.software_image_td {
-  width:300px;
-  vertical-align: top;
-}
-.green_box {
-  border: @border_width solid @std_green;
-  background: rgba(0, 0, 0, 0.5);
-  padding: @border_width 25px;
-}
 .green_border {
   border: @border_width solid @std_green;
 }
 .content_box {
-  position: relative;
-  display: block;
   width: @main_width;
-  left: 0px;
   border: @border_width solid @std_green;
-  margin-top:10px;
+  margin-top: 10px;
   padding: 10px;
   overflow: hidden;
 }
@@ -330,175 +190,33 @@ body
 }
 .content_col_right {
   .content_col;
-  margin-top:10px;
-}
-.content_row {
-  position: relative;
-  width: 100%;
-  padding-top: 10px;
-  overflow: hidden;
-}
-.cms_row {
-  position: relative;
-  width: 100%;
-  padding-top: 10px;
-  overflow: hidden;
-}
-.cms_row_image {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-}
-.cms_row_text {
-  position: absolute;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: 730px;
-  min-height: 200px;
-  display: inline-block;
-}
-.general_row_156h {
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  min-height:156px;
-  overflow: hidden;
-}
-.general_row_300h {
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  min-height: 300px;
-  overflow: hidden;
-}
-.general_row_200h {
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  height: 200px;
-  overflow: hidden;
-}
-.general_row_156h {
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  height: 156px;
-  overflow: hidden;
-}
-.general_row_75h {
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  height: 75px;
-  overflow: hidden;
-}
-.general_row_32h {
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  height: 32px;
-  overflow: hidden;
-}
-.img_box {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.our_city_img {
-  .img_box;
-}
-.team_member_img {
-  .img_box;
-}
-.text_box_common {
-  position: relative;
-  display: inline-block;
-  width: 500px;
-  top: 0px;
-  left: 350px;
-}
-.team_member_text_left {
-  .text_box_common;
-}
-.our_city_text_left {
-  .text_box_common;
-}
-.general_row_text_left {
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-  line-height: 30px;
-  text-align: left;
-  border-bottom: 1px solid @std_green;
-}
-.general_row_text {
-  position: absolute;
-  width: 300px;
-  top: 0px;
-  left: 100px;
-  overflow: hidden;
-  line-height: 30px;
-  text-align: left;
+  margin-top: 10px;
 }
 .row_text_common {
   float: left;
   width: 252px;
-  top: 0px;
   line-height: @default_line_height;
   text-align: center;
-}
-.row_text_right {
-  .row_text_common;
-  right: 0px;
-}
-.row_text_left {
-  .row_text_common;
-  left: 0px;
 }
 .row_text_center {
-  position: relative;
   float: left;
   width: 396px;
-  top: 0px;
-  left: 0px;
   line-height: @default_line_height;
   text-align: center;
 }
-.row_thirds_common {
+.row_thirds {
   float: left;
   width: 20px;
-  top: 0px;
   line-height: @default_line_height;
   text-align: center;
-}
-.row_text_one_third {
-  .row_thirds_common;
-  left: 0px;
-}
-.row_text_two_thirds {
-  .row_thirds_common;
-  right: 0px;
+  font-size: 24px;
 }
 .top_row {
   position: relative;
-  top: 0px;
   margin-top: 20px;
   height: 70px;
-  width: @grid_width;
 }
 #logo_box {
-  position: absolute;
-  top: 0px;
-  height: 60px;
   width: 194px;
 }
 .logo_box {
@@ -529,7 +247,6 @@ body
   top: 0px;
   height: 28px;
   width: 305px;
-  line-height: 28px;
 }
 .repo_link {
   position: absolute;
@@ -539,49 +256,6 @@ body
   width: 190px;
   line-height: 27px;
   text-align: center;
-}
-#below_logo {
-  margin-top: 30px;
-}
-.col_left {
-  float: left;
-  clear: both;
-  height: 100%;
-}
-.col_wide_center {
-  padding-left: 10px;
-  overflow: hidden;
-}
-.post_content {
-  overflow: hidden;
-}
-.post_date {
-  float: right;
-  margin-left: 10px;
-  padding: 0px 50px;
-}
-.post_title {
-  font-weight: bold;
-  overflow: hidden;
-}
-.post_below_title {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.profile_pics {
-  padding: 0px 10px;	
-  text-align: center;
-  display: text-cell;
-  vertical-align: middle;
-  height: 100%;
-  clear: both;
-}
-.bio {
-  padding: 10px 0px;
-  clear: both;
-}
-.content_padding {
-  padding: 5px 25px;	
 }
 .code_snippet {
   .tl_green {
@@ -629,8 +303,7 @@ body
   text-decoration: none;
 }
 .large_tech_text_upper {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 0 10px;
 }
 .testimonials {
   width: 100%;
@@ -662,8 +335,7 @@ body
 }
 .side_squeeze
 {
-  margin-right: 5px;
-  margin-left: 5px;
+  margin: 0 5px;
 }
 .v_center {
   text-align: center;
@@ -672,4 +344,7 @@ body
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); 
+}
+.hide {
+  display: none;
 }
