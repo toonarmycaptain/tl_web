@@ -18,13 +18,31 @@ body_html: <a href="https://modavanti.com/" target="_blank">modavanti.com</a>
 images:
 
 ##### select-image #####
-image: modavanti_home_page.png
+image: modavanti_usa_badge.jpg
 -----
 title: 
 -----
 caption: 
 ##### select-image #####
-image: modavanti_mission.png
+image: modavanti_the_big_picture.png
+-----
+title: 
+-----
+caption: 
+##### select-image #####
+image: modavanti_shop_dresses.png
+-----
+title: 
+-----
+caption: 
+##### select-image #####
+image: modavanti_nothing_good_comes_without_a_fight.png
+-----
+title: 
+-----
+caption: 
+##### select-image #####
+image: modavanti_meet_your_maker.png
 -----
 title: 
 -----
