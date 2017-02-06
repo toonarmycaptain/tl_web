@@ -1,6 +1,3 @@
-.contact {
-  cursor: pointer;
-}
 .row {
   position: relative;
 }
@@ -10,7 +7,7 @@
 }
 .row_border {
   line-height: 30px;
-  border-bottom: 1px solid #2f9a41;
+  border-bottom: 1px solid #2F9A41;
 }
 .contact_info {
   position: absolute;
@@ -25,98 +22,15 @@
 #slides {
   height: 310px;
 }
-.ajax_insert {
-  overflow: hidden;
-}
-.client_slide {
-  float: left;
-  text-align: center;
-  display: none;
-}
-.client_tabs {
-  position: relative;
-  height: 40px;
-  width: 940px;
-  top: 0px;
-  left: 0px;
-  margin-bottom: 20px;
-}
 .blog_navigation {
   position: relative;
   height: 40px;
   width: 100%;
 }
-.blog_content {
-  padding-top: 10px;
-}
-.blog_header {
-  position: absolute;
-  width: 470px;
-}
-.blog_header_left {
-  position: absolute;
-  width: 470px;
-  left: 10px;
-}
-.blog_header_right {
-  position: absolute;
-  width: 470px;
-  right: 10px;
-  text-align: right;
-}
-.blog_entry {
-  position: absolute;
-  height: 40px;
-  width: 460px;
-  top: 0px;
-  line-height: 40px;
-}
-.next_blog_entry {
-  position: absolute;
-  height: 40px;
-  width: 460px;
-  top: 0px;
-  line-height: 40px;
-  right: 0px;
-  text-align: right;
-}
-.previous_blog_entry {
-  position: absolute;
-  height: 40px;
-  width: 460px;
-  top: 0px;
-  line-height: 40px;
-  left: 0px;
-  text-align: left;
-}
-.client_tab {
-  position: absolute;
-  height: 40px;
-  width: 460px;
-  top: 0px;
-  line-height: 40px;
+.client_slide {
+  float: left;
   text-align: center;
-  cursor: pointer;
-}
-.client_tab_left {
-  position: absolute;
-  height: 40px;
-  width: 460px;
-  top: 0px;
-  line-height: 40px;
-  text-align: center;
-  cursor: pointer;
-  left: 0px;
-}
-.client_tab_right {
-  position: absolute;
-  height: 40px;
-  width: 460px;
-  top: 0px;
-  line-height: 40px;
-  text-align: center;
-  cursor: pointer;
-  right: 0px;
+  display: none;
 }
 .client_image {
   top: 0px;
@@ -135,48 +49,13 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #2f9a41;
+  background-color: #2F9A41;
 }
 .client_underline {
   display: none;
 }
-.slide {
-  position: relative;
-  height: 75px;
-  width: 786px;
-  float: left;
-  margin-left: 67px;
-}
-.text {
-  position: absolute;
-  height: 300px;
-  width: 460px;
-  left: 50px;
-  top: 50px;
-}
 a img {
   border: none;
-}
-#main {
-  text-align: center;
-  width: 920px;
-  position: relative;
-}
-#content {
-  position: absolute;
-  top: 0px;
-  height: 100%;
-  width: 100%;
-  left: 0px;
-  background-color: #111;
-  overflow-y: scroll;
-  display: none;
-}
-#content img {
-  float: left;
-  margin: 2px;
-  cursor: pointer;
-  opacity: 0.4;
 }
 .tech_boxes {
   position: relative;
@@ -191,22 +70,17 @@ a img {
   width: 740px;
   cursor: pointer;
 }
-img.img_center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .center {
   text-align: center;
 }
 a:link,
 a:visited {
-  color: #c0c0c0;
+  color: #C0C0C0;
   text-decoration: none;
 }
 a:hover,
 a:active {
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 a.active,
 a.active a:hover {
@@ -215,13 +89,9 @@ a.active a:hover {
 a.inactive {
   text-decoration: none;
 }
-a.logo_div {
-  display: block;
-  width: 450px;
-}
 html,
 body {
-  color: #c0c0c0;
+  color: #C0C0C0;
   background-color: black;
   font: 16px prime_regular;
 }
@@ -363,9 +233,6 @@ body {
 .font_32 {
   font-size: 32px;
 }
-.vertical_top {
-  vertical-align: text-top;
-}
 .gallery_tool_img {
   float: left;
   width: 75px;
@@ -378,32 +245,15 @@ body {
   height: 50px;
   line-height: 20px;
 }
-.bio_image {
-  top: 0px;
-  width: 200px;
-  height: 100%;
-}
-.software_image {
-  width: 280px;
-}
-.software_image_td {
-  width: 300px;
-  vertical-align: top;
-}
-.green_box {
-  border: 2px solid #2f9a41;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 2px 25px;
-}
 .green_border {
-  border: 2px solid #2f9a41;
+  border: 2px solid #2F9A41;
 }
 .content_box {
   position: relative;
   display: block;
   width: 940px;
   left: 0px;
-  border: 2px solid #2f9a41;
+  border: 2px solid #2F9A41;
   margin-top: 10px;
   padding: 10px;
   overflow: hidden;
@@ -421,7 +271,7 @@ body {
   width: 440px;
   padding: 10px;
   min-height: 300px;
-  border-right: 1px solid #2f9a41;
+  border-right: 1px solid #2F9A41;
 }
 .content_col_right {
   display: inline-block;
@@ -430,135 +280,6 @@ body {
   padding: 10px;
   min-height: 300px;
   margin-top: 10px;
-}
-.content_row {
-  position: relative;
-  width: 100%;
-  padding-top: 10px;
-  overflow: hidden;
-}
-.cms_row {
-  position: relative;
-  width: 100%;
-  padding-top: 10px;
-  overflow: hidden;
-}
-.cms_row_image {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-}
-.cms_row_text {
-  position: absolute;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: 730px;
-  min-height: 200px;
-  display: inline-block;
-}
-.general_row_156h {
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  min-height: 156px;
-  overflow: hidden;
-}
-.general_row_300h {
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  min-height: 300px;
-  overflow: hidden;
-}
-.general_row_200h {
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  height: 200px;
-  overflow: hidden;
-}
-.general_row_156h {
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  height: 156px;
-  overflow: hidden;
-}
-.general_row_75h {
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  height: 75px;
-  overflow: hidden;
-}
-.general_row_32h {
-  position: relative;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  height: 32px;
-  overflow: hidden;
-}
-.img_box {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.our_city_img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.team_member_img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.text_box_common {
-  position: relative;
-  display: inline-block;
-  width: 500px;
-  top: 0px;
-  left: 350px;
-}
-.team_member_text_left {
-  position: relative;
-  display: inline-block;
-  width: 500px;
-  top: 0px;
-  left: 350px;
-}
-.our_city_text_left {
-  position: relative;
-  display: inline-block;
-  width: 500px;
-  top: 0px;
-  left: 350px;
-}
-.general_row_text_left {
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-  line-height: 30px;
-  text-align: left;
-  border-bottom: 1px solid #2f9a41;
-}
-.general_row_text {
-  position: absolute;
-  width: 300px;
-  top: 0px;
-  left: 100px;
-  overflow: hidden;
-  line-height: 30px;
-  text-align: left;
 }
 .row_text_common {
   float: left;
@@ -632,34 +353,34 @@ body {
   position: absolute;
   height: 28px;
   width: 28px;
-  border-left: 2px solid #2f9a41;
+  border-left: 2px solid #2F9A41;
 }
 .twitter_logo_box {
   position: absolute;
   height: 28px;
   width: 28px;
-  border-left: 2px solid #2f9a41;
+  border-left: 2px solid #2F9A41;
   right: 56px;
 }
 .pinterest_logo_box {
   position: absolute;
   height: 28px;
   width: 28px;
-  border-left: 2px solid #2f9a41;
+  border-left: 2px solid #2F9A41;
   right: 28px;
 }
 .linkedin_logo_box {
   position: absolute;
   height: 28px;
   width: 28px;
-  border-left: 2px solid #2f9a41;
+  border-left: 2px solid #2F9A41;
   right: 84px;
 }
 .facebook_logo_box {
   position: absolute;
   height: 28px;
   width: 28px;
-  border-left: 2px solid #2f9a41;
+  border-left: 2px solid #2F9A41;
   right: 0px;
 }
 .social_box {
@@ -679,51 +400,8 @@ body {
   line-height: 27px;
   text-align: center;
 }
-#below_logo {
-  margin-top: 30px;
-}
-.col_left {
-  float: left;
-  clear: both;
-  height: 100%;
-}
-.col_wide_center {
-  padding-left: 10px;
-  overflow: hidden;
-}
-.post_content {
-  overflow: hidden;
-}
-.post_date {
-  float: right;
-  margin-left: 10px;
-  padding: 0px 50px;
-}
-.post_title {
-  font-weight: bold;
-  overflow: hidden;
-}
-.post_below_title {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.profile_pics {
-  padding: 0px 10px;
-  text-align: center;
-  display: text-cell;
-  vertical-align: middle;
-  height: 100%;
-  clear: both;
-}
-.bio {
-  padding: 10px 0px;
-  clear: both;
-}
-.content_padding {
-  padding: 5px 25px;
-}
 .code_snippet .tl_green {
-  color: #2f9a41;
+  color: #2F9A41;
 }
 .code_snippet .host {
   color: #8ae234;
