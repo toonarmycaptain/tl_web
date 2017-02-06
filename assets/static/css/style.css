@@ -47,12 +47,18 @@
   top: -8px;
   height: 2px;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-color: #2F9A41;
 }
 .client_underline {
   display: none;
+}
+.slide {
+  position: relative;
+  height: 75px;
+  width: 786px;
+  float: left;
+  margin-left: 67px;
 }
 a img {
   border: none;
@@ -107,14 +113,10 @@ body {
   user-select: none;
 }
 #container {
-  position: relative;
   width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
+  margin: 0 auto;
 }
 #nav_menu_bar {
-  position: relative;
   width: 964px;
   height: 40px;
   margin-top: 10px;
@@ -135,22 +137,13 @@ body {
 .nav_menu_tier_2 {
   float: left;
   width: 137px;
-  height: 148px;
-  display: inline-block;
-  overflow: hidden;
 }
 .nav_menu_tier_2_text {
   width: 80%;
-  height: 42px;
-  line-height: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 10px;
 }
 .menu_item {
   cursor: pointer;
-}
-.width_960 {
-  width: 960px;
 }
 .nav_menu {
   float: left;
@@ -175,10 +168,7 @@ body {
   border: 2px solid #2F9A41;
 }
 .content_box {
-  position: relative;
-  display: block;
   width: 940px;
-  left: 0px;
   border: 2px solid #2F9A41;
   margin-top: 10px;
   padding: 10px;
@@ -210,72 +200,28 @@ body {
 .row_text_common {
   float: left;
   width: 252px;
-  top: 0px;
   line-height: 40px;
   text-align: center;
-}
-.row_text_right {
-  float: left;
-  width: 252px;
-  top: 0px;
-  line-height: 40px;
-  text-align: center;
-  right: 0px;
-}
-.row_text_left {
-  float: left;
-  width: 252px;
-  top: 0px;
-  line-height: 40px;
-  text-align: center;
-  left: 0px;
 }
 .row_text_center {
-  position: relative;
   float: left;
   width: 396px;
-  top: 0px;
-  left: 0px;
   line-height: 40px;
   text-align: center;
 }
-.row_thirds_common {
+.row_thirds {
   float: left;
   width: 20px;
-  top: 0px;
   line-height: 40px;
   text-align: center;
   font-size: 24px;
-}
-.row_text_one_third {
-  float: left;
-  width: 20px;
-  top: 0px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 24px;
-  left: 0px;
-}
-.row_text_two_thirds {
-  float: left;
-  width: 20px;
-  top: 0px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 24px;
-  right: 0px;
 }
 .top_row {
   position: relative;
-  top: 0px;
   margin-top: 20px;
   height: 70px;
-  width: 960px;
 }
 #logo_box {
-  position: absolute;
-  top: 0px;
-  height: 60px;
   width: 194px;
 }
 .logo_box {
@@ -318,7 +264,6 @@ body {
   top: 0px;
   height: 28px;
   width: 305px;
-  line-height: 28px;
 }
 .repo_link {
   position: absolute;
@@ -373,8 +318,7 @@ body {
   text-decoration: none;
 }
 .large_tech_text_upper {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 0 10px;
 }
 .testimonials {
   width: 100%;
@@ -405,8 +349,7 @@ body {
   display: inline-block;
 }
 .side_squeeze {
-  margin-right: 5px;
-  margin-left: 5px;
+  margin: 0 5px;
 }
 .v_center {
   text-align: center;
@@ -416,90 +359,84 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.margin_auto {
-  margin-left: auto;
-  margin-right: auto;
+.hide {
+  display: none;
 }
-.tree_image_box_target {
+.tree_target {
   position: absolute;
   display: inline-block;
   cursor: default;
 }
-.tree_image_box {
+.tree_box {
   position: relative;
   height: 256px;
   width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 .tech_box_common {
   position: absolute;
   height: 40px;
   width: 140px;
 }
-#tree_image_box_django {
+#tree_django {
   position: absolute;
   height: 40px;
   width: 140px;
   top: 178px;
   left: -30px;
 }
-#tree_image_box_jquery {
+#tree_jquery {
   position: absolute;
   height: 40px;
   width: 140px;
   top: 178px;
   left: 190px;
 }
-#tree_image_box_python {
+#tree_python {
   position: absolute;
   height: 40px;
   width: 140px;
   top: 226px;
   left: -60px;
 }
-#tree_image_box_ubuntu {
+#tree_ubuntu {
   position: absolute;
   height: 40px;
   width: 140px;
   top: 124px;
   left: 0px;
 }
-#tree_image_box_mysql {
+#tree_mysql {
   position: absolute;
   height: 40px;
   width: 140px;
   top: 124px;
   left: 160px;
 }
-#tree_image_box_linux {
+#tree_linux {
   position: absolute;
   height: 40px;
   width: 140px;
   top: 226px;
   left: 220px;
 }
-.plus_and__equals_signs {
+.plus_and_equals_signs {
   position: relative;
   top: 85px;
-  height: 20px;
-  width: 20px;
 }
 .tech_side_image_common {
   position: relative;
   width: 192px;
   top: 36px;
   height: 128px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 #your_idea_image {
   position: relative;
   width: 192px;
   top: 36px;
   height: 128px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background: url('/static/images/your_idea.png') no-repeat center;
 }
 #our_solution_image {
@@ -507,8 +444,7 @@ body {
   width: 192px;
   top: 36px;
   height: 128px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background: url('/static/images/our_solution.png') no-repeat center;
 }
 /* Preload images */
