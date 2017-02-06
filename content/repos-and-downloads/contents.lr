@@ -37,9 +37,9 @@ body_html:
 </ul>
 <p>LinkedIn:</p>
 <ul>
-<li><a style="text-decoration: none;" href="https://www.linkedin.com/in/josephnix" target="_blank"><span style="font: 80% Arial,sans-serif; color: #0783b6;"><img style="vertical-align: middle;" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" alt="View Joseph Nix's LinkedIn profile" width="20" height="15" border="0" />&nbsp;View Joseph Nix's profile</span></a></li>
-<li><a style="text-decoration: none;" href="https://www.linkedin.com/pub/christopher-smith/8/785/81b" target="_blank"><span style="font: 80% Arial,sans-serif; color: #0783b6;"><img style="vertical-align: middle;" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" alt="View Christopher Smith's LinkedIn profile" width="20" height="15" border="0" />&nbsp;View Christopher Smith's profile</span></a></li>
-<li><a style="text-decoration: none;" href="https://www.linkedin.com/in/mikeverhulst" target="_blank"><span style="font: 80% Arial,sans-serif; color: #0783b6;"><img style="vertical-align: middle;" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" alt="View Michael Verhulst's LinkedIn profile" width="20" height="15" border="0" />&nbsp;View Michael Verhulst's profile</span></a></li>
+<li><a href="https://www.linkedin.com/in/josephnix" target="_blank">Joseph Nix's profile</a></li>
+<li><a href="https://www.linkedin.com/pub/christopher-smith/8/785/81b" target="_blank">Christopher Smith's profile</a></li>
+<li><a href="https://www.linkedin.com/in/mikeverhulst" target="_blank">Michael Verhulst's profile</a></li>
 </ul>
 ---
 nav_bar: no
