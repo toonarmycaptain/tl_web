@@ -89,6 +89,24 @@ image: mobius_fx.png
 title: 
 -----
 caption: 
+##### select-image #####
+image: mobius_dvh_analysis.jpg
+-----
+title: 
+-----
+caption: 
+##### select-image #####
+image: mobius_home.png
+-----
+title: 
+-----
+caption: 
+##### select-image #####
+image: mobius_3d_gamma_and_is_dose.png
+-----
+title: 
+-----
+caption: 
 #### subnav-item-title ####
 title: Cox Media
 ----
@@ -103,13 +121,37 @@ body_html: <a href="http://www.coxmediagroup.com/" target="_blank">coxmediagroup
 images:
 
 ##### select-image #####
-image: cox_media_markets_1920x1080.png
+image: cox_ajc_mobile.png
 -----
 title: 
 -----
 caption: 
 ##### select-image #####
-image: cox_media_about_1920x1080.png
+image: cox_ajc_screen.gif
+-----
+title: 
+-----
+caption: 
+##### select-image #####
+image: cox_cmg_atlanta.png
+-----
+title: 
+-----
+caption: 
+##### select-image #####
+image: cox_radio_stations.jpg
+-----
+title: 
+-----
+caption: 
+##### select-image #####
+image: cox_cmg_miami.png
+-----
+title: 
+-----
+caption: 
+##### select-image #####
+image: cox_statesman.png
 -----
 title: 
 -----
