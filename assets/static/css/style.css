@@ -630,36 +630,36 @@ body {
 }
 .logo_box {
   position: absolute;
-  top: 0px;
-  height: 29px;
-  width: 29px;
+  height: 28px;
+  width: 28px;
+  border-left: 2px solid #2f9a41;
 }
 .twitter_logo_box {
   position: absolute;
-  top: 0px;
-  height: 29px;
-  width: 29px;
-  right: 58px;
+  height: 28px;
+  width: 28px;
+  border-left: 2px solid #2f9a41;
+  right: 56px;
 }
 .pinterest_logo_box {
   position: absolute;
-  top: 0px;
-  height: 29px;
-  width: 29px;
-  right: 29px;
+  height: 28px;
+  width: 28px;
+  border-left: 2px solid #2f9a41;
+  right: 28px;
 }
 .linkedin_logo_box {
   position: absolute;
-  top: 0px;
-  height: 29px;
-  width: 29px;
-  right: 87px;
+  height: 28px;
+  width: 28px;
+  border-left: 2px solid #2f9a41;
+  right: 84px;
 }
 .facebook_logo_box {
   position: absolute;
-  top: 0px;
-  height: 29px;
-  width: 29px;
+  height: 28px;
+  width: 28px;
+  border-left: 2px solid #2f9a41;
   right: 0px;
 }
 .social_box {
