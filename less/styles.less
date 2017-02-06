@@ -79,8 +79,9 @@ a img {
   width: 740px;
   cursor:pointer;
 }
-.center {
+.logo_subtext {
   text-align:center;
+  font-size: 12px;
 }
 a:link, a:visited {
   color: @std_gray;
@@ -161,13 +162,6 @@ body
   text-align:center;
   line-height: @default_line_height;
 }
-.generate-fonts(); // ecessive / unnecessary?
-.generate-fonts(@i: 8) when (@i =< 32) {
-  .font_@{i} {
-  font-size: unit(@i, px);
-  }
-  .generate-fonts((@i + 1));
-}
 .gallery_tool_img {
   float: left;
   width: 75px;
@@ -238,6 +232,7 @@ body
   top: 0px;
   line-height: @default_line_height;
   text-align: center;
+  font-size: 24px;
 }
 .row_text_one_third {
   .row_thirds_common;
