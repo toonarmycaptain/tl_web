@@ -18,7 +18,7 @@ title:
 -----
 caption: https://www.djangoproject.com/
 #### subnav-item ####
-body: The PySide project provides LGPL-licensed Python bindings for the Qt cross-platform application and UI framework, as well as a complete toolchain for rapidly generating bindings for any Qt-based C++ class hierarchies.iki/PySide" target="_blank">http://qt-project.org/wiki/PySide
+body: The PySide project provides LGPL-licensed Python bindings for the Qt cross-platform application and UI framework, as well as a complete toolchain for rapidly generating bindings for any Qt-based C++ class hierarchies.
 ----
 body_html: 
 ----
