@@ -76,10 +76,6 @@ a img {
   width: 740px;
   cursor: pointer;
 }
-.logo_center {
-  text-align: center;
-  line-height: 32px;
-}
 .logo_subtext {
   text-align: center;
   font-size: 12px;
@@ -225,9 +221,6 @@ body {
   margin-top: 20px;
   height: 70px;
 }
-#logo_box {
-  width: 194px;
-}
 .logo_box {
   position: absolute;
   height: 28px;
@@ -239,21 +232,21 @@ body {
   height: 28px;
   width: 28px;
   border-left: 2px solid #2F9A41;
-  right: 56px;
+  right: 60px;
 }
 .pinterest_logo_box {
   position: absolute;
   height: 28px;
   width: 28px;
   border-left: 2px solid #2F9A41;
-  right: 28px;
+  right: 30px;
 }
 .linkedin_logo_box {
   position: absolute;
   height: 28px;
   width: 28px;
   border-left: 2px solid #2F9A41;
-  right: 84px;
+  right: 90px;
 }
 .facebook_logo_box {
   position: absolute;
@@ -268,6 +261,8 @@ body {
   top: 0px;
   height: 28px;
   width: 305px;
+  line-height: 32px;
+  text-align: center;
 }
 .repo_link {
   position: absolute;
@@ -275,7 +270,6 @@ body {
   top: 0px;
   height: 28px;
   width: 190px;
-  line-height: 27px;
   text-align: center;
 }
 .code_snippet .tl_green {
