@@ -85,10 +85,6 @@ a img {
   width: 740px;
   cursor:pointer;
 }
-.logo_center {
-  text-align: center;
-  line-height: 32px;
-}
 .logo_subtext {
   text-align:center;
   font-size: 12px;
@@ -220,9 +216,6 @@ body
   margin-top: 20px;
   height: 70px;
 }
-#logo_box {
-  width: 194px;
-}
 .logo_box {
   position: absolute;
   height: @logo_box_width;
@@ -231,19 +224,19 @@ body
 }
 .twitter_logo_box {
   .logo_box;
-  right: @logo_box_width * 2;
+  right: (@logo_box_width + @border_width) * 2;
 }
 .pinterest_logo_box {
   .logo_box;
-  right: @logo_box_width * 1;
+  right: (@logo_box_width + @border_width) * 1;
 }
 .linkedin_logo_box {
   .logo_box;
-  right: @logo_box_width * 3;
+  right: (@logo_box_width + @border_width) * 3;
 }
 .facebook_logo_box {
   .logo_box;
-  right: @logo_box_width * 0;
+  right: (@logo_box_width + @border_width) * 0;
 }
 .social_box {
   position: absolute;
@@ -251,6 +244,8 @@ body
   top: 0px;
   height: 28px;
   width: 305px;
+  line-height: 32px;
+  text-align: center;
 }
 .repo_link {
   position: absolute;
@@ -258,7 +253,6 @@ body
   top: 0px;
   height: 28px;
   width: 190px;
-  line-height: 27px;
   text-align: center;
 }
 .code_snippet {
