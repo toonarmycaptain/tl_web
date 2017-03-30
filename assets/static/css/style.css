@@ -76,6 +76,9 @@ a img {
   width: 740px;
   cursor: pointer;
 }
+#logo_box {
+  width: 194px;
+}
 .logo_subtext {
   text-align: center;
   font-size: 12px;
@@ -95,6 +98,11 @@ a.active a:hover {
 }
 a.inactive {
   text-decoration: none;
+}
+.blog-post a:link,
+.blog-post a:visited {
+  color: #808080;
+  text-decoration: underline;
 }
 html,
 body {

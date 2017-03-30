@@ -1,5 +1,6 @@
 @std_green: #2F9A41;
 @std_gray: #C0C0C0;
+@link_gray: #808080;
 @default_line_height: 40px;
 @logo_box_width: 28px;
 @main_width: 940px;
@@ -85,6 +86,9 @@ a img {
   width: 740px;
   cursor:pointer;
 }
+#logo_box {
+  width: 194px;
+}
 .logo_subtext {
   text-align:center;
   font-size: 12px;
@@ -101,6 +105,10 @@ a.active, a.active a:hover {
 }
 a.inactive {
    text-decoration: none;
+}
+.blog-post a:link, .blog-post a:visited {
+  color: @link_gray;
+  text-decoration: underline;
 }
 html,
 body
