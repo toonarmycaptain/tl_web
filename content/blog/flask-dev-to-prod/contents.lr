@@ -1,0 +1,145 @@
+title: Flask Dev to Prod
+---
+author: Michael W. Verhulst
+---
+body:
+
+<b> How to take a flask app that you can run locally on your laptop and move it to virtual machines on DigitalOcean and support hundreds of users. </b>
+
+So, you have been learning Python and Flask. Perhaps you have been studying a nice Flask tutorial like one of these for example:
+
+<a href="http://Flask.pocoo.org/docs/0.12/tutorial/" target="_blank">http://Flask.pocoo.org/docs/0.12/tutorial/</a>
+
+
+<a href="https://blog.miguelgrinberg.com/post/the-Flask-mega-tutorial-part-i-hello-world" target="_blank">https://blog.miguelgrinberg.com/post/the-Flask-mega-tutorial-part-i-hello-world</a>
+
+
+<a href="https://www.fullstackpython.com/flask.html" target="_blank">https://www.fullstackpython.com/Flask.html</a>
+
+But now you want to learn how to get your new Flask app up and running on a production system that can handle hundreds of users. That is what we will do in this article.
+
+Assumptions:
+I am assuming that you have a:
+* Modern personal computer running linux or a mac, with VT-x support in the CPU (2015 or newer generation computer should work) Note: tablets and small  netbook class devices are not sufficient here.
+* Basic understating of Python
+* Basic understating of Bash
+* Basic understating of Distributed Revision Control System (like git or hg)
+* Basic understating of hosted revision control like Bitbucket or GitHub
+* Basic understating of the core ideas of virtualization
+* Basic understating of Internet technology (such as,  client server architecture, sockets, ports, networking stack, HTTP, web servers and web browsers, etc)
+
+
+Alright let's get started.
+
+Normally when you are learning Flask you are working directly on you main dev box. In other words you are working on your personal computer and you installed a bunch of stuff, wrote some code, ran some simple commands, and your Flask project was serving content to your browser. Good! That is a great start.
+
+Sometimes tutorials teach your how to setup and work in something called a “virtual environment” Great. Even better.
+
+Some people might ask, is a "virtual environment" related to “virtualization” well the short answer to that is no.
+
+Without getting too far into the weeds a virtual environment is like a special folder on your computer that your operating system treats in a special way. When you work with a virtual environment you are basically telling your computer, “You know that special folder I made a few minutes ago? Well I want you to always look in it for config files and runnable programs and custom settings and all that kind of stuff.”
+
+So virtual environments work as a form of file isolation. You can have tens of thousands of virtual environments on a modern computer at the same time.
+
+Virtualization on the other hand is much more complicated. With virtualization you basically tell your computer’s operating system to spin up another operating systems inside of itself, OS in OS.
+
+With virtualization each child or guest OS is a full machine in it’s own right with a file system, ram, networking stack, everything!
+
+So virtualization work as a form of full machine isolation. You can have about a dozen virtual machines on a modern computer at the same time.
+
+Anyway let's get back to the task of getting your Flask app up on a production server. The first subtask is getting your virtual environments in a virtual machines. Yup, we will be using both tools, one inside the other.
+
+There are many reasons why adding virtual machines to your workflow is important. For one, it allows you to move your project around between physical computers much more easily. You just run your virtual machine inside of whatever physical computer you happen to be working with. Second, your production server will also be a virtual machine just one running on a public service like AWS or Digital Ocean. So, by running virtual machines locally on your personal computer you can make sure that what works locally will also work in production. 
+
+Why is this?  Well, public cloud services like AWS or Digital Ocean own a whole bunch of standard commodity servers (like Dell servers for example) and on these physical servers they run a ton of  virtual machines. You can approximate this on you local dev box by running your own virtual machines.
+
+One of the complex issues with running your own virtual machines is that you can configure a huge number of different machines. You can set how much ram, and drive space, etc, your virtual machines have. But, remember that we want to approximate the virtual machines hosted by a production company. 
+
+This is an easy enough problem to solve just go check out what types of machines are offered at your public cloud vendor of choice. I really like Digital Ocean so I looked at what the have first, they offer a machine with 1GB ram and 30GB drives space. So that will be the setup of our locally running virtual machines.
+
+Next install VirtualBox on your personal computer. This tool can create and run personal computer virtual machines locally. Pretty cool.
+
+Working with VirtualBox and creating a virtual machines is somewhat complex in and of itself. See our slideshow <a href="https://docs.google.com/presentation/d/1s86YiREhUbi69DAjAe3rFuV-9QkWNkHjDUBl47WPFqg/pub?start=false&loop=false&delayms=3000" target="_blank">How to Setup Virtualbox</a> for a presentation of how to setup Debian 8 Jessie in VirtualBox. Note: this process is composed of about 40 steps and the whole process takes about an hour.
+
+Well, now that you have setup a guest virtual machine VirtualBox the old fashioned way I want to show you a faster and more modern way to do effectively the same thing.
+
+Enter Vagrant.
+
+Vagrant is a very popular tool that works with VirtualBox as an abstraction/control layer that handles basically all of the complex and tedious parts of working with local VirtualBox for you.
+
+With Vagrant after a little bit of setup you can simply run the command “vagrant up” and in a few minutes you will have full virtual machines running on your local personal computer.
+
+So, we now have a guest virtual machine running Debian 8 Jessie. What do we do with it? We will be deploying our Flask app and other needed support tools into it.
+
+We will be installing:
+
+* Virtualenv
+* Our Flask app (in this case I will be using  <a href="https://github.com/pdybka-ep/flask-todoapp.git" target="_blank">https://github.com/pdybka-ep/flask-todoapp.git</a>  )
+* NGINX
+* Postgres
+* Supervisor
+* uWSGI
+
+You might be asking. What do all these tools do? Let's go through what these tool are in top-down order.
+
+First off,  virtualenv, this is the “special folder” system that we talked about earlier.
+
+Next, our app. This is the Python Flask app itself. The core of this project.
+
+Now regarding NGINX, this is a very popular, high performance, and stable webserver. It’s job in our setup is to handle all the internet protocol connection between client web browsers and our Flask app.
+
+In our setup, when a user uses a browser to view our web application (the Flask app) the browser only interacts with  NGINX. The browser does not know we are running a Flask app. For all the browser knows we could be running Django, NodeJS, PHP, etc. The Flask application itself, from the point of view of the browser, is behind NGINX.  This is why you sometimes hear people talk about Flask app as “back-end apps.”
+
+Moving on to Postgres. Postgres is a very stable open-source Object-Relational Database Management System. We need it to store user information for your web app.
+
+Next up, Supervisor. This is a tool that watches and controls other programs running on a Linux system. Supervisor can restart dead services/process. We have Supervisor watch our Flask app’s execution and get it under control. If the Flask app process freezes or dies Supervisor will reset it for us. Adding Supervisor to your system is a relatively simple way to meaningfully increase our system's stability. 
+
+Finally, uWSGI. uWSGI is a specialized programs that helps NGINX communicate with our Flask app. Think of it as a translation systems or bridge. It also helps increase the performance of our Flask app.
+
+Time for code.
+
+Vagrant needs a simple config file. You can use ours which is hosted here:
+<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/Vagrantfile?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/Vagrantfile?at=master&fileviewer=file-view-default</a>
+
+With the above config file you can run “vagrant up” and that should setup your virtual machine. Once the machine is up and running it will run a master bash script that in turn runs 6 other bash scripts. 
+
+The master script is hosted here:
+<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/deploy_all.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/deploy_all.sh?at=master&fileviewer=file-view-default</a>
+
+The first thing the scripts do is set up a new Linux user on the box. See:
+<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/users/deploy_users.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/users/deploy_users.sh?at=master&fileviewer=file-view-default</a>
+
+Then the core system dependencies are installed. See:
+<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/dependencies/deploy_dependencies.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/dependencies/deploy_dependencies.sh?at=master&fileviewer=file-view-default</a>
+
+Next, Postgres is installed. See:
+<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/postgresql/deploy_postgresql.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/postgresql/deploy_postgresql.sh?at=master&fileviewer=file-view-default</a>
+
+Next, NGINX is installed and it’s config files are copied into the machine. See:
+<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/nginx/?at=master" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/nginx/?at=master</a>
+
+Now for the Flask app. See:
+<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/app/deploy_app.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/app/deploy_app.sh?at=master&fileviewer=file-view-default</a>
+
+Finally, install Supervisor and it’s config file. See:
+<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/supervisord/deploy_supervisord.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/supervisord/deploy_supervisord.sh?at=master&fileviewer=file-view-default</a>
+
+After all these scripts run the virtual machine running in VirtualBox should be serving your app at 127.0.0.1:8080
+
+Well, that is interesting but how does this apply a production system? This is the point where all the work of approximating Digital Ocean’s virtual machines that you did earlier pays off. It turns and that Vagrant can be used to control Digital Ocean’s infrastructure. First, install a Vagrant plugin with:
+
+vagrant plugin install vagrant-digitalocean
+
+Then, just make an account at Digital Ocean, then download you API key and reconfigure your Vagrant config file.
+
+We have done that here:
+<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_public/Vagrantfile?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_public/Vagrantfile?at=master&fileviewer=file-view-default</a>
+
+
+Finally, run “vagrant up --provider=digital_ocean”.
+
+Done :)
+
+
+---
+pub_date: 2017-03-30
