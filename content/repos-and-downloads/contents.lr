@@ -2,48 +2,47 @@ _model: page
 ---
 title: Repos and Downloads
 ---
-body_html:
-
-<p>Testimonials:</p>
-<ul>
-<li><a href="/testimonials/">https://terminallabs.com/testimonials/</a></li>
-</ul>
-<p>Repos:</p>
-<ul>
-<li><a href="https://bitbucket.org/terminal_labs" target="_blank">https://bitbucket.org/terminal_labs</a></li>
-<li><a href="https://github.com/terminal-labs" target="_blank">https://github.com/terminal-labs</a></li>
-<li><a href="https://www.behance.net/terminal_labs" target="_blank">https://www.behance.net/terminal_labs</a></li>
-</ul>
-<p>Gists:</p>
-<ul>
-<li><a class="external" title="Webpage download speed tester" href="https://gist.github.com/nixjdm/190eee9ccd7b25c9b433" target="_blank">https://gist.github.com/nixjdm/190eee9ccd7b25c9b433</a></li>
-</ul>
-<div>Curricula Vitae:</div>
-<div>
-<ul>
-<li><a href="https://dclbdhr5sfbt6.cloudfront.net/JosephNixCV.pdf" target="_blank">Joseph Nix</a></li>
-<li><a href="https://dclbdhr5sfbt6.cloudfront.net/ChrisSmithCV.pdf" target="_blank">Chris Smith</a></li>
-<li><a href="https://dclbdhr5sfbt6.cloudfront.net/MichaelVerhulstCV.pdf" target="_blank">Michael Verhulst</a></li>
-</ul>
-</div>
-<p>Presentations:</p>
-<ul>
-<li><a href="https://docs.google.com/presentation/d/15OiTPO-z-9l8Yhk2abqzJ2O0t-XwWHnCy3_XU__XziA/pub?start=false&amp;loop=false&amp;delayms=3000" target="_blank">What is full-stack</a></li>
-</ul>
-<p>Downloads:</p>
-<ul>
-<li><a href="https://dclbdhr5sfbt6.cloudfront.net/terminal_labs_dossier.pdf" target="_blank">Terminal_Labs_Dossier.pdf</a></li>
-<li><a href="https://dclbdhr5sfbt6.cloudfront.net/python_brochure.pdf" target="_blank">Python_Brochure.pdf</a></li>
-</ul>
-<p>LinkedIn:</p>
-<ul>
-<li><a href="https://www.linkedin.com/in/josephnix" target="_blank">Joseph Nix's profile</a></li>
-<li><a href="https://www.linkedin.com/pub/christopher-smith/8/785/81b" target="_blank">Christopher Smith's profile</a></li>
-<li><a href="https://www.linkedin.com/in/mikeverhulst" target="_blank">Michael Verhulst's profile</a></li>
-</ul>
+body_html: 
 ---
 nav_bar: no
 ---
 _template: flat.html
 ---
 _slug: repos_and_downloads
+---
+body:
+
+Testimonials:
+* <a href="/testimonials/">https://terminallabs.com/testimonials/</a>
+
+Repos:
+
+* <a href="https://bitbucket.org/terminal_labs" target="_blank">https://bitbucket.org/terminal_labs</a>
+* <a href="https://github.com/terminal-labs" target="_blank">https://github.com/terminal-labs</a>
+* <a href="https://www.behance.net/terminal_labs" target="_blank">https://www.behance.net/terminal_labs</a>
+
+Gists:
+
+* <a class="external" title="Webpage download speed tester" href="https://gist.github.com/nixjdm/190eee9ccd7b25c9b433" target="_blank">https://gist.github.com/nixjdm/190eee9ccd7b25c9b433</a>
+
+Curricula Vitae:
+
+* <a href="https://dclbdhr5sfbt6.cloudfront.net/JosephNixCV.pdf" target="_blank">Joseph Nix</a>
+* <a href="https://dclbdhr5sfbt6.cloudfront.net/ChrisSmithCV.pdf" target="_blank">Chris Smith</a>
+* <a href="https://dclbdhr5sfbt6.cloudfront.net/MichaelVerhulstCV.pdf" target="_blank">Michael Verhulst</a>
+
+Presentations:
+
+* <a href="https://docs.google.com/presentation/d/15OiTPO-z-9l8Yhk2abqzJ2O0t-XwWHnCy3_XU__XziA/pub?start=false&amp;loop=false&amp;delayms=3000" target="_blank">What is full-stack</a>
+
+Downloads:
+
+* <a href="https://dclbdhr5sfbt6.cloudfront.net/terminal_labs_dossier.pdf" target="_blank">Terminal_Labs_Dossier.pdf</a>
+* <a href="https://dclbdhr5sfbt6.cloudfront.net/python_brochure.pdf" target="_blank">Python_Brochure.pdf</a>
+
+LinkedIn:
+
+* <a href="https://www.linkedin.com/in/josephnix" target="_blank">Joseph Nix's profile</a>
+* <a href="https://www.linkedin.com/pub/christopher-smith/8/785/81b" target="_blank">Christopher Smith's profile</a>
+* <a href="https://www.linkedin.com/in/mikeverhulst" target="_blank">Michael Verhulst's profile</a>
+
