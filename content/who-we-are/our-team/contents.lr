@@ -18,7 +18,7 @@ body_html:
 images:
 
 ##### select-image #####
-image: joe.png
+image: joe.jpg
 -----
 title: 
 -----
@@ -37,7 +37,7 @@ body_html:
 images:
 
 ##### select-image #####
-image: chris.png
+image: chris.jpg
 -----
 title: 
 -----
@@ -54,7 +54,7 @@ body_html:
 images:
 
 ##### select-image #####
-image: mike.png
+image: mike.jpg
 -----
 title: 
 -----
