@@ -15,8 +15,6 @@ Django is a high-level Python Web framework.
 
 We use it to create feature-rich web apps for clients.
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -31,8 +29,6 @@ body:
 Debian is a free operating system (OS) for your computer.
 
 We run Debian on many of our servers. It is well supported and stable.
-----
-body_html: 
 ----
 images:
 
@@ -49,8 +45,6 @@ jQuery is a fast, small, and feature-rich JavaScript library.
 
 We use this in all our web-based projects. It makes development much faster.
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -65,8 +59,6 @@ body:
 PySide project provides LGPL-licensed Python bindings for the Qt.
 
 We use this toolkit to create cross-platform desktop applications in Python.
-----
-body_html: 
 ----
 images:
 
@@ -83,8 +75,6 @@ Mercurial is a distributed version control system. It is written in Python.
 
 We use this to keep track of, log, and share our code
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -99,8 +89,6 @@ body:
 Python is a programming language that lets you work quickly and effectively.
 
 While creating solutions, we use Python as much as we can.
-----
-body_html: 
 ----
 images:
 
@@ -117,8 +105,6 @@ Nginx is a free, open-source, high-performance HTTP server and reverse proxy.
 
 Nginx is a core part of most of our full-stack solutions.
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -133,8 +119,6 @@ body:
 Ubuntu is the most popular desktop Linux distribution.
 
 We use Ubuntu (and its descendant Mint) on our personal workstations.
-----
-body_html: 
 ----
 images:
 
@@ -151,8 +135,6 @@ Lighttpd is a web server designed for high performance environments.
 
 We have worked with Lighttpd for load balancing and serving static files.
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -167,8 +149,6 @@ body:
 The world's most popular open source database.
 
 MySQL has good performance and is well supported, we use it in many of our projects.
-----
-body_html: 
 ----
 images:
 
@@ -185,8 +165,6 @@ Tornado is a high performance web server and application framework.
 
 With Python Tornado, we have created complex, high performance web apps.
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -197,8 +175,6 @@ title:
 caption: 
 #### subnav-item ####
 body: Flask-SQLAlchemy is an extension for Flask that adds support for SQLAlchemy to your application.  It aims to simplify using SQLAlchemy with Flask by providing useful defaults and extra helpers that make it easier to accomplish common tasks.
-----
-body_html: 
 ----
 images:
 
@@ -215,8 +191,6 @@ PostgreSQL is a database server.
 
 PostgreSQL is a stable and reliable system. In fact, we are using it to support this website.
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -227,8 +201,6 @@ title:
 caption: 
 #### subnav-item ####
 body: Lektor. A flexible and powerful static content management system for building complex and beautiful websites out of flat files — for people who do not want to make a compromise between a CMS and a static blog engine.
-----
-body_html: 
 ----
 images:
 
@@ -245,8 +217,6 @@ Virtualbox is a virtualization software package for x86 and AMD64/Intel64-based 
 
 We use Virtualbox for development every day.
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -261,8 +231,6 @@ body:
 SQLite is a relational database management system. 
 
 It is small, lightweight, and great for storing data in desktop applications.
-----
-body_html: 
 ----
 images:
 
@@ -279,8 +247,6 @@ Flask is a lightweight web application framework written in Python.
 
 We use it to create feature-rich web apps for clients.
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -296,8 +262,6 @@ Javascript is a dynamic computer programming language.
 
 Javascript allows us to create interactive web apps.
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -312,8 +276,6 @@ body:
 HTML5 is a markup language used for structuring and presenting content for the WorldWide Web and a core technology of the Internet. 
 We use HTML5 extensively in our web-based projects.
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -327,8 +289,6 @@ body:
 
 CSS3 is a style sheet language used for describing the look and formatting of a document written in a markup language.
 We use CSS3 to create the core look and feel of our web-based projects.
-----
-body_html: 
 ----
 images:
 

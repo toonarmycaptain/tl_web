@@ -4,7 +4,7 @@ title: Testimonials
 ---
 _template: flat.html
 ---
-body_html:
+body:
 
 <div style="font-size: 20px; text-align: center; padding-top: 10px;">Testimonials</div>
 <span class="code_snippet testimonials">
@@ -14,38 +14,56 @@ body_html:
   Type "help", "copyright", "credits" or "license" for more information.<br>
   <span class="tl_green">>>></span><span class="protected"> from</span> os <span class="protected">import</span> getcwd, listdir<br>
   <span class="tl_green">>>></span> path = getcwd() <span class="protected">+</span><span class="quote"> "/testimonials/"</span><br>
-  <span class="tl_green">>>></span><span class="protected"> for</span> testimonial <span class="protected">in</span> listdir(path): <span class="protected">print</span> testimonial, <span class="quote">":\n\n"</span>, <span class="method">open</span>(path + testimonial, <span class="quote">'r'</span>).read(), <span class="quote">"\n--------"</span><br>
+  <span class="tl_green">>>></span><span class="protected"> for</span> testimonial <span class="protected">in</span> listdir(path): <span class="protected">p\
+rint</span> testimonial, <span class="quote">":\n\n"</span>, <span class="method">open</span>(path + testimonial, <span class="quote">'r'</span>).read(), <sp\
+an class="quote">"\n--------"</span><br>
   ...<br>
   Jason.txt :<br>
   <br>
-  The Terminal Labs team were great partners for Cox Media Group.  Over the course of 2 years Joe, Chris, and Michael helped us with the ground-up development of websites for our flagship newspaper brands Austin American Statesman, Atlanta Journal Constitution, Dayton Daily News, and the Palm Beach Post. The Terminal Labs team offer a can-do attitude, strong work ethic, great communication, and adaptability to any of the new challenges we proposed.  As we completed our major deliverables Joe, Chris and Michael helped us optimize our custom CMS platform and front-end templates to improve the customer experience through faster page load times. When we have other projects that would be a fit for the Terminal Labs Team, they will be top of mind for us.<br>
+  The Terminal Labs team were great partners for Cox Media Group.  Over the course of 2 years Joe, Chris, and Michael helped us with the ground-up developmen\
+t of websites for our flagship newspaper brands Austin American Statesman, Atlanta Journal Constitution, Dayton Daily News, and the Palm Beach Post. The Term\
+inal Labs team offer a can-do attitude, strong work ethic, great communication, and adaptability to any of the new challenges we proposed.  As we completed o\
+ur major deliverables Joe, Chris and Michael helped us optimize our custom CMS platform and front-end templates to improve the customer experience through fa\
+ster page load times. When we have other projects that would be a fit for the Terminal Labs Team, they will be top of mind for us.<br>
   <br>
   --Jason Munson, Sr. Director of Technology at Cox Media Group<br>
   <br>
   --------<br>
   Jeff.txt :<br>
   <br>
-  I have had the privilege of working with Terminal Labs for close to 2 years now and it’s been an incredibly rewarding partnership. They are exceptional technologists, Python experts and have the aptitude and versatility to deliver value well beyond Python-based software development. On top of their technical skills, they’re even better people and have been a pleasure to work with. Being in Atlanta, Terminal Labs has worked remotely for us and they have gone above and beyond to overcome any difficulties that could come along with an off-site partner. They are communicative, responsive and exceptionally reliable which has translated into a great client experience.<br>
+  I have had the privilege of working with Terminal Labs for close to 2 years now and it’s been an incredibly rewarding partnership. They are exceptional tec\
+hnologists, Python experts and have the aptitude and versatility to deliver value well beyond Python-based software development. On top of their technical sk\
+ills, they’re even better people and have been a pleasure to work with. Being in Atlanta, Terminal Labs has worked remotely for us and they have gone above a\
+nd beyond to overcome any difficulties that could come along with an off-site partner. They are communicative, responsive and exceptionally reliable which ha\
+s translated into a great client experience.<br>
   <br>
   --Jeff Kolve, Senior Technical Recruiter at eHire<br>
   <br>
   --------<br>
   Jesse.txt :<br>
   <br>
-  Terminal Labs has been an integral partner and instrumental to our embedded teams at Cox Media Group for nearly 2 years. In particular, they have provided a wealth of knowledge and expertise at a crucial time to our efforts around performance engineering and tooling for existing and emerging products. They have also helped us establish new standards and best practices in our engineering of secure, stable, and performant web applications.<br>
+  Terminal Labs has been an integral partner and instrumental to our embedded teams at Cox Media Group for nearly 2 years. In particular, they have provided \
+a wealth of knowledge and expertise at a crucial time to our efforts around performance engineering and tooling for existing and emerging products. They have\
+ also helped us establish new standards and best practices in our engineering of secure, stable, and performant web applications.<br>
   <br>
-  Their expertise in python/django application performance and also deep understanding of front end technologies including complex JavaScript web applications has been invaluable to our team. Terminal Labs have assisted us across various project teams in our digital media business, delivering many features and improvements to our existing and developing platforms.<br>
+  Their expertise in python/django application performance and also deep understanding of front end technologies including complex JavaScript web application\
+s has been invaluable to our team. Terminal Labs have assisted us across various project teams in our digital media business, delivering many features and im\
+provements to our existing and developing platforms.<br>
   <br>
-  Terminal Labs works flawlessly in a high demand, agile environment with “in the weeds” tactical aptitude and high-level architectural and strategic thinking. I highly value our relationship and would recommend them without reservation to any project seeking professional and team oriented consultation. These guys all kick some serious ass.<br>
+  Terminal Labs works flawlessly in a high demand, agile environment with “in the weeds” tactical aptitude and high-level architectural and strategic thinkin\
+g. I highly value our relationship and would recommend them without reservation to any project seeking professional and team oriented consultation. These guy\
+s all kick some serious ass.<br>
   <br>
   --Jesse Heady, Lead Performance Engineer at Cox Media Group<br>
   <br>
   --------<br>
   Shawn.txt :<br>
   <br>
-  As a team lead, I had the pleasure of working with Joe Nix, Chris Smith, and Michael Verhulst, on a team, to manage the remaining updates for our soon to be end-of-life CMS (Django/Python.)<br>
+  As a team lead, I had the pleasure of working with Joe Nix, Chris Smith, and Michael Verhulst, on a team, to manage the remaining updates for our soon to b\
+e end-of-life CMS (Django/Python.)<br>
   <br>
-  These guys are very smart, friendly, and knowledgeable about their craft. Not only did they complete all of their assigned stories on time but they also helped troubleshoot and update our aging local/test environments.<br>
+  These guys are very smart, friendly, and knowledgeable about their craft. Not only did they complete all of their assigned stories on time but they also he\
+lped troubleshoot and update our aging local/test environments.<br>
   <br>
   I would count myself lucky to work on another project with them.<br>
   <br>

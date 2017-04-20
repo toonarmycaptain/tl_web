@@ -15,8 +15,6 @@ Technically, Modavanti’s e-commerce platform is made using Python Django and r
 
 <a href="https://modavanti.com/" target="_blank">modavanti.com</a>
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -58,8 +56,6 @@ Agyield is a revenue management platform for agriculture. Terminal Labs assisted
 
 <a href="http://www.agyield.com/" target="_blank">agyield.com</a>
 ----
-body_html: 
-----
 images:
 
 ##### select-image #####
@@ -82,8 +78,6 @@ body:
 Mobius Medical Systems is a medical technology company that focuses on radiation oncology software solutions. Mobius develops and markets a Treatment Planning System.  Terminal Labs assisted Mobius with the addition of many new features to their sophisticated code base.
 
 <a href="http://www.mobiusmed.com/" target="_blank">mobiusmed.com</a>
-----
-body_html: 
 ----
 images:
 
@@ -127,8 +121,6 @@ Cox Media Group is a media company that operates radio stations, television stat
 Terminal Labs has been using Python, Django, HTML/CSS/Javascript, and Linux to create full-stack solutions. 
 
 <a href="http://www.coxmediagroup.com/" target="_blank">coxmediagroup.com</a>
-----
-body_html: 
 ----
 images:
 

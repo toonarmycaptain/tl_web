@@ -2,8 +2,6 @@ _model: page
 ---
 title: Repos and Downloads
 ---
-body_html: 
----
 nav_bar: no
 ---
 _template: flat.html
