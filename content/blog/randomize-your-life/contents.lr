@@ -4,7 +4,9 @@ author: Chris Smith
 ---
 body:
 
-<p>Do you ever find that your entropy pool is to low? I know we've all been there! Most modern servers come with a hardware random number generator with their TPM, but if you have an older server or are running a crypto heavy service (like an SSL proxy) then you might want to try out the ol' entropy key.&nbsp;<br /><br />To check out how much entropy you have on your Linux box do this:&nbsp;</p>
+Do you ever find that your entropy pool is too low? I know we've all been there! Most modern servers come with a hardware random number generator with their TPM, but if you have an older server or are running a crypto heavy service (like an SSL proxy) then you might want to try out the ol' entropy key.
+
+To check out how much entropy you have on your Linux box do this:
 
 ```
 cat /proc/sys/kernel/random/entropy_avail
@@ -17,4 +19,4 @@ So, if you need more randomness in you life, check out the entropy key!
 
 <a href="http://www.entropykey.com/" target="_blank">http://www.entropykey.co.uk/</a>
 ---
-pub_date: 2014-05-02
+pub_date: 2012-11-23

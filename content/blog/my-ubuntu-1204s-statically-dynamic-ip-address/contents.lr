@@ -35,4 +35,4 @@ sudo /etc/init.d/networking restart
 Another link that explains how to set up a static IP in a very similar way, and includes this important step as well as&nbsp;<a href="http://www.howtogeek.com/howto/ubuntu/change-ubuntu-server-from-dhcp-to-a-static-ip-address/" target="_blank">http://www.howtogeek.com/howto/ubuntu/change-ubuntu-server-from-dhcp-to-a-static-ip-address/</a>.
 
 ---
-pub_date: 2014-05-04
+pub_date: 2013-05-03
