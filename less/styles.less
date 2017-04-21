@@ -1,8 +1,8 @@
 @std_green: #2F9A41;
-@std_gray: #C0C0C0;
 @std_font: 16px prime_regular;
 @dark_gray: #202020;
 @light_gray: #808080;
+@lightest_gray: #C0C0C0;
 @default_line_height: 40px;
 @logo_box_width: 28px;
 @main_width: 940px;
@@ -96,11 +96,11 @@ a img {
   font-size: 12px;
 }
 a:link, a:visited {
-  color: @std_gray;
+  color: @lightest_gray;
   text-decoration: none;
 }
 a:hover, a:active {
-  color: @std_gray;
+  color: @lightest_gray;
 }
 a.active, a.active a:hover {
   text-decoration: underline;
@@ -108,14 +108,18 @@ a.active, a.active a:hover {
 a.inactive {
    text-decoration: none;
 }
-.blog-post a:link, .blog-post a:visited {
+.content_box a:link, .content_box a:visited {
   text-decoration: underline;
   color: @light_gray;
+}
+.competitor_boxes a:link, .competitor_boxes a:visited {
+  text-decoration: none;
+  color: @lightest_gray;
 }
 html,
 body
 {
-  color: @std_gray;
+  color: @lightest_gray;
   background-color: black;
   font: @std_font;
 }
