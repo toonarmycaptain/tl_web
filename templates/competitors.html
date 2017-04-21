@@ -5,16 +5,16 @@
 
 <div class="competitor_boxes">
   {% for link in this.links.blocks %}
-  <div class="client_button green_border">
-    <div class="v_center">      
-      <div class="side_squeeze">
-        <a href="{{ link.url }}" target="_blank" rel="nofollow">
-          {{ link.text }}
-        </a>
+    <a href="{{ link.url }}" target="_blank" rel="nofollow">
+      <div class="client_button green_border">
+        <div class="v_center">
+          <div class="side_squeeze">
+            {{ link.text }}
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-{% endfor %}
+    </a>
+  {% endfor %}
 </div>
 
 {% endblock body_content %}

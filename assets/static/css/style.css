@@ -104,6 +104,11 @@ a.inactive {
   text-decoration: underline;
   color: #808080;
 }
+.competitor_boxes a:link,
+.competitor_boxes a:visited {
+  text-decoration: none;
+  color: #C0C0C0;
+}
 html,
 body {
   color: #C0C0C0;
