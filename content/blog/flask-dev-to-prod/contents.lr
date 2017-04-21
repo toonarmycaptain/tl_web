@@ -67,7 +67,7 @@ Enter Vagrant.
 
 Vagrant is a very popular tool that works with VirtualBox as an abstraction/control layer that handles basically all of the complex and tedious parts of working with local VirtualBox for you.
 
-With Vagrant after a little bit of setup you can simply run the command “vagrant up” and in a few minutes you will have full virtual machines running on your local personal computer.
+With Vagrant after a little bit of setup you can simply run the command `vagrant up` and in a few minutes you will have full virtual machines running on your local personal computer.
 
 So, we now have a guest virtual machine running Debian 8 Jessie. What do we do with it? We will be deploying our Flask app and other needed support tools into it.
 
@@ -101,7 +101,7 @@ Time for code.
 Vagrant needs a simple config file. You can use ours which is hosted here:
 <a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/Vagrantfile?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/Vagrantfile?at=master&fileviewer=file-view-default</a>
 
-With the above config file you can run “vagrant up” and that should setup your virtual machine. Once the machine is up and running it will run a master bash script that in turn runs 6 other bash scripts. 
+With the above config file you can run `vagrant up` and that should setup your virtual machine. Once the machine is up and running it will run a master bash script that in turn runs 6 other bash scripts. 
 
 The master script is hosted here:
 <a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/deploy_all.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/deploy_all.sh?at=master&fileviewer=file-view-default</a>
@@ -136,7 +136,7 @@ We have done that here:
 <a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_public/Vagrantfile?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_public/Vagrantfile?at=master&fileviewer=file-view-default</a>
 
 
-Finally, run “vagrant up --provider=digital_ocean”.
+Finally, run `vagrant up --provider=digital_ocean`.
 
 Done :)
 
