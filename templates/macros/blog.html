@@ -17,4 +17,16 @@
   </p>
   {{ post.body }}
   </div>
+  <div>
+    {% set siblings = post.get_siblings() %}
+    {% if siblings.next_page %}
+      <a href="{{ siblings.next_page|url }}" title="{{ siblings.next_page.title }}" >&laquo; Previous</a>
+    {% endif %}
+    {% if siblings.next_page and siblings.prev_page %}
+      |
+    {% endif %}
+    {% if siblings.prev_page %}
+      <a href="{{ siblings.prev_page|url }}" title="{{ siblings.prev_page.title }}" >Next &raquo;</a>
+    {% endif %}
+  </div>
 {% endmacro %}

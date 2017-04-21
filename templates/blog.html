@@ -10,6 +10,8 @@
       <br>
       <br>
     {% endfor %}
-    {{ render_pagination(this.pagination) }}
+    {% if this.pagination.pages > 1 %}
+      {{ render_pagination(this.pagination) }}
+    {% endif %}
   </div>
 {% endblock content %}
