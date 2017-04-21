@@ -7,7 +7,7 @@ _template: flat.html
 body:
 
 <div style="font-size: 20px; text-align: center; padding-top: 10px;">Testimonials</div>
-<span class="code_snippet testimonials">
+<span class="code_highlights testimonials">
   (tl_website)<span class="host">tl_webserver@debian</span>:<span class="path">~/tl_website/testimonials</span>$ python<br>
   Python 2.7.9 (default, Oct  5 2016, 17:31:46)<br>
   [GCC 4.9.2] on linux2<br>

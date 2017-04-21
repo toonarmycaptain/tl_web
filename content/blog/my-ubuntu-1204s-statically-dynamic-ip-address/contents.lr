@@ -4,11 +4,35 @@ author: Joseph Nix
 ---
 body:
 
-<p>I ran across a curious networking problem last week.&nbsp;<br /><br />I have a few virtualizations running Ubuntu 12.04, that I keep that run a few development servers of various things. I recently gave one of them a static IP address so I could more easily access it in the near future, from wherever in my network I happen to be. This server was headless (no GUI), so I used my go-to method for setting a static IP address. That is, I opened up the network interfaces config file in&nbsp;/etc/network/interfaces, and modified it to make it look something like this:&nbsp;<br /><br /></p>
-<blockquote>auto eth0&nbsp;<br />iface eth0 inet static&nbsp;<br />address 10.0.0.100&nbsp;<br />netmask 255.255.255.0&nbsp;<br />gateway 10.0.0.1&nbsp;</blockquote>
-<p><br /><br />This is exactly the protocol outlined in&nbsp;<a href="https://help.ubuntu.com/12.04/serverguide/network-configuration.html" target="_blank">https://help.ubuntu.com/12.04/serverguide/network-configuration.html</a>, in the section titled "Static IP Address Assignment," if you want to follow along. After a quick networking restart, I'm done! I've successfully got a brand new static IP. I ssh into my virtualization, and get to work!&nbsp;<br /><br />Now for the twist!&nbsp;<br /><br />Later that day, while running an innocuous command via ssh, I get a broken pipe! My ssh session is broken! I soon find out that my 12.04 box has reacquired an IP address dynamically.&nbsp;<br /><br />For some background, you should know that the router I was using does have dhcp running, and will hand out dynamic IPs when requested, to a specified range. So for example, everything over .128, which is where the new IP address was located. I also happen to know that the IP address the 12.04 box had was not being used by anything else; it was free, so nothing was fighting over it.&nbsp;<br /><br />I've ran into this problem before, so I knew what to do. Unintuitively, even if you set a static IP in this config file, which I would think would be authoritative, it won't stick in Ubuntu if you still have a dhcp client installed. I think I've ran into this in older versions of Ubuntu as well. I am unaware though, if later versions have changed this.&nbsp;<br /><br />There are a few variants of the dhcp client. I don't need them, so my quick fix is simply to remove them. So to catch them and set the static IP once and for all:&nbsp;<br /><br /></p>
-<blockquote>change your config file&nbsp;<br />sudo apt-get remove dhcp-client isc-dhcp-client dhcp3-client&nbsp;<br />sudo /etc/init.d/networking restart</blockquote>
-<p><br /><br />Another link that explains how to set up a static IP in a very similar way, and includes this important step as well as&nbsp;<a href="http://www.howtogeek.com/howto/ubuntu/change-ubuntu-server-from-dhcp-to-a-static-ip-address/" target="_blank">http://www.howtogeek.com/howto/ubuntu/change-ubuntu-server-from-dhcp-to-a-static-ip-address/</a>.</p>
-<p>&nbsp;</p>
+I ran across a curious networking problem last week.
+
+I have a few virtualizations running Ubuntu 12.04, that I keep that run a few development servers of various things. I recently gave one of them a static IP address so I could more easily access it in the near future, from wherever in my network I happen to be. This server was headless (no GUI), so I used my go-to method for setting a static IP address. That is, I opened up the network interfaces config file in `/etc/network/interfaces`, and modified it to make it look something like this:
+
+```
+auto eth0
+iface eth0 inet static
+address 10.0.0.100
+netmask 255.255.255.0
+gateway 10.0.0.1
+```
+
+This is exactly the protocol outlined in&nbsp;<a href="https://help.ubuntu.com/12.04/serverguide/network-configuration.html" target="_blank">https://help.ubuntu.com/12.04/serverguide/network-configuration.html</a>, in the section titled "Static IP Address Assignment," if you want to follow along. After a quick networking restart, I'm done! I've successfully got a brand new static IP. I ssh into my virtualization, and get to work!&nbsp;<br /><br />Now for the twist!
+
+Later that day, while running an innocuous command via ssh, I get a broken pipe! My ssh session is broken! I soon find out that my 12.04 box has reacquired an IP address dynamically.
+
+For some background, you should know that the router I was using does have dhcp running, and will hand out dynamic IPs when requested, to a specified range. So for example, everything over .128, which is where the new IP address was located. I also happen to know that the IP address the 12.04 box had was not being used by anything else; it was free, so nothing was fighting over it.
+
+I've ran into this problem before, so I knew what to do. Unintuitively, even if you set a static IP in this config file, which I would think would be authoritative, it won't stick in Ubuntu if you still have a dhcp client installed. I think I've ran into this in older versions of Ubuntu as well. I am unaware though, if later versions have changed this.
+
+There are a few variants of the dhcp client. I don't need them, so my quick fix is simply to remove them. So to catch them and set the static IP once and for all:
+
+```
+change your config file
+sudo apt-get remove dhcp-client isc-dhcp-client dhcp3-client
+sudo /etc/init.d/networking restart
+```
+
+Another link that explains how to set up a static IP in a very similar way, and includes this important step as well as&nbsp;<a href="http://www.howtogeek.com/howto/ubuntu/change-ubuntu-server-from-dhcp-to-a-static-ip-address/" target="_blank">http://www.howtogeek.com/howto/ubuntu/change-ubuntu-server-from-dhcp-to-a-static-ip-address/</a>.
+
 ---
 pub_date: 2014-05-04
