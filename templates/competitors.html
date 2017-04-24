@@ -6,11 +6,9 @@
 <div class="competitor-boxes">
   {% for link in this.links.blocks %}
     <a href="{{ link.url }}" target="_blank" rel="nofollow">
-      <div class="client_button green_border">
-        <div class="v_center">
-          <div class="side_squeeze">
-            {{ link.text }}
-          </div>
+      <div class="competitor-box green_border">
+        <div class="competitor">
+          {{ link.text }}
         </div>
       </div>
     </a>
