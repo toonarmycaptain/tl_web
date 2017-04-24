@@ -1,5 +1,5 @@
 [project]
-name = tl_web_lektor
+name = tl_lektor
 url = http://local.terminallabs.com:5000
 url_style = external
 
