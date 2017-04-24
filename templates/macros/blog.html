@@ -17,7 +17,8 @@
   </p>
   {{ post.body }}
   </div>
-  <div>
+  <div class="blog-nav">
+    <br>
     {% set siblings = post.get_siblings() %}
     {% if siblings.next_page %}
       <a href="{{ siblings.next_page|url }}" title="{{ siblings.next_page.title }}" >&laquo; Previous</a>

@@ -69,12 +69,25 @@ a img {
   left: 67px;
   width: 800px;
 }
-.competitor_boxes {
+.competitor-boxes {
   position: relative;
   top: 0px;
   left: 98px;
   width: 740px;
-  cursor: pointer;
+}
+.competitor-box {
+  float: left;
+  width: 144px;
+  height: 50px;
+}
+.competitor {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 5px;
 }
 #logo_box {
   width: 194px;
@@ -82,6 +95,10 @@ a img {
 .logo_subtext {
   text-align: center;
   font-size: 12px;
+}
+.unformatted {
+  text-decoration: none;
+  color: #C0C0C0;
 }
 a:link,
 a:visited {
@@ -104,8 +121,13 @@ a.inactive {
   text-decoration: underline;
   color: #808080;
 }
-.competitor_boxes a:link,
-.competitor_boxes a:visited {
+.blog-nav a:link,
+.blog-nav a:visited {
+  text-decoration: none;
+  color: #C0C0C0;
+}
+.competitor-boxes a:link,
+.competitor-boxes a:visited {
   text-decoration: none;
   color: #C0C0C0;
 }
@@ -170,12 +192,6 @@ body {
   width: 75px;
   height: 75px;
   cursor: pointer;
-}
-.client_button {
-  float: left;
-  width: 144px;
-  height: 50px;
-  line-height: 20px;
 }
 .green_border {
   border: 2px solid #2F9A41;
@@ -392,17 +408,6 @@ pre code {
   margin-left: 30px;
   vertical-align: top;
   display: inline-block;
-}
-.side_squeeze {
-  margin: 0 5px;
-}
-.v_center {
-  text-align: center;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 .hide {
   display: none;

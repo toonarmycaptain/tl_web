@@ -5,6 +5,7 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block content %}
   <div class="content_box">
+    <h2>Terminal Labs blog posts:</h2>
     {% for child in this.pagination.items %}
       <a href="{{ child.path }}"> {{ child._data.title }}</a>
       <br>
