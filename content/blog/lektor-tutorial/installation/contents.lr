@@ -1,6 +1,6 @@
 _model: blog-post
 ---
-title: Installation
+title: Installation & Quickstart
 ---
 author: Joseph Nix
 ---
@@ -8,12 +8,42 @@ body:
 
 Here are installations for installing Lektor with pip. Output has been removed to save space.
 
-<pre><code><span class="code_highlights"><span class="host">joe@nix</span>:<span class="path">~</span>$ mkdir project
-<span class="host">joe@nix</span>:<span class="path">~</span>$ cd project/
-<span class="host">joe@nix</span>:<span class="path">~/project</span>$ sudo apt-get install python-dev libssl-dev libffi-dev imagemagick
-<span class="host">joe@nix</span>:<span class="path">~/project</span>$ virtualenv venv
-<span class="host">joe@nix</span>:<span class="path">~/project</span>$ . venv/bin/activate</span>
-(venv) <span class="host">joe@nix</span>:<span class="path">~/project</span>$
+<pre><code><span class="code_highlights"><span class="host">dev@host</span>:<span class="path">~</span>$ mkdir project
+<span class="host">dev@host</span>:<span class="path">~</span>$ cd project/
+<span class="host">dev@host</span>:<span class="path">~/project</span>$ sudo apt-get install python-dev libssl-dev libffi-dev imagemagick
+<span class="host">dev@host</span>:<span class="path">~/project</span>$ virtualenv venv
+<span class="host">dev@host</span>:<span class="path">~/project</span>$ . venv/bin/activate</span>
+(venv) <span class="host">dev@host</span>:<span class="path">~/project</span>$ lektor quickstart
+<span class="click-header">Lektor Quickstart
+=================</span>
+
+This wizard will generate a new basic project with some sensible defaults for
+getting started quickly.  We just need to go through a few questions so that
+the project is set up correctly for you.
+
+<span class="click-subheader">Step 1:</span>
+| A project needs a name.  The name is primarily used for the admin UI and
+| some other places to refer to your project to not get confused if multiple
+| projects exist.  You can change this at any later point.
+> <span class="click-prompt">Project Name</span>: tutorial
+
+<span class="click-subheader">Step 2:</span>
+| Your name.  This is used in a few places in the default template to refer
+| to in the default copyright messages.
+> <span class="click-prompt">Author Name</span> [Dev,,,]:
+
+<span class="click-subheader">Step 3:</span>
+| This is the path where the project will be located.  You can move a
+| project around later if you do not like the path.  If you provide a
+| relative path it will be relative to the working directory.
+> <span class="click-prompt">Project Path</span> [/home/dev/project/tutorial]: 
+
+<span class="click-subheader">Step 4:</span>
+| Do you want to generate a basic blog module?  If you enable this the
+| models for a very basic blog will be generated.
+> <span class="click-prompt">Add Basic Blog</span> [Y/n]: y
+
+That's all. Create project? [Y/n] y
 </code></pre>
 
   (tl_website)<span class="host">tl_webserver@debian</span>:<span class="path">~/tl_website/testimonials</span>$ python<br>

@@ -7,14 +7,14 @@ _template: flat.html
 body:
 
 <div style="font-size: 20px; text-align: center;">Testimonials</div>
-<span class="code_highlights testimonials">
+<span class="code-highlights testimonials">
   (tl_website)<span class="host">tl_webserver@debian</span>:<span class="path">~/tl_website/testimonials</span>$ python<br>
   Python 2.7.9 (default, Oct  5 2016, 17:31:46)<br>
   [GCC 4.9.2] on linux2<br>
   Type "help", "copyright", "credits" or "license" for more information.<br>
-  <span class="tl_green">>>></span><span class="protected"> from</span> os <span class="protected">import</span> getcwd, listdir<br>
-  <span class="tl_green">>>></span> path = getcwd() <span class="protected">+</span><span class="quote"> "/testimonials/"</span><br>
-  <span class="tl_green">>>></span><span class="protected"> for</span> testimonial <span class="protected">in</span> listdir(path): <span class="protected">print</span> testimonial, <span class="quote">":\n\n"</span>, <span class="method">open</span>(path + testimonial, <span class="quote">'r'</span>).read(), <span class="quote">"\n--------"</span><br>
+  <span class="tl-green">>>></span><span class="protected"> from</span> os <span class="protected">import</span> getcwd, listdir<br>
+  <span class="tl-green">>>></span> path = getcwd() <span class="protected">+</span><span class="quote"> "/testimonials/"</span><br>
+  <span class="tl-green">>>></span><span class="protected"> for</span> testimonial <span class="protected">in</span> listdir(path): <span class="protected">print</span> testimonial, <span class="quote">":\n\n"</span>, <span class="method">open</span>(path + testimonial, <span class="quote">'r'</span>).read(), <span class="quote">"\n--------"</span><br>
   ...<br>
   Jason.txt :<br>
   <br>

@@ -302,58 +302,6 @@ body {
   width: 190px;
   text-align: center;
 }
-.code_highlights .tl_green {
-  color: #2F9A41;
-}
-.code_highlights .host {
-  color: #8ae234;
-}
-.code_highlights .path {
-  color: #729fcf;
-}
-.code_highlights .quote {
-  color: #ff5f87;
-}
-.code_highlights .method {
-  color: #af5f00;
-}
-.code_highlights .protected {
-  font-weight: bold;
-  color: white;
-}
-code {
-  padding: 1px 2px;
-  background: #202020;
-  border: 1px solid;
-  border-color: #808080;
-  border-radius: 3px;
-  font: 16px prime_regular;
-  max-width: 100%;
-  overflow-x: auto;
-}
-code .tl_green {
-  color: #2F9A41;
-}
-code .host {
-  color: #8ae234;
-}
-code .path {
-  color: #729fcf;
-}
-code .quote {
-  color: #ff5f87;
-}
-code .method {
-  color: #af5f00;
-}
-code .protected {
-  font-weight: bold;
-  color: white;
-}
-pre code {
-  display: block;
-  padding: 5px 10px;
-}
 .slideshow_menu {
   width: 940px;
   text-align: center;
@@ -411,6 +359,76 @@ pre code {
 }
 .hide {
   display: none;
+}
+.code-highlights .tl-green {
+  color: #2F9A41;
+}
+.code-highlights .host {
+  color: #8ae234;
+}
+.code-highlights .path {
+  color: #729fcf;
+}
+.code-highlights .quote {
+  color: #ff5f87;
+}
+.code-highlights .method {
+  color: #af5f00;
+}
+.code-highlights .protected {
+  font-weight: bold;
+  color: white;
+}
+.code-highlights .click-header {
+  color: #06989a;
+}
+.code-highlights .click-subheader {
+  color: #c4a000;
+}
+.code-highlights .click-prompt {
+  color: #06989a;
+}
+code {
+  padding: 1px 2px;
+  background: #202020;
+  border: 1px solid;
+  border-color: #808080;
+  border-radius: 3px;
+  font: 16px prime_regular;
+  max-width: 100%;
+  overflow-x: auto;
+}
+code .tl-green {
+  color: #2F9A41;
+}
+code .host {
+  color: #8ae234;
+}
+code .path {
+  color: #729fcf;
+}
+code .quote {
+  color: #ff5f87;
+}
+code .method {
+  color: #af5f00;
+}
+code .protected {
+  font-weight: bold;
+  color: white;
+}
+code .click-header {
+  color: #06989a;
+}
+code .click-subheader {
+  color: #c4a000;
+}
+code .click-prompt {
+  color: #06989a;
+}
+pre code {
+  display: block;
+  padding: 5px 10px;
 }
 .tree_target {
   position: absolute;
