@@ -148,7 +148,7 @@ body {
   user-select: none;
 }
 #container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 #nav_menu_bar {
@@ -197,7 +197,7 @@ body {
   border: 2px solid #2F9A41;
 }
 .content_box {
-  width: 940px;
+  max-width: 940px;
   border: 2px solid #2F9A41;
   margin-top: 10px;
   padding: 10px;
