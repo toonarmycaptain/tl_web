@@ -5,12 +5,86 @@
 @lightest_gray: #C0C0C0;
 @default_line_height: 40px;
 @logo_box_width: 28px;
-@grid_width: 960px;
+@grid_width: 980px; // <body> has 8px margin on both sides, effective 964px width
 @main_width: 940px;
 @med_width: 740px;
+@grid_min: 536px;
 @border_width: 2px;
 @nav_tabs: 7;
 
+html {
+  padding: 0 8px;
+}
+body {
+  color: @lightest_gray;
+  background-color: black;
+  font: @std_font;
+  max-width: @grid_width;
+  min-width: @grid_min;
+  margin: 0 auto;
+}
+.unselectable {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;   /* Firefox all */
+  -ms-user-select: none;    /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;
+}
+#nav_menu_bar {
+  display: inline-block;
+  margin-top: 10px;
+}
+.table {
+  display: table;   /* Allow the centering to work */
+  margin: 0 auto;
+}
+.nav_menu_bar_tier_2 {
+  position: relative;
+  left: 0px;
+  overflow: hidden;
+  margin-top: 10px;
+  text-align: center;
+}
+.nav_menu_tier_2 {
+  float: left;
+  width: 137px; //TODO - calculate this
+}
+.nav_menu_tier_2_text {
+  width: 80%;
+  margin: 0 auto 10px;
+}
+.menu_item {
+  cursor: pointer;
+}
+.nav_menu {
+  float: left;
+  width: (@grid_width - 2* @border_width * @nav_tabs) / @nav_tabs;
+  height: 40px;
+  text-align:center;
+  line-height: @default_line_height;
+}
+.content_box {
+  border: @border_width solid @std_green;
+  margin-top: 10px;
+  padding: 10px;
+  overflow: hidden;
+  line-height: 1.2;
+}
+.content_col {
+  display: inline-block;
+  vertical-align: top;
+  width: 440px;
+  padding: 10px;
+  min-height: 300px;
+}
+.content_col_left {
+  .content_col;
+  border-right: 1px solid @std_green;
+}
+.content_col_right {
+  .content_col;
+  margin-top: 10px;
+}
 .row {
   position: relative;
 }
@@ -136,59 +210,6 @@ a.inactive {
 .competitor-boxes a:link, .competitor-boxes a:visited {
   .unformatted;
 }
-html,
-body
-{
-  color: @lightest_gray;
-  background-color: black;
-  font: @std_font;
-}
-.unselectable {
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;   /* Firefox all */
-  -ms-user-select: none;    /* IE 10+ */
-  -o-user-select: none;
-  user-select: none;
-}
-#container {
-  max-width: @grid_width;
-  margin: 0 auto;
-}
-#nav_menu_bar {
-  width: @grid_width + 2 * @border_width;
-  height: 40px;
-  margin-top: 10px;
-}
-.table {
-  display: table;   /* Allow the centering to work */
-  margin: 0 auto;
-}
-.nav_menu_bar_tier_2 {
-  position: relative;
-  left: 0px;
-  width: @grid_width;
-  overflow: hidden;
-  margin-top: 10px;
-  text-align: center;
-}
-.nav_menu_tier_2 {
-  float: left;
-  width: 137px;
-}
-.nav_menu_tier_2_text {
-  width: 80%;
-  margin: 0 auto 10px;
-}
-.menu_item {
-  cursor: pointer;
-}
-.nav_menu {
-  float: left;
-  width: (@grid_width - 2* @border_width * @nav_tabs) / @nav_tabs;
-  height: 40px;
-  text-align:center;
-  line-height: @default_line_height;
-}
 .gallery_tool_img {
   float: left;
   width: 75px;
@@ -197,29 +218,6 @@ body
 }
 .green_border {
   border: @border_width solid @std_green;
-}
-.content_box {
-  max-width: @main_width;
-  border: @border_width solid @std_green;
-  margin-top: 10px;
-  padding: 10px;
-  overflow: hidden;
-  line-height: 1.2;
-}
-.content_col {
-  display: inline-block;
-  vertical-align: top;
-  width: 440px;
-  padding: 10px;
-  min-height: 300px;
-}
-.content_col_left {
-  .content_col;
-  border-right: 1px solid @std_green;
-}
-.content_col_right {
-  .content_col;
-  margin-top: 10px;
 }
 .row_text_common {
   float: left;

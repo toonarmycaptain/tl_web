@@ -2,18 +2,16 @@
 <html>
   {% include "includes/header.html" %}
   <body>
-    <div id="container">
-      <div class="top_row">
-	{% include "includes/logo.html" %}
-	{% include "includes/social_box.html" %}
-      </div>
-      {% include "includes/navbar.html" %}
-      {% block content %}
-        {% if this._path == '/' %} {# display homepage art #}
-          {% include "includes/homepage_body.html" %}
-        {% endif %}
-      {% endblock content %}
+    <div class="top_row">
+      {% include "includes/logo.html" %}
+      {% include "includes/social_box.html" %}
     </div>
+    {% include "includes/navbar.html" %}
+    {% block content %}
+      {% if this._path == '/' %} {# display homepage art #}
+        {% include "includes/homepage_body.html" %}
+      {% endif %}
+    {% endblock content %}
   </body>
   {% include "includes/footer.html" %}
 </html>
