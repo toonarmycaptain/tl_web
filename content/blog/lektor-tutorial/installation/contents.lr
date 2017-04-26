@@ -14,6 +14,7 @@ Here are instructions for installing Lektor with pip. Some output has been remov
 imagemagick
 <span class="host">dev@host</span>:<span class="path">~/projects</span>$ virtualenv venv
 <span class="host">dev@host</span>:<span class="path">~/projects</span>$ . venv/bin/activate</span>
+(venv) <span class="host">dev@host</span>:<span class="path">~/projects</span>$ pip install lektor
 (venv) <span class="host">dev@host</span>:<span class="path">~/projects</span>$ lektor quickstart
 <span class="click-header">Lektor Quickstart
 =================</span>
@@ -37,7 +38,7 @@ the project is set up correctly for you.
 | This is the path where the project will be located.  You can move a
 | project around later if you do not like the path.  If you provide a
 | relative path it will be relative to the working directory.
-> <span class="click-prompt">Project Path</span> [/home/dev/project/tutorial]: 
+> <span class="click-prompt">Project Path</span> [/home/dev/projects/tutorial]: 
 
 <span class="click-subheader">Step 4:</span>
 | Do you want to generate a basic blog module?  If you enable this the
@@ -47,12 +48,32 @@ the project is set up correctly for you.
 That's all. Create project? [Y/n] y
 </code></pre>
 
-  (tl_website)<span class="host">tl_webserver@debian</span>:<span class="path">~/tl_website/testimonials</span>$ python<br>
-  Python 2.7.9 (default, Oct  5 2016, 17:31:46)<br>
-  [GCC 4.9.2] on linux2<br>
-  Type "help", "copyright", "credits" or "license" for more information.<br>
-  <span class="tl_green">>>></span><span class="protected"> from</span> os <span class="protected">import</span> getcwd, listdir<br>
-  <span class="tl_green">>>></span> path = getcwd() <span class="protected">+</span><span class="quote"> "/testimonials/"</span><br>
-  <span class="tl_green">>>></span><span class="protected"> for</span> testimonial <span class="protected">in</span> listdir(path): <span class="protected">print</span> testimonial, <span class="quote">":\n\n"</span>, <span class="method">open</span>(path + testimonial, <span 
+Now let's take a look at what the quickstart has produced.
+<pre><code>
+<span class="host">dev@host</span>:<span class="path">~/projects</span>$ cd tutorial/
+<span class="host">dev@host</span>:<span class="path">~/projects/tutorial</span>$ ls -R
+.:
+<span class="path">assets</span>  <span class="path">content</span>  <span class="path">models</span>  <span class="path">templates</span>  tutorial.lektorproject
+./assets:
+<span class="path">static</span>
+./assets/static:
+style.css
+./content:
+<span class="path">about</span>  <span class="path">blog</span>  contents.lr  <span class="path">projects</span>
+./content/about:
+contents.lr
+./content/blog:
+contents.lr  <span class="path">first-post</span>
+./content/blog/first-post:
+contents.lr
+./content/projects:
+contents.lr
+./models:
+blog.ini  blog-post.ini  page.ini
+./templates:
+blog.html  blog-post.html  layout.html  <span class="path">macros</span>  page.html
+./templates/macros:
+blog.html  pagination.html
+</code></pre>
 ---
 pub_date: 2017-04-26

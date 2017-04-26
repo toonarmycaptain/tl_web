@@ -6,6 +6,7 @@
 {% block content %}
   <div class="content_box">
     <h2>{{ this.title }}:</h2>
+    {{ this.body }}
     {% for child in this.pagination.items %}
       <p>
         <a href="{{ child.path }}"> {{ child._data.title }}</a>
