@@ -15,6 +15,8 @@ imagemagick
 <span class="host">dev@host</span>:<span class="path">~/projects</span>$ virtualenv venv
 <span class="host">dev@host</span>:<span class="path">~/projects</span>$ . venv/bin/activate</span>
 (venv) <span class="host">dev@host</span>:<span class="path">~/projects</span>$ pip install lektor
+</code></pre>
+<pre><code>
 (venv) <span class="host">dev@host</span>:<span class="path">~/projects</span>$ lektor quickstart
 <span class="click-header">Lektor Quickstart
 =================</span>
@@ -54,26 +56,58 @@ Now let's take a look at what the quickstart has produced.
 <span class="host">dev@host</span>:<span class="path">~/projects/tutorial</span>$ ls -R
 .:
 <span class="path">assets</span>  <span class="path">content</span>  <span class="path">models</span>  <span class="path">templates</span>  tutorial.lektorproject
+
 ./assets:
 <span class="path">static</span>
+
 ./assets/static:
 style.css
+
 ./content:
 <span class="path">about</span>  <span class="path">blog</span>  contents.lr  <span class="path">projects</span>
+
 ./content/about:
 contents.lr
+
 ./content/blog:
 contents.lr  <span class="path">first-post</span>
+
 ./content/blog/first-post:
 contents.lr
+
 ./content/projects:
 contents.lr
+
 ./models:
 blog.ini  blog-post.ini  page.ini
+
 ./templates:
 blog.html  blog-post.html  layout.html  <span class="path">macros</span>  page.html
+
 ./templates/macros:
 blog.html  pagination.html
 </code></pre>
+
+Let's run the server!
+<pre><code>
+<span class="host">dev@host</span>:<span class="path">~/projects/tutorial</span>$ lektor server
+ * Project path: /home/dev/projects/tutorial/tutorial.lektorproject
+ * Output path: /home/dev/.cache/lektor/builds/66bd4ffa5a06350a8b5a248069a1f528
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+<span class="path">Started source info update</span>
+<span class="path">Finished source info update in 0.23 sec</span>
+<span class="path">Started build</span>
+<span class="click-prompt">U</span> index.html
+<span class="click-prompt">U</span> about/index.html
+<span class="click-prompt">U</span> projects/index.html
+<span class="click-prompt">U</span> blog/index.html
+<span class="click-prompt">U</span> static/style.css
+<span class="click-prompt">U</span> blog/first-post/index.html
+<span class="path">Finished build in 0.07 sec</span>
+<span class="path">Started prune</span>
+<span class="path">Finished prune in 0.00 sec</span>
+</code></pre>
 ---
 pub_date: 2017-04-26
+---
+position: 0

@@ -1,0 +1,25 @@
+_model: blog-post
+---
+title: Folder Structure: Contents
+---
+body:
+
+**One Folder — One Page**
+Each page (url) corresponds to one folder in `content/`. Child pages are nested. Each page has it's content stored in `contents.lr` and any attachments in the same folder. For example, in the Quickstart State, we have
+
+<pre><code>
+<span class="path">content/</span>
+  contents.lr
+  <span class="path">portfolio/</span>
+    contents.lr
+    <span class="path">project-a/</span>
+      contents.lr
+      thumbnail.jpg
+    project-b/
+      contents.lr
+      thumbnail.jpg
+  about/
+    contents.lr
+</code></pre>
+---
+position: 2

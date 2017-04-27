@@ -375,7 +375,7 @@ a.inactive {
   color: #c4a000;
 }
 .code-highlights .click-prompt {
-  color: #06989a;
+  color: #4e9a06;
 }
 code {
   padding: 1px 2px;
@@ -413,7 +413,7 @@ code .click-subheader {
   color: #c4a000;
 }
 code .click-prompt {
-  color: #06989a;
+  color: #4e9a06;
 }
 pre code {
   display: block;
