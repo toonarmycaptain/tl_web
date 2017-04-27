@@ -10,8 +10,7 @@ Here are instructions for installing Lektor with pip. Some output has been remov
 
 <pre><code><span class="code_highlights"><span class="host">dev@host</span>:<span class="path">~</span>$ mkdir projects
 <span class="host">dev@host</span>:<span class="path">~</span>$ cd projects/
-<span class="host">dev@host</span>:<span class="path">~/projects</span>$ sudo apt-get install python-dev libssl-dev libffi-dev
-imagemagick
+<span class="host">dev@host</span>:<span class="path">~/projects</span>$ sudo apt install python-dev libssl-dev libffi-dev imagemagick
 <span class="host">dev@host</span>:<span class="path">~/projects</span>$ virtualenv venv
 <span class="host">dev@host</span>:<span class="path">~/projects</span>$ . venv/bin/activate</span>
 (venv) <span class="host">dev@host</span>:<span class="path">~/projects</span>$ pip install lektor
