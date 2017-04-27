@@ -32,3 +32,5 @@ _model: blog
 position: 3
 ---
 author: Joseph Nix
+---
+pub_date: 2017-04-26

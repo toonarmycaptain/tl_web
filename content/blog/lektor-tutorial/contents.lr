@@ -1,6 +1,6 @@
 _model: blog
 ---
-title: Lektor: What, How, and Why?
+title: Lektor: What, Why, and How?
 ---
 author: Joseph Nix
 ---
@@ -8,4 +8,4 @@ meta_description:
 ---
 pub_date: 2017-04-26
 ---
-body: sdafsdf
+body: Lektor is good stuff

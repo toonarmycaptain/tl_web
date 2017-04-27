@@ -25,3 +25,7 @@ Here, the `contents.lr` files will be rendered to the pages associated with thei
 Each content file is associated with a model and a template. Defaults are determined by Lektor, but can be specified in the CMS when creating the page if non-default models or templates are desired.
 ---
 position: 2
+---
+author: Joseph Nix
+---
+pub_date: 2017-04-26
