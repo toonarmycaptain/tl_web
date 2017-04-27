@@ -10,15 +10,13 @@ Each page (url) corresponds to one folder in `content/`. Child pages are nested.
 <pre><code>
 <span class="path">content/</span>
   contents.lr
-  <span class="path">portfolio/</span>
+  <span class="path">about/</span>
     contents.lr
-    <span class="path">project-a/</span>
+  <span class="path">blog/</span>
+    contents.lr
+    <span class="path">first-post/</span>
       contents.lr
-      thumbnail.jpg
-    project-b/
-      contents.lr
-      thumbnail.jpg
-  about/
+  <span class="path">projects/</span>
     contents.lr
 </code></pre>
 ---
