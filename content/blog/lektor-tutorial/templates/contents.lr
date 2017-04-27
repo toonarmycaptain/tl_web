@@ -1,0 +1,22 @@
+_model: blog-post
+---
+title: Templates
+---
+position: 4
+---
+author: Joseph Nix
+---
+body:
+
+To generator pages into HTML, Lektor uses the Jinja2 templating language as well as Lektor's Template API. All templates are stored in `templates/` and typically carry the .html extension. By convention, the template matches the model name. For example, the templates `blog.html` and `page.html` match the `blog` and `page` models, respectively.
+
+This can be customized by setting a specific template for a page in the CMS. Templates can also be made to break up sections of template code and make it more flexible, by extending or including files, and by using macros. For instance, in the Quickstart state, `blog-post.html` extends the `layout.html` file, and imports code from `macros/blog.html`. `blog-post.html` includes starts out as the following:
+
+<pre><code>
+<span class="path bold">{% extends</span><span class="click-prompt"> "layout.html" </span><span class="path bold">%}</span>
+<span class="path bold">{%</span><span class="import bold"> from</span><span class="click-prompt"> "macros/blog.html" </span><span class="import bold">import</span> <span class="click-subheader">render_blog_post</span> <span class="path bold">%}</span>
+<span class="path bold">{% block</span> <span class="click-subheader">title</span> <span class="path bold">%}{{</span> <span class="click-subheader">this.title</span> <span class="path bold">}}{% endblock %}</span>
+<span class="path bold">{% block</span> <span class="click-subheader">body</span> <span class="path bold">%}</span>
+  <span class="path bold">{{ render_blog_post</span>(<span class="click-subheader">this</span>) <span class="path bold">}}
+<span class="path bold">{% endblock %}</span>
+</code></pre>
