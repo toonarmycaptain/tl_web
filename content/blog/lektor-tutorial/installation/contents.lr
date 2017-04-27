@@ -6,7 +6,7 @@ author: Joseph Nix
 ---
 body:
 
-Here are instructions for installing Lektor with pip. Some output has been removed to save space.
+Here are instructions for installing Lektor with pip on a Debian based system. Some output has been removed to save space. Other systems will install dependencies that `apt` handles here in different ways. There are other ways to install Lektor that are more 'hands off' (installing binaries) or 'hands on'  (from the source) depending on your desires found <a href="https://www.getlektor.com/docs/installation/" target="_blank">here</a>.
 
 <pre><code><span class="code_highlights"><span class="host">dev@host</span>:<span class="path">~</span>$ mkdir projects
 <span class="host">dev@host</span>:<span class="path">~</span>$ cd projects/
@@ -49,7 +49,7 @@ the project is set up correctly for you.
 That's all. Create project? [Y/n] y
 </code></pre>
 
-Now let's take a look at what the quickstart has produced.
+Now let's take a look at what the quickstart has produced. Here we see all of the initial folders (in blue) and files. The names of the folders indicate what sort of data they hold in a pretty straight forward way, as do the individual file names. We'll dig into them a little more soon.
 <pre><code>
 <span class="host">dev@host</span>:<span class="path">~/projects</span>$ cd tutorial/
 <span class="host">dev@host</span>:<span class="path">~/projects/tutorial</span>$ ls -R
@@ -87,24 +87,24 @@ blog.html  blog-post.html  layout.html  <span class="path">macros</span>  page.h
 blog.html  pagination.html
 </code></pre>
 
-Let's run the server!
+For now, let's not delay the fun! Let's run the server! Running the server is easy to do, and accomplishes a few things. Notice it tells us where it's grabbing configuration data, from `tutorial.lektorproject`, where it's compiling it's end product HTML files to, the `.cahce` dir, and where it's serving these files to, `http://127.0.0.1:5000/`. After that it builds the HTML that's available at that address.
 <pre><code>
 <span class="host">dev@host</span>:<span class="path">~/projects/tutorial</span>$ lektor server
  * Project path: /home/dev/projects/tutorial/tutorial.lektorproject
  * Output path: /home/dev/.cache/lektor/builds/66bd4ffa5a06350a8b5a248069a1f528
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-<span class="path">Started source info update</span>
-<span class="path">Finished source info update in 0.23 sec</span>
-<span class="path">Started build</span>
+<span class="click-header">Started source info update</span>
+<span class="click-header">Finished source info update in 0.23 sec</span>
+<span class="click-header">Started build</span>
 <span class="click-prompt">U</span> index.html
 <span class="click-prompt">U</span> about/index.html
 <span class="click-prompt">U</span> projects/index.html
 <span class="click-prompt">U</span> blog/index.html
 <span class="click-prompt">U</span> static/style.css
 <span class="click-prompt">U</span> blog/first-post/index.html
-<span class="path">Finished build in 0.07 sec</span>
-<span class="path">Started prune</span>
-<span class="path">Finished prune in 0.00 sec</span>
+<span class="click-header">Finished build in 0.07 sec</span>
+<span class="click-header">Started prune</span>
+<span class="click-header">Finished prune in 0.00 sec</span>
 </code></pre>
 ---
 pub_date: 2017-04-26

@@ -20,5 +20,41 @@ This can be customized by setting a specific template for a page in the CMS. Tem
   <span class="path bold">{{ render_blog_post</span>(<span class="click-subheader">this</span>) <span class="path bold">}}
 <span class="path bold">{% endblock %}</span>
 </code></pre>
+
+`blog-post.html` `extends` `layout.html`, which is the longest template file in the Quickstart State. It is reproduced below. `layout.html` is not associated with a model, because it is only used by invocation through other templates. Through this way, there can be more template files needed for a project than model files, especially when you incorporate `includes` and `macros`.
+
+```
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+<title>{% block title %}Welcome{% endblock %} — tutorial</title>
+<body>
+  <header>
+    <h1>tutorial</h1>
+    <nav>
+      <ul class="nav navbar-nav">
+        <li{% if this._path == '/' %} class="active"{% endif
+          %}><a href="{{ '/'|url }}">Welcome</a></li>
+        {% for href, title in [
+          ['/blog', 'Blog'],
+          ['/projects', 'Projects'],
+          ['/about', 'About']
+        ] %}
+          <li{% if this.is_child_of(href) %} class="active"{% endif
+            %}><a href="{{ href|url }}">{{ title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+  <div class="page">
+    {% block body %}{% endblock %}
+  </div>
+  <footer>
+    &copy; Copyright 2017 by Dev.
+  </footer>
+</body>
+```
+
+You now have a basic exposure to Lektor! For more info please visit Get Lektor!
 ---
 pub_date: 2017-04-26

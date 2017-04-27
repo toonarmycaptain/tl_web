@@ -5,6 +5,7 @@ title: Contents
 body:
 
 **One Folder — One Page**
+
 Each page (url) corresponds to one folder in `content/`. Child pages are nested. Each page has it's content stored in `contents.lr` and any attachments in the same folder. For example, in the Quickstart State, we have
 
 <pre><code>
