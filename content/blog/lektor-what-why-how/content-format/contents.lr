@@ -27,7 +27,7 @@ System fields appear with an underscore prefixed to the key name, such as in `co
 _model: blog
 ```
 ---
-position: 3
+position: 4
 ---
 author: Joseph Nix
 ---

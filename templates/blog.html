@@ -13,7 +13,7 @@
         {# Now loop again if child is blog post series. #}
         {% for grandchild in child.pagination.items %}
           <blockquote>
-            <a href="{{ grandchild.path }}"> {{ grandchild.title }}</a></a>
+            <a href="{{ grandchild.path }}">{{ grandchild.title }}</a></a>
           </blockquote>
         {% endfor %}
       </p>
