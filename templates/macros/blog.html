@@ -27,12 +27,11 @@
     <br>
     {% set siblings = post.get_siblings() %}
     {% set children = post.pagination.items %}
-    {# TODO: Make this a template tag so that we can have page|seriable #}
 
     {# nav logic for previous page #}
     {% if siblings.prev_page %}
       {% set prev = siblings.prev_page %}
-    {% else %}
+    {% elif (post.parent._path != "/blog") %}
       {% set prev = post.parent %}
     {% endif %}
 
