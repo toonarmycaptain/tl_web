@@ -1,0 +1,110 @@
+title: Installation & Quickstart
+---
+author: Joseph Nix
+---
+body:
+
+Here are instructions for installing Lektor with pip on a Debian based system. Some output has been removed to save space. Other systems will install dependencies that `apt` handles here in different ways. There are other ways to install Lektor that are more 'hands off' (installing binaries) or 'hands on'  (from the source) depending on your desires found <a href="https://www.getlektor.com/docs/installation/" target="_blank">here</a>.
+
+<pre><code><span class="code_highlights"><span class="host">dev@host</span>:<span class="path">~</span>$ mkdir projects
+<span class="host">dev@host</span>:<span class="path">~</span>$ cd projects/
+<span class="host">dev@host</span>:<span class="path">~/projects</span>$ sudo apt install python-dev libssl-dev libffi-dev imagemagick
+<span class="host">dev@host</span>:<span class="path">~/projects</span>$ virtualenv venv
+<span class="host">dev@host</span>:<span class="path">~/projects</span>$ . venv/bin/activate</span>
+(venv) <span class="host">dev@host</span>:<span class="path">~/projects</span>$ pip install lektor
+</code></pre>
+<pre><code>
+(venv) <span class="host">dev@host</span>:<span class="path">~/projects</span>$ lektor quickstart
+<span class="click-header">Lektor Quickstart
+=================</span>
+
+This wizard will generate a new basic project with some sensible defaults for
+getting started quickly.  We just need to go through a few questions so that
+the project is set up correctly for you.
+
+<span class="click-subheader">Step 1:</span>
+| A project needs a name.  The name is primarily used for the admin UI and
+| some other places to refer to your project to not get confused if multiple
+| projects exist.  You can change this at any later point.
+> <span class="click-prompt">Project Name</span>: tutorial
+
+<span class="click-subheader">Step 2:</span>
+| Your name.  This is used in a few places in the default template to refer
+| to in the default copyright messages.
+> <span class="click-prompt">Author Name</span> [Dev,,,]:
+
+<span class="click-subheader">Step 3:</span>
+| This is the path where the project will be located.  You can move a
+| project around later if you do not like the path.  If you provide a
+| relative path it will be relative to the working directory.
+> <span class="click-prompt">Project Path</span> [/home/dev/projects/tutorial]: 
+
+<span class="click-subheader">Step 4:</span>
+| Do you want to generate a basic blog module?  If you enable this the
+| models for a very basic blog will be generated.
+> <span class="click-prompt">Add Basic Blog</span> [Y/n]: y
+
+That's all. Create project? [Y/n] y
+</code></pre>
+
+Now let's take a look at what the quickstart has produced. Here we see all of the initial folders (in blue) and files. The names of the folders indicate what sort of data they hold in a pretty straight forward way, as do the individual file names. We'll dig into them a little more soon.
+<pre><code>
+<span class="host">dev@host</span>:<span class="path">~/projects</span>$ cd tutorial/
+<span class="host">dev@host</span>:<span class="path">~/projects/tutorial</span>$ ls -R
+.:
+<span class="path">assets</span>  <span class="path">content</span>  <span class="path">models</span>  <span class="path">templates</span>  tutorial.lektorproject
+
+./assets:
+<span class="path">static</span>
+
+./assets/static:
+style.css
+
+./content:
+<span class="path">about</span>  <span class="path">blog</span>  contents.lr  <span class="path">projects</span>
+
+./content/about:
+contents.lr
+
+./content/blog:
+contents.lr  <span class="path">first-post</span>
+
+./content/blog/first-post:
+contents.lr
+
+./content/projects:
+contents.lr
+
+./models:
+blog.ini  blog-post.ini  page.ini
+
+./templates:
+blog.html  blog-post.html  layout.html  <span class="path">macros</span>  page.html
+
+./templates/macros:
+blog.html  pagination.html
+</code></pre>
+
+For now, let's not delay the fun! Let's run the server! Running the server is easy to do, and accomplishes a few things. Notice it tells us where it's grabbing configuration data, from `tutorial.lektorproject`, where it's compiling it's end product HTML files to, the `.cahce` dir, and where it's serving these files to, `http://127.0.0.1:5000/`. After that it builds the HTML that's available at that address.
+<pre><code>
+<span class="host">dev@host</span>:<span class="path">~/projects/tutorial</span>$ lektor server
+ * Project path: /home/dev/projects/tutorial/tutorial.lektorproject
+ * Output path: /home/dev/.cache/lektor/builds/66bd4ffa5a06350a8b5a248069a1f528
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+<span class="click-header">Started source info update</span>
+<span class="click-header">Finished source info update in 0.23 sec</span>
+<span class="click-header">Started build</span>
+<span class="click-prompt">U</span> index.html
+<span class="click-prompt">U</span> about/index.html
+<span class="click-prompt">U</span> projects/index.html
+<span class="click-prompt">U</span> blog/index.html
+<span class="click-prompt">U</span> static/style.css
+<span class="click-prompt">U</span> blog/first-post/index.html
+<span class="click-header">Finished build in 0.07 sec</span>
+<span class="click-header">Started prune</span>
+<span class="click-header">Finished prune in 0.00 sec</span>
+</code></pre>
+---
+pub_date: 2017-04-26
+---
+position: 0

@@ -1,0 +1,58 @@
+title: Templates
+---
+position: 4
+---
+author: Joseph Nix
+---
+body:
+
+To generator pages into HTML, Lektor uses the Jinja2 templating language as well as Lektor's Template API. All templates are stored in `templates/` and typically carry the .html extension. By convention, the template matches the model name. For example, the templates `blog.html` and `page.html` match the `blog` and `page` models, respectively.
+
+This can be customized by setting a specific template for a page in the CMS. Templates can also be made to break up sections of template code and make it more flexible, by extending or including files, and by using macros. For instance, in the Quickstart state, `blog-post.html` extends the `layout.html` file, and imports code from `macros/blog.html`. `blog-post.html` includes starts out as the following:
+
+<pre><code>
+<span class="path bold">{% extends</span><span class="click-prompt"> "layout.html" </span><span class="path bold">%}</span>
+<span class="path bold">{%</span><span class="import bold"> from</span><span class="click-prompt"> "macros/blog.html" </span><span class="import bold">import</span> <span class="click-subheader">render_blog_post</span> <span class="path bold">%}</span>
+<span class="path bold">{% block</span> <span class="click-subheader">title</span> <span class="path bold">%}{{</span> <span class="click-subheader">this.title</span> <span class="path bold">}}{% endblock %}</span>
+<span class="path bold">{% block</span> <span class="click-subheader">body</span> <span class="path bold">%}</span>
+  <span class="path bold">{{ render_blog_post</span>(<span class="click-subheader">this</span>) <span class="path bold">}}
+<span class="path bold">{% endblock %}</span>
+</code></pre>
+
+`blog-post.html` `extends` `layout.html`, which is the longest template file in the Quickstart State. It is reproduced below. `layout.html` is not associated with a model, because it is only used by invocation through other templates. Through this way, there can be more template files needed for a project than model files, especially when you incorporate `includes` and `macros`.
+
+```
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+<title>{% block title %}Welcome{% endblock %} — tutorial</title>
+<body>
+  <header>
+    <h1>tutorial</h1>
+    <nav>
+      <ul class="nav navbar-nav">
+        <li{% if this._path == '/' %} class="active"{% endif
+          %}><a href="{{ '/'|url }}">Welcome</a></li>
+        {% for href, title in [
+          ['/blog', 'Blog'],
+          ['/projects', 'Projects'],
+          ['/about', 'About']
+        ] %}
+          <li{% if this.is_child_of(href) %} class="active"{% endif
+            %}><a href="{{ href|url }}">{{ title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+  <div class="page">
+    {% block body %}{% endblock %}
+  </div>
+  <footer>
+    &copy; Copyright 2017 by Dev.
+  </footer>
+</body>
+```
+
+You now have a basic exposure to Lektor! For more info please visit Get Lektor!
+---
+pub_date: 2017-04-26
