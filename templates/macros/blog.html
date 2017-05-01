@@ -22,23 +22,40 @@
 {% endmacro %}
 
 {% macro render_blog_sibling_nav(post, from_index=false) %}
+  {% from "macros/pagination.html" import render_pagination %}
   <div class="blog-nav">
     <br>
     {% set siblings = post.get_siblings() %}
+    {% set children = post.pagination.items %}
     {# TODO: Make this a template tag so that we can have page|seriable #}
-    {% set prev_valid = "True" if siblings.prev_page._model in ['blog', 'blog-post'] %}
-    {% set next_valid = "True" if siblings.next_page._model in ['blog', 'blog-post'] %}
 
-    {% if siblings.prev_page and prev_valid %}
-      <a href="{{ siblings.prev_page|url }}" title="{{ siblings.prev_page.title }}" >&laquo; Previous</a>
+    {# nav logic for previous page #}
+    {% if siblings.prev_page %}
+      {% set prev = siblings.prev_page %}
+    {% else %}
+      {% set prev = post.parent %}
     {% endif %}
 
-    {% if siblings.prev_page and prev_valid %} | {% endif %}
-    {% if (post._path != "/blog") %} {{ post.title }} {% endif%}
-    {% if siblings.next_page and next_valid %} | {% endif %}
+    {# nav logic for next page #}
+    {% if children %}
+      {% set next = children.first() %}
+    {% elif siblings.next_page %}
+      {% set next = siblings.next_page %}
+    {% else %}
+      {% set next = post.parent.get_siblings().next_page %}
+    {% endif %}
 
-    {% if siblings.next_page and next_valid %}
-      <a href="{{ siblings.next_page|url }}" title="{{ siblings.next_page.title }}" >Next &raquo;</a>
+    {# previous / nex nav links #}
+    {% if prev %}
+      <a href="{{ prev|url }}" title="{{ prev.title }}" >&laquo; Previous</a>
+    {% endif %}
+
+    {% if prev %} | {% endif %}
+    {% if (post._path != "/blog") %} {{ post.title }} {% endif%}
+    {% if next %} | {% endif %}
+
+    {% if next %}
+      <a href="{{ next|url }}" title="{{ next.title }}" >Next &raquo;</a>
     {% endif %}
   </div>
 {% endmacro %}

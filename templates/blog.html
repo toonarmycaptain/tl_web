@@ -6,14 +6,19 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block content %}
   <div class="content_box">
-    <h2>{{ this.title }}:</h2>
     {{ this.body }}
-    {% for child in this.pagination.items.order_by('position', '-pub_date') %}
+    {% for child in this.pagination.items.order_by('-pub_date', 'title') %}
       <p>
         <a href="{{ child.path }}"> {{ child.title }}</a></a>
+        {# Now loop again if child is blog post series. #}
+        {% for grandchild in child.pagination.items %}
+          <blockquote>
+            <a href="{{ grandchild.path }}"> {{ grandchild.title }}</a></a>
+          </blockquote>
+        {% endfor %}
       </p>
     {% endfor %}
-    {{ render_blog_sibling_nav(this) }}
+
     {% if this.pagination.pages > 1 %}
       <p>More blog posts</p>
       {{ render_pagination(this.pagination) }}
