@@ -1,4 +1,4 @@
-title: Content Format
+title: Lektor Tutorial - pt. 4
 ---
 body:
 
@@ -27,8 +27,8 @@ System fields appear with an underscore prefixed to the key name, such as in `co
 _model: blog
 ```
 ---
-position: 4
----
 author: Joseph Nix
 ---
 pub_date: 2017-04-26
+---
+subtitle: Content Format

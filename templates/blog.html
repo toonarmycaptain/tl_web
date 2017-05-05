@@ -7,20 +7,19 @@
 {% block content %}
   <div class="content_box">
     {{ this.body }}
-    {% for child in this.pagination.items.order_by('-pub_date', 'title') %}
+    {% for child in this.pagination.items.order_by('-pub_date', '-title') %}
       <p>
-        <a href="{{ child.path }}"> {{ child.title }}</a></a>
-        {# Now loop again if child is blog post series. #}
-        {% for grandchild in child.pagination.items %}
-          <blockquote>
-            <a href="{{ grandchild.path }}">{{ grandchild.title }}</a></a>
-          </blockquote>
-        {% endfor %}
+        <a href="{{ child.path }}">
+          {% if child.subtitle %}
+            {{ child.title }}: {{ child.subtitle }}
+          {% else %}
+            {{ child.title }}
+          {% endif %}
+        </a>
       </p>
     {% endfor %}
 
     {% if this.pagination.pages > 1 %}
-      <p>More blog posts</p>
       {{ render_pagination(this.pagination) }}
     {% endif %}
   </div>

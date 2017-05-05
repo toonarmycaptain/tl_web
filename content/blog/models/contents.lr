@@ -1,4 +1,4 @@
-title: Models
+title: Lektor Tutorial - pt. 2
 ---
 author: Joseph Nix
 ---
@@ -67,4 +67,4 @@ type = markdown
 ---
 pub_date: 2017-04-26
 ---
-position: 2
+subtitle: Models
