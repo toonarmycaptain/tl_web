@@ -1,0 +1,30 @@
+title: Lektor Tutorial - pt. 3
+---
+body:
+
+**One Folder — One Page**
+
+Each page (url) corresponds to one folder in `content/`. Child pages are nested. Each page has it's content stored in `contents.lr` and any attachments in the same folder. For example, in the Quickstart State, we have
+
+<pre><code>
+<span class="path">content/</span>
+  contents.lr
+  <span class="path">about/</span>
+    contents.lr
+  <span class="path">blog/</span>
+    contents.lr
+    <span class="path">first-post/</span>
+      contents.lr
+  <span class="path">projects/</span>
+    contents.lr
+</code></pre>
+
+Here, the `contents.lr` files will be rendered to the pages associated with their folders. `content/page/path/contents.lr` will be rendered to `/page/path/`. 
+
+Each content file is associated with a model and a template. Defaults are determined by Lektor, but can be specified in the CMS when creating the page if non-default models or templates are desired.
+---
+author: Joseph Nix
+---
+pub_date: 2017-04-26
+---
+subtitle: Contents

@@ -1,0 +1,70 @@
+title: Lektor Tutorial - pt. 2
+---
+author: Joseph Nix
+---
+body:
+
+Inside the `models/` directory we have ini files that define what sort of content can be set in the Lektor CMS (admin), and how that data will be stored in the `content/` directory. These are basic files just to get you started. For example, in `page.ini` a `body` field can be set to any `markdown`. `blog-post.ini` also has a markdown body field. To enable specific children of blog pages that are blog-posts, the model for `[children]` is set in `blog.ini`.
+<pre><code>
+<span class="host">dev@host</span>:<span class="path">~/projects/tutorial</span>$ cd models/
+blog.ini  blog-post.ini  page.ini
+<span class="host">dev@host</span>:<span class="path">~/projects/tutorial</span>$ cat page.ini
+[model]
+name = Page
+label = {{ this.title }}
+
+[fields.title]
+label = Title
+type = string
+
+[fields.body]
+label = Body
+type = markdown
+<span class="host">dev@host</span>:<span class="path">~/projects/tutorial</span>$ cat blog.ini
+[model]
+name = Blog
+label = Blog
+hidden = yes
+
+[children]
+model = blog-post
+order_by = -pub_date, title
+
+[pagination]
+enabled = yes
+per_page = 10
+<span class="host">dev@host</span>:<span class="path">~/projects/tutorial</span>$ cat blog-post.ini
+[model]
+name = Blog Post
+label = {{ this.title }}
+hidden = yes
+
+[fields.title]
+label = Title
+type = string
+size = large
+
+[fields.author]
+label = Author
+type = string
+width = 1/2
+
+[fields.twitter_handle]
+label = Twitter Handle
+type = string
+width = 1/4
+addon_label = @
+
+[fields.pub_date]
+label = Publication date
+type = date
+width = 1/4
+
+[fields.body]
+label = Body
+type = markdown
+</code></pre>
+---
+pub_date: 2017-04-26
+---
+subtitle: Models

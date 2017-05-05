@@ -1,69 +1,43 @@
-@top_tech_text: 124px;
-@middle_tech_text: 178px;
-@bottom_tech_text: 226px;
+@top_tech_text: 136px;
+@middle_tech_text: 190px;
+@bottom_tech_text: 240px;
 
-.tree_target {
-  position: absolute;
-  display: inline-block;
-  cursor: default;
-}
 .tree_box {
+  min-width: 300px;
   position: relative;
-  height: 256px;
-  width: 300px;
-  margin: 0 auto;
+  text-align: center;
 }
-.tech_box_common {
-  position: absolute;
-  height: 40px;
-  width: 140px;
+.tech_side_image {
+  min-width: 200px;
+  text-align: center;
 }
 #tree_django {
-  .tech_box_common;
+  position: absolute;
   top: @middle_tech_text;
-  left: -30px;
+  left: 20px;
 }
 #tree_jquery {
-  .tech_box_common;
+  position: absolute;
   top: @middle_tech_text;
-  left: 190px;
+  left: 240px;
 }
 #tree_python {
-  .tech_box_common;
+  position: absolute;
   top: @bottom_tech_text;
-  left: -60px;
+  left: -10px;
 }
 #tree_ubuntu {
-  .tech_box_common;
+  position: absolute;
   top: @top_tech_text;
-  left: 0px;
+  left: 50px;
 }
 #tree_mysql {
-  .tech_box_common;
+  position: absolute;
   top: @top_tech_text;
-  left: 160px;
+  left: 200px;
 }
 #tree_linux {
-  .tech_box_common;
+  position: absolute;
   top: @bottom_tech_text;
-  left: 220px;
-}
-.plus_and_equals_signs {
-  position: relative;
-  top: 85px;
-}
-.tech_side_image_common {
-  position: relative;
-  width: 192px;
-  top: 36px;
-  height: 128px;
-  margin: 0 auto;
-}
-#your_idea_image {
-  .tech_side_image_common;
-  background: url('/static/images/your_idea.png') no-repeat center;
-}
-#our_solution_image {
-  .tech_side_image_common;
-  background: url('/static/images/our_solution.png') no-repeat center;
+  left: 276px;
 }

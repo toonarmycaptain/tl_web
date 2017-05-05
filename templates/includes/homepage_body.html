@@ -1,12 +1,16 @@
 <div class="content_box">
-  <div class="row_text_common">{Your Idea}</div>
-  <div class="row_thirds">+</div>
-  <div id="tech_term" class="row_text_center">{Technology}</div>
-  <div class="row_thirds">=</div>
-  <div class="row_text_common">{Our solution}</div>
+  <div class="art-bar">
+    <div class="tech_side_image">{Your Idea}</div>
+    <div class="symbol">+</div>
+    <div class="tree_box">{Technology}</div>
+    <div class="symbol">=</div>
+    <div class="tech_side_image">{Our solution}</div>
+  </div>
 </div>
 <div class="content_box">
-  {% include "includes/homepage_art.html" %}
+  <div class="art-bar">
+    {% include "includes/homepage_art.html" %}
+  </div>
   <div class="testimonials">
     <a href="/testimonials/" id="testimonial_link">Testimonials</a>
     {% include "includes/homepage_testimonial.html" %}

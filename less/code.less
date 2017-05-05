@@ -1,0 +1,54 @@
+.code-highlights {
+  .tl-green {
+    color: @std_green;
+  }
+  .host {
+    color: #8ae234; // green
+  }
+  .path {
+    color: #729fcf; // blue
+  }
+  .quote {
+    color: #ff5f87; // pink
+  }
+  .method {
+    color: #af5f00; // orange
+  }
+  .protected {
+    font-weight: bold;
+    color: white;
+  }
+  .click-header {
+    color: #06989a; // teal
+  }
+  .click-subheader {
+    color: #c4a000; // burnt orange
+  }
+  .click-prompt {
+    color: #4e9a06; // forest green
+  }
+  .import {
+    color: #34e2e2; // light blue
+  }
+  .bold
+  {
+    font-weight: 600;
+  }
+}
+code {
+  .code-highlights;
+  padding: 1px 2px;
+  background: @dark_gray;
+  border: 1px solid;
+  border-color: @light_gray;
+  border-radius: 3px;
+  font: @std_font;
+  max-width: 100%;
+  overflow-x: auto;
+}
+pre {
+  code {
+    display: block;
+    padding: 5px 10px;
+  }
+}
