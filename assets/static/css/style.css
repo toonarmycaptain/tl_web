@@ -1,6 +1,12 @@
 html {
   padding: 0 8px;
 }
+footer {
+  display: block;
+  margin: 20px;
+  font-size: 10px;
+  text-align: right;
+}
 body {
   color: #C0C0C0;
   background-color: black;
