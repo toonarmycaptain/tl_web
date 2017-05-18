@@ -1,0 +1,59 @@
+title: Carcassonne Dice
+---
+author: Joseph Nix
+---
+body:
+
+My wife and I were playing the board game Carcassonne last night, or we were going to, but we got a little distracted. We often decide who goes first by rolling the little towns folk, as if they were normal dice. We always just used our intuition for how rare some landing was, and whoever got that, went first. It's normally obvious because (clearly) the most common position is simply laying down, like a farmer. We thought though, what if we both get something besides a piece that's laying down? Who wins then? Which is more rare? Laying down, standing up, on a head and and arm, or on a arm and a foot?
+
+But before we get to any good experimentation, we first need a 
+
+###Hypothesis ###
+
+Ranked from most common to least: laying down, head-arm, arm-foot, standing up. Clearly laying down is most common (duh.) I'm thinking head-arm has the widest angle that will settle on this position. Sure, landing straight on your head is unstable, but wobbling back and forth is fine. Standing and being on either side of head-arm seems less likely, and approximately as likely as each other. Except that arm-foot has two sides, so standing is probably the least likely. That's my guess. But to find out, we really
+
+NEED DATA!
+
+###Experimentation###
+
+So on we go seeking the truth. What is the relative rarity of these outcomes? Rolling one at a time is too tedious, so we put all the pieces in our hands, shake and count to three, and let them drop!
+
+<img src="roll dice.jpg" width="900px"/>
+
+What a beautiful spread! All that data! So we separate them into groups and count them, and repeat.
+
+<img src="spread.jpg" width="450px"/> <img src="spread2.jpg" width="450px"/>
+
+We were trying just a little to repeat the drops in the same way. It seemed that if you dropped a piece on this table from only a couple inches, they would bounce around quite a lot. This made us think we could drop them all together and they would bounce around enough that they wouldn't effectively interfere with each other. If they hit, so what? They'd bounce even more. We dropped them about as high as we could without them spilling off of the table, though that did happen occasionally. We counted those few anyway, since we have a tile floor. The drops ended up being from a height of about a half a foot.
+
+<img src="tallying.jpg" width="900px"/>
+
+We collected four rounds of data at first and added the results. We had a distinction, but the results were not clearly different enough. So we added a few more rounds just to be sure. Here are our awesome lab notes.
+
+<img src="roll count.jpg" width="900px"/>
+
+###Analysis###
+
+I'm going to hand wave a little and say our experimental procedure was flawless except for one error, which I can't hand wave away because it's documented in our notes. Look at those notes. There are 40 Carcassonne pieces: 8 per color and 5 colors. You can see right away that our total is odd. There is an extra mark in row three, which totals 41 pieces counted. Whoops. Well, everything else was perfect. Surely.
+
+Ignoring that little bit we find the following ranking:
+
+| **Type of Landing  ** | **Total** | **Percentage** |
+| ------------------ |:-------------:| -----:|
+| Laying Down       | 210     | 65% |
+| Head-Arm            | 56       | 17% |
+| Standing               | 35      | 11% |
+| Arm-Foot             | 20       | 6% |
+| All types               | 321     | 100%* |
+
+Yes, I know the percentages actually only add to 99. It just looks like that because these are rounded values. I only had two significant digits. I'm not going to just make up precision here.
+
+###Conclusion###
+
+Anyway... looks like my Hypothesis was wrong. Arm-foot wins. :/ Oh well, that's science!
+
+Now we know, and can maybe actually play Carcassonne next time we unbox it. Unless we find more science that needs done.
+
+<img src="ranking.jpg" width="600px"/> <img src="Christmas tree.jpg" width="300px"/>
+---
+pub_date: 2017-05-18
