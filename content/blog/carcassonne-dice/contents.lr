@@ -4,13 +4,13 @@ author: Joseph Nix
 ---
 body:
 
-My wife Becky and I were playing the board game Carcassonne last night, or we were going to, but we got a little distracted. We often decide who goes first by rolling the little towns folk, as if they were normal dice. We always just used our intuition for how rare some landing was, and whoever got that, went first. It's normally obvious because (clearly) the most common position is simply laying down, like a farmer. We thought though, what if we both get something besides a piece that's laying down? Who wins then? Which is more rare? Laying down, standing up, on a head and and arm, or on a arm and a foot?
+My wife Becky and I were playing the board game Carcassonne two nights ago, or we were going to, but we got a little distracted. We often decide who goes first by rolling the little towns folk, as if they were normal dice. We always just used our intuition for how rare some landing was, and whoever got that, went first. It's normally obvious because (clearly) the most common position is simply laying down, like a farmer. We thought though, what if we both get something besides a piece that's laying down? Who wins then? Which is more rare? Laying down, standing up, on a head and and arm, or on a arm and a foot?
 
-But before we get to any good experimentation, we first need a 
+But before we get to any good experimentation, we first need a ...
 
 ###Hypothesis ###
 
-Ranked from most common to least: laying down, head-arm, arm-foot, standing up. Clearly laying down is most common (duh.) I'm thinking head-arm has the widest angle that will settle on this position. Sure, landing straight on your head is unstable, but wobbling back and forth is fine. Standing and being on either side of head-arm seems less likely, and approximately as likely as each other. Except that arm-foot has two sides, so standing is probably the least likely. That's my guess. But to find out, we really
+Ranked from most common to least: laying down, head-arm, arm-foot, standing up. Clearly laying down is most common (duh.) I'm thinking head-arm has the widest angle that will settle on this position. Sure, landing straight on your head is unstable, but wobbling back and forth is fine. Standing and being on either side of head-arm seems less likely, and approximately as likely as each other. Except that arm-foot has two sides, so standing is probably the least likely. That's my guess. But to find out, we really ...
 
 NEED DATA!
 
@@ -56,4 +56,4 @@ Now we know, and can maybe actually play Carcassonne next time we unbox it. Unle
 
 <img src="ranking.jpg" width="600px"/> <img src="Christmas tree.jpg" width="300px"/>
 ---
-pub_date: 2017-05-18
+pub_date: 2017-05-19
