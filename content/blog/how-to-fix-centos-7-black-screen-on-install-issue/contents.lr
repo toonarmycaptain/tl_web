@@ -1,0 +1,21 @@
+title: How to Fix CentOS 7 Black Screen on Install Issue
+---
+body:
+
+A few weeks ago we installed CentOS 7 onto one of our custom-build/repurposed-pc servers. This particular server had a pretty high-end motherboard that was designed for gaming, so it did not have an onboard vga port.  We had an old budget gpu laying around so we put that in the server in order to connect to a monitor for the installation of CentOS. 
+
+During the installation of CentOS the computer would show initiation information for 1-2 seconds and then the screen would go black. At first we thought that maybe the USB drive we were installing the OS from might be bad so we reformatted the drive with the CentOS image and tried again. No luck.
+
+We tried installing Ubuntu 16.04 and Debian 8 from a USB drive and both of these os's installed fine. The next thing we tried was connecting the monitor to each of the 3 ports on the graphics card (2 dvi and 1 vga) during the centOS installation. Still no luck.
+
+We talked about the timing of when the CentOS installer cut to a black screen. Our guess was that the CentOS installation system was trying to upgrade its graphics driver settings and that these new settings did not work with the 4 year old low end graphics card. So we bought a more modern higher quality card. We wanted Nvidia on EVGA and we ended up getting a Low Profile EVGA GeForce GT 610 1024MB from Amazon for $35 (https://www.amazon.com/gp/product/B00847TOLC) installed it and that fixed the issues. CentOS installed fine.
+
+It turns out that the CentOS 7 installer needs to output pretty high resolution to the monitor so that it can render large PNG “ads” for related projects.  Ubuntu 16.04 and Debian 8 use low resolution installation systems that have no graphics at all. 
+
+Final notes:
+If you are installing Linux onto a server without onboard vga graphics, get a premium brand addon graphics card with well supported drivers. EVGA and Nvidia have always worked well for us in other situations and they worked here to, I recommend them. We also recommend trying to avoid motherboards without onboard vga graphics.
+
+---
+pub_date: 2017-05-18
+---
+author: Michael Verhulst
