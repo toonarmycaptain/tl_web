@@ -68,3 +68,7 @@ type = markdown
 pub_date: 2017-04-26
 ---
 subtitle: Models
+---
+meta_keywords: Lektor,CMS,static file generator,Framework,tutorial,models
+---
+meta_description: What Lektor Models look like and how to use them.

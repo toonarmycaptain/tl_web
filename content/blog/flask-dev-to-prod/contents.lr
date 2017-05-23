@@ -143,3 +143,7 @@ Done :)
 
 ---
 pub_date: 2017-03-30
+---
+meta_description: How to take a flask app that you can run locally on your laptop and move it to virtual machines on DigitalOcean and support hundreds of users.
+---
+meta_keywords: Flask,DevOps,DigitalOcean,Python,Vagrant,VirtualBox,tutorial,virtual environments,scale
