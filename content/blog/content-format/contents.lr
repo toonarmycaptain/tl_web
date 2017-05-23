@@ -32,3 +32,7 @@ author: Joseph Nix
 pub_date: 2017-04-26
 ---
 subtitle: Content Format
+---
+meta_keywords: Lektor,CMS,static file generator,Framework,tutorial,contents,content format
+---
+meta_description: Explanation of Lektor's content file format.

@@ -1,0 +1,24 @@
+title: Rambo: Making Virtual Machines on Any Provider
+---
+author: Joseph Nix
+---
+pub_date: 2017-05-23
+---
+body:
+
+Terminal Labs has some exciting news! We're open sourcing a project called <a href="https://bitbucket.org/terminal_labs/rambo" target="_blank">Rambo</a>.
+
+Rambo is a tool that allows you to simply provision new virtual machines on any provider and have them be nearly identical. To accomplish this Rambo makes heavy use of <a href="https://www.vagrantup.com/" target="_blank">Vagrant</a> and it's various plugins for different providers. This means that you can spin up a new local instance on VirtualBox with `vagrant up`, and another instance that is nearly identical on the cloud by passing in an argument for your cloud provider of choice, such as `vagrant --target=digitalocean up`.
+
+Why did we make Rambo? Rambo is something we found that we wanted for our own use. As a design philosophy, we really want to have development environments that are as similar as possible to production environments. This streamlines development, catches bugs, and helps smooth production releases. So to achieve this, we wanted to automate the provisioning of these environments. For this we used <a href="https://saltstack.com/" target="_blank">SaltStack</a>. Among other things, SaltStack is great for provisioning machines. With it, we can provision a local or remote instance pretty easily. But Salt can't do everything. For instance, you can't easily provision anything locally with SaltStack, without also using Vagrant. It also can't ensure that 'hardware' specifications of our virtual machines are the same. If your production environment will only have a 30 GB storage drive, do you really want to develop on a virtual machine that thinks it has your whole workstation drive to work with?
+
+We started as most projects by working with a standard Vagrant-provided VirtualBox instance. Then we worked toward provisioning this with Salt. Moving a little closer to a production-like environment, we added a Vagrant plugin to `vagrant up` a cloud instance, still using with the same Salt provisioner. At this point we can make two masterless Salt minions with Vagrant, in two different places, that are nearly identical. Since SaltStack is also a great orchestration tool, much of this Salt code can be reused to create many minions under a Salt master with a slightly different set up. This makes Rambo a great launching point for many projects and web apps.
+
+We understand however that people want a little choice. Indeed, we didn't want to lock ourselves in to specific providers. So, we have included code to allow you to spin up with four different providers; two local, and two on the cloud: <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a>, <a href="https://help.ubuntu.com/lts/serverguide/lxc.html" target="_blank">LXC</a>, <a href="https://www.digitalocean.com/" target="_blank">DigitalOcean</a>, and <a href="https://aws.amazon.com/ec2/" target="_blank">AWS EC2</a>. Of course, we'll add more as we can.
+
+Why is this useful? Rambo is useful to get your project up and running faster, and in a way you can hopefully use later without much refactoring. With Rambo, you get a virtual machine you can use and test locally or remotely, and can pretty easily get to work with just about any provisioner; SaltStack, out of the box.
+
+---
+meta_keywords: Rambo,Vagrant,SaltStack,DevOps,virtual machine,cloud,AWS,DigitalOcean,LXC,VirtualBox
+---
+meta_description: Rambo: using Vagrant & SaltStack to easily create the same virtual machines locally and on the cloud.

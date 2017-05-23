@@ -18,19 +18,19 @@ NEED DATA!
 
 So on we go seeking the truth. What is the relative rarity of these outcomes? Rolling one at a time is too tedious, so we put all the pieces in our hands, shake and count to three, and let them drop!
 
-<img src="roll dice.jpg" width="900px"/>
+<img src="roll dice.jpg" width="900px" alt="Carcassonne pieces rolled"/>
 
 What a beautiful spread! All that data! So we separate them into groups and count them, and repeat.
 
-<img src="spread.jpg" width="450px"/> <img src="spread2.jpg" width="450px"/>
+<img src="spread.jpg" width="450px" alt="Carcassonne piecesgrouped"/> <img src="spread2.jpg" width="450px" alt="Carcassonne pieces grouped"/>
 
 We were trying just a little to repeat the drops in the same way. It seemed that if you dropped a piece on this table from only a couple inches, they would bounce around quite a lot. This made us think we could drop them all together and they would bounce around enough that they wouldn't effectively interfere with each other. If they hit, so what? They'd bounce even more. We dropped them about as high as we could without them spilling off of the table, though that did happen occasionally. We counted those few anyway, since we have a tile floor. The drops ended up being from a height of about a half a foot.
 
-<img src="tallying.jpg" width="900px"/>
+<img src="tallying.jpg" width="900px" alt="Carcassonne pieces counted"/>
 
 We collected four rounds of data at first and added the results. We had a distinction, but the results were not clearly different enough. So we added a few more rounds just to be sure. Here are our awesome lab notes.
 
-<img src="roll count.jpg" width="900px"/>
+<img src="roll count.jpg" width="900px" alt="Carcassonne pieces tallied"/>
 
 ###Analysis###
 
@@ -54,6 +54,10 @@ Anyway... looks like my Hypothesis was wrong. Arm-foot wins. :/ Oh well, that's 
 
 Now we know, and can maybe actually play Carcassonne next time we unbox it. Unless we find more science that needs done.
 
-<img src="ranking.jpg" width="600px"/> <img src="Christmas tree.jpg" width="300px"/>
+<img src="ranking.jpg" width="600px" alt="Carcassonne pieces positions"/> <img src="Christmas tree.jpg" width="300px" alt="Carcassonne pieces Christmas tree"/>
 ---
 pub_date: 2017-05-19
+---
+meta_description: How should you decide who goes first in Carcassonne? Roll the pieces!
+---
+meta_keywords: Carcassonne,dice,board games,experimentation,science,statistics
