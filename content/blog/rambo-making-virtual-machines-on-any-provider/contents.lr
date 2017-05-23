@@ -1,6 +1,6 @@
 title: Rambo: Making Virtual Machines on Any Provider
 ---
-author: Joseph
+author: Joseph Nix
 ---
 pub_date: 2017-05-23
 ---
@@ -18,3 +18,7 @@ We understand however that people want a little choice. Indeed, we didn't want t
 
 Why is this useful? Rambo is useful to get your project up and running faster, and in a way you can hopefully use later without much refactoring. With Rambo, you get a virtual machine you can use and test locally or remotely, and can pretty easily get to work with just about any provisioner; SaltStack, out of the box.
 
+---
+meta_keywords: Rambo,Vagrant,SaltStack,virtual machine,cloud,AWS,DigitalOcean,LXC,VirtualBox
+---
+meta_description: Rambo: using Vagrant & SaltStack to easily create the same virtual machines locally and on the cloud.

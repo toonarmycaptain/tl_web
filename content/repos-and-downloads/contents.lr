@@ -10,39 +10,41 @@ _slug: repos_and_downloads
 ---
 body:
 
-Testimonials:
+#### Testimonials:
 * <a href="/testimonials/">https://terminallabs.com/testimonials/</a>
 
-Repos:
+#### Repos:
 
 * <a href="https://bitbucket.org/terminal_labs" target="_blank">https://bitbucket.org/terminal_labs</a>
 * <a href="https://github.com/terminal-labs" target="_blank">https://github.com/terminal-labs</a>
 * <a href="https://www.behance.net/terminal_labs" target="_blank">https://www.behance.net/terminal_labs</a>
 
-Gists:
+#### Gists:
 
 * <a class="external" title="Webpage download speed tester" href="https://gist.github.com/nixjdm/190eee9ccd7b25c9b433" target="_blank">https://gist.github.com/nixjdm/190eee9ccd7b25c9b433</a>
 
-Curricula Vitae:
+#### Curricula Vitae:
 
 * <a href="https://dclbdhr5sfbt6.cloudfront.net/JosephNixCV.pdf" target="_blank">Joseph Nix</a>
 * <a href="https://dclbdhr5sfbt6.cloudfront.net/ChrisSmithCV.pdf" target="_blank">Chris Smith</a>
 * <a href="https://dclbdhr5sfbt6.cloudfront.net/MichaelVerhulstCV.pdf" target="_blank">Michael Verhulst</a>
 
-Presentations:
+#### Presentations:
 
 * Lektor: What, Why, and How? <a href="https://goo.gl/5gT4xI" target="_blank">Slideshow</a>, <a href="https://www.youtube.com/watch?v=N2cJ7Y31gnc&t=14s" target="_blank">video presentation</a>, & [blog](/blog/lektor-tutorial/).
 * <a href="http://goo.gl/6xCEbn" target="_blank">Dev to Prod</a>
 * <a href="http://goo.gl/XqpwLe" target="_blank">What is full-stack</a>
 
-Downloads:
+#### Downloads:
 
 * <a href="https://dclbdhr5sfbt6.cloudfront.net/terminal_labs_dossier.pdf" target="_blank">Terminal_Labs_Dossier.pdf</a>
 * <a href="https://dclbdhr5sfbt6.cloudfront.net/python_brochure.pdf" target="_blank">Python_Brochure.pdf</a>
 
-LinkedIn:
+#### LinkedIn:
 
 * <a href="https://www.linkedin.com/in/josephnix" target="_blank">Joseph Nix's profile</a>
 * <a href="https://www.linkedin.com/pub/christopher-smith/8/785/81b" target="_blank">Christopher Smith's profile</a>
 * <a href="https://www.linkedin.com/in/mikeverhulst" target="_blank">Michael Verhulst's profile</a>
 
+---
+meta_keywords: Repos,Repository,Downloads,Testimonials,Bitbucket,Github,Gist,LinkedIn,Resume,CV,Curricula Vitae
