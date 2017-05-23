@@ -1,7 +1,14 @@
 [project]
 name = tl_lektor
-url = http://local.terminallabs.com:5000
+url = https://terminallabs.com
 url_style = external
 
 [packages]
 lektor-htmlmin = 1.0
+lektor-s3 = 0.4.0
+
+[servers.s3]
+name = S3
+enabled = yes
+target = s3://terminallabs.com
+cloudfront = E2NMU6DL3M256M
