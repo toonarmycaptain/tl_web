@@ -2,4 +2,4 @@ dist
 build
 *.pyc
 *.pyo
-*.egg-info
+*.egg-info/
