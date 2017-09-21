@@ -4,7 +4,7 @@ url = https://terminallabs.com
 url_style = external
 
 [packages]
-lektor-htmlmin = 1.0
+lektor-htmlmin = 1.0.2
 lektor-s3 = 0.4.0
 
 [servers.s3]
