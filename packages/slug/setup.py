@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='lektor-slug',
-    version='0.1',
+    version='0.1.1',
     author=u'Michael Verhulst',
     author_email='michael@terminallabs.com',
     license='MIT',
@@ -12,5 +12,7 @@ setup(
             'slug = lektor_slug:SlugPlugin',
         ]
     },
-    install_requires=['slugify']
+    install_requires=[
+        'python-slugify',
+    ]
 )
