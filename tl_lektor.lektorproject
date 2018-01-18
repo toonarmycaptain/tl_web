@@ -5,7 +5,8 @@ url_style = external
 
 [packages]
 lektor-htmlmin = 1.0.2
-lektor-s3 = 0.4.0
+#using lektor-s3 from a submodule until they release a new version
+#lektor-s3 = 0.4.0
 
 [servers.s3]
 name = S3

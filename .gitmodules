@@ -1,0 +1,3 @@
+[submodule "packages/lektor-s3"]
+	path = packages/lektor-s3
+	url = git@github.com:spenczar/lektor-s3.git
