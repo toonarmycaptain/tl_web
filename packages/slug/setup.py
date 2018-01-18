@@ -3,8 +3,8 @@ from setuptools import setup
 setup(
     name='lektor-slug',
     version='0.1.1',
-    author=u'Michael Verhulst',
-    author_email='michael@terminallabs.com',
+    author=u'Terminal Labs',
+    author_email='solutions@terminallabs.com',
     license='MIT',
     py_modules=['lektor_slug'],
     entry_points={
