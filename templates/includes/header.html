@@ -10,7 +10,7 @@
   <link rel="icon" href="{{ '/static/images/favicons/favicon.png'|asseturl }}">
 
   <meta charset="UTF-8">
-  <meta name="description" content="{{ this.meta_description or this.body|cleanhtml|sentence or this._slug }}">
+  <meta name="description" content="{{ this.meta_description or this.body|removehtml|firstsentence or this._slug }}">
   <meta name="keywords" content="{% block keywords %}{{ this.meta_keywords }}{% endblock %}">
   <link rel="stylesheet" href="{{ '/static/css/style.css'|asseturl }}" type="text/css" media="all">
   {% block header_scripts %}
