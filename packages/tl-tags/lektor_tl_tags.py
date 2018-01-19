@@ -3,25 +3,15 @@ import re
 
 from lektor.pluginsystem import Plugin
 
-from nltk import tokenize
-
 class TlTagsPlugin(Plugin):
     name = 'TL Tags'
-    description = u'Add your description here.'
+    description = u'Some template tags made by Terminal Labs.'
 
     def on_setup_env(self, **extra):
-        def sentence_filter(txt):
-            '''Accept html and return the first sentence only.
+        def removehtml_filter(raw_html):
+            '''Accept string and return with html tags removed.
             '''
-            try:
-                rv = tokenize.punkt.PunktSentenceTokenizer().sentences_from_text(txt)[0]
-            except IndexError: # txt is empty
-                rv = ''
+            r = re.compile('<.*?>')
+            rv = re.sub(r, '', str(raw_html))
             return rv
-        self.env.jinja_env.filters['sentence'] = sentence_filter
-
-        def cleanhtml_filter(raw_html):
-            cleanr = re.compile('<.*?>')
-            cleantext = re.sub(cleanr, '', str(raw_html))
-            return cleantext
-        self.env.jinja_env.filters['cleanhtml'] = cleanhtml_filter
+        self.env.jinja_env.filters['removehtml'] = removehtml_filter
