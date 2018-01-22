@@ -11,9 +11,5 @@ setup(
         'lektor.plugins': [
             'tl-tags = lektor_tl_tags:TlTagsPlugin',
         ]
-    },
-    install_requires=[
-        'nltk',
-    ]
-
+    }
 )

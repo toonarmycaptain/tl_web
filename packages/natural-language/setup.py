@@ -11,5 +11,9 @@ setup(
         'lektor.plugins': [
             'natural-language = lektor_natural_language:NaturalLanguagePlugin',
         ]
-    }
+    },
+    install_requires=[
+        'nltk',
+        'rake-nltk'
+    ]
 )
