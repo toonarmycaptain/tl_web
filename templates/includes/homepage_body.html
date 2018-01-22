@@ -11,6 +11,11 @@
   <div class="art-bar">
     {% include "includes/homepage_art.html" %}
   </div>
+
+  {% block body_content %}
+    {{ this.body }}
+  {% endblock body_content %}
+
   <div class="testimonials">
     <a href="/testimonials/" id="testimonial_link">Testimonials</a>
     {% include "includes/homepage_testimonial.html" %}
