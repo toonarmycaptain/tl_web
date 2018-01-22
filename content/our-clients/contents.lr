@@ -160,6 +160,20 @@ image: cox_statesman.png
 title: 
 -----
 caption: 
+#### subnav-item-title ####
+title: White Label
+----
+body:
+
+<div style="background-color: white; width: 600px;height: 152px; border-radius: 10px; border-style: solid; border-width: 2px; font-size: 75px; text-align: center; margin: 0 auto 50px;">
+      <span style="position: relative; top: 38px;">White Label</span>
+</div>
+
+Sometimes our clients wish us to work on their behalf under their brand - White Labeling. This may simply mean <span style="white-space: nowrap;">work-for-hire,</span> where we help build their product, or it may mean we represent their company as a part of staff augmentation. This often allows greater efficiency and effectiveness when talking to vendors or customers. We also respect our client's privacy wishes.
+
+We can literally be a part of your team.
+----
+images: 
 ---
 _template: clients.html
 ---
