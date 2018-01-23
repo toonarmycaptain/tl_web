@@ -11,7 +11,7 @@ SubNav:
 #### subnav-item ####
 body:
 
-Django is a high-level Python Web framework.
+[Django](https://www.djangoproject.com/) is a high-level Python Web framework.
 
 We use it to create feature-rich web apps for clients.
 ----
@@ -26,7 +26,7 @@ caption:
 #### subnav-item ####
 body:
 
-Debian is a free operating system (OS) for your computer.
+[Debian](https://www.debian.org/) is a free operating system (OS) for your computer.
 
 We run Debian on many of our servers. It is well supported and stable.
 ----
@@ -41,9 +41,9 @@ caption:
 #### subnav-item ####
 body:
 
-jQuery is a fast, small, and feature-rich JavaScript library. 
+[jQuery](https://jquery.com/) is a fast, small, and feature-rich JavaScript library. 
 
-We use this in all our web-based projects. It makes development much faster.
+We use this in many of our web-based projects. It makes development much faster.
 ----
 images:
 
@@ -56,7 +56,7 @@ caption:
 #### subnav-item ####
 body:
 
-PySide project provides LGPL-licensed Python bindings for the Qt.
+[PySide](https://wiki.qt.io/PySide) project provides LGPL-licensed Python bindings for the Qt.
 
 We use this toolkit to create cross-platform desktop applications in Python.
 ----
@@ -71,14 +71,14 @@ caption:
 #### subnav-item ####
 body:
 
-Mercurial is a distributed version control system. It is written in Python.
+[Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
-We use this to keep track of, log, and share our code
+Git is the industry standard. We use this to keep track of, log, and share our code.
 ----
 images:
 
 ##### select-image #####
-image: mercurial_logo_75x75.png
+image: git-icon-white.png
 -----
 title: 
 -----
@@ -86,7 +86,7 @@ caption:
 #### subnav-item ####
 body:
 
-Python is a programming language that lets you work quickly and effectively.
+[Python](https://www.python.org/) is a programming language that lets you work quickly and effectively.
 
 While creating solutions, we use Python as much as we can.
 ----
@@ -101,7 +101,7 @@ caption:
 #### subnav-item ####
 body:
 
-Nginx is a free, open-source, high-performance HTTP server and reverse proxy.
+[Nginx](https://www.nginx.com/) is a free, open-source, high-performance HTTP server and reverse proxy.
 
 Nginx is a core part of most of our full-stack solutions.
 ----
@@ -114,11 +114,7 @@ title:
 -----
 caption: 
 #### subnav-item ####
-body:
-
-Ubuntu is the most popular desktop Linux distribution.
-
-We use Ubuntu (and its descendant Mint) on our personal workstations.
+body: [Ubuntu](https://www.ubuntu.com/) is one of the most popular desktop and server Linux distributions.
 ----
 images:
 
@@ -131,7 +127,7 @@ caption:
 #### subnav-item ####
 body:
 
-Lighttpd is a web server designed for high performance environments.
+[Lighttpd](https://www.lighttpd.net/) is a web server designed for high performance environments.
 
 We have worked with Lighttpd for load balancing and serving static files.
 ----
@@ -148,7 +144,7 @@ body:
 
 The world's most popular open source database.
 
-MySQL has good performance and is well supported, we use it in many of our projects.
+[MySQL](https://www.mysql.com/) has good performance and is well supported, we use it in many of our projects.
 ----
 images:
 
@@ -161,7 +157,7 @@ caption:
 #### subnav-item ####
 body:
 
-Tornado is a high performance web server and application framework.
+[Tornado](http://www.tornadoweb.org/en/stable/) is a high performance web server and application framework.
 
 With Python Tornado, we have created complex, high performance web apps.
 ----
@@ -174,7 +170,7 @@ title:
 -----
 caption: 
 #### subnav-item ####
-body: Flask-SQLAlchemy is an extension for Flask that adds support for SQLAlchemy to your application.  It aims to simplify using SQLAlchemy with Flask by providing useful defaults and extra helpers that make it easier to accomplish common tasks.
+body: [Flask-SQLAlchemy](http://flask-sqlalchemy.pocoo.org/2.3/) is an extension for Flask that adds support for SQLAlchemy to your application.  It aims to simplify using SQLAlchemy with Flask by providing useful defaults and extra helpers that make it easier to accomplish common tasks.
 ----
 images:
 
@@ -187,7 +183,7 @@ caption:
 #### subnav-item ####
 body:
 
-PostgreSQL is a database server. 
+[PostgreSQL](https://www.postgresql.org/) is a database server. 
 
 PostgreSQL is a stable and reliable system. In fact, we are using it to support this website.
 ----
@@ -200,7 +196,7 @@ title:
 -----
 caption: 
 #### subnav-item ####
-body: Lektor. A flexible and powerful static content management system for building complex and beautiful websites out of flat files — for people who do not want to make a compromise between a CMS and a static blog engine.
+body: [Lektor](https://www.getlektor.com/) is a flexible and powerful static content management system for building complex and beautiful websites out of flat files — for people who do not want to make a compromise between a CMS and a static blog engine.
 ----
 images:
 
@@ -213,9 +209,9 @@ caption:
 #### subnav-item ####
 body:
 
-Virtualbox is a virtualization software package for x86 and AMD64/Intel64-based computers.
+[Virtualbox](https://www.virtualbox.org/) is a virtualization software package for x86 and AMD64/Intel64-based computers.
 
-We use Virtualbox for development every day.
+We use Virtualbox for development every day. It is an integral part of our open source tool [Rambo](https://github.com/terminal-labs/rambo).
 ----
 images:
 
@@ -228,7 +224,7 @@ caption:
 #### subnav-item ####
 body:
 
-SQLite is a relational database management system. 
+[SQLite](https://sqlite.org/) is a relational database management system. 
 
 It is small, lightweight, and great for storing data in desktop applications.
 ----
@@ -243,7 +239,7 @@ caption:
 #### subnav-item ####
 body:
 
-Flask is a lightweight web application framework written in Python. 
+[Flask](http://flask.pocoo.org/) is a lightweight web application framework written in Python. 
 
 We use it to create feature-rich web apps for clients.
 ----
@@ -258,7 +254,7 @@ caption:
 #### subnav-item ####
 body:
 
-Javascript is a dynamic computer programming language. 
+[Javascript](https://www.javascript.com/) is a dynamic computer programming language. 
 
 Javascript allows us to create interactive web apps.
 ----
@@ -273,7 +269,8 @@ caption:
 #### subnav-item ####
 body:
 
-HTML5 is a markup language used for structuring and presenting content for the WorldWide Web and a core technology of the Internet. 
+[HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) is a markup language used for structuring and presenting content for the WorldWide Web and a core technology of the Internet. 
+
 We use HTML5 extensively in our web-based projects.
 ----
 images:
@@ -287,7 +284,8 @@ caption:
 #### subnav-item ####
 body:
 
-CSS3 is a style sheet language used for describing the look and formatting of a document written in a markup language.
+[CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) is a style sheet language used for describing the look and formatting of a document written in a markup language.
+
 We use CSS3 to create the core look and feel of our web-based projects.
 ----
 images:
