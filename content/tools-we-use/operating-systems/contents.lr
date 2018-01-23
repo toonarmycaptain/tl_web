@@ -7,7 +7,7 @@ SubNav:
 #### subnav-item ####
 body:
 
-Debian is a computer operating system composed of software packages released as free and open source software primarily under the GNU General Public License along with other free software licenses. Debian GNU/Linux, which includes the GNU OS tools and Linux kernel, is a popular and influential GNU/Linux distribution. Debian is unique in its trifecta support for the Linux, FreeBSD, and Hurd kernels. It is distributed with access to repositories containing thousands of software packages ready for installation and use. 
+[Debian](http://www.debian.org/) is a computer operating system composed of software packages released as free and open source software primarily under the GNU General Public License along with other free software licenses. Debian GNU/Linux, which includes the GNU OS tools and Linux kernel, is a popular and influential GNU/Linux distribution. Debian is unique in its trifecta support for the Linux, FreeBSD, and Hurd kernels. It is distributed with access to repositories containing thousands of software packages ready for installation and use. 
 Debian is known for relatively strict adherence to the philosophies of Unix and free software as well as using collaborative software development and testing processes. Debian can be used on a variety of hardware, from laptops and desktops to NAS devices, phones, and servers. It focuses on stability and security and is used as a base for many other distributions.
 ----
 images:
@@ -21,7 +21,7 @@ caption: http://www.debian.org/
 #### subnav-item ####
 body:
 
-Ubuntu is the world's favourite free operating system, with more than 20 million people preferring it to commercial alternatives. 
+[Ubuntu](https://www.ubuntu.com/) is the world's favourite free operating system, with more than 20 million people preferring it to commercial alternatives. 
 
 Fast, free and incredibly easy to use, the Ubuntu operating system powers millions of desktop PCs, laptops and servers around the world. Ubuntu will work with your existing PC files, printers, cameras, music players and smartphones - and it comes with thousands of free apps.
 ----
@@ -34,7 +34,7 @@ title:
 -----
 caption: https://www.ubuntu.com/
 #### subnav-item ####
-body: FreeBSD is an advanced computer operating system used to power modern servers, desktops and embedded platforms. A large community has continually developed it for more than thirty years. Its advanced networking, security and storage features have made FreeBSD the platform of choice for many of the busiest web sites and most pervasive embedded networking and storage devices.
+body: [FreeBSD](https://www.freebsd.org/) is an advanced computer operating system used to power modern servers, desktops and embedded platforms. A large community has continually developed it for more than thirty years. Its advanced networking, security and storage features have made FreeBSD the platform of choice for many of the busiest web sites and most pervasive embedded networking and storage devices.
 ----
 images:
 

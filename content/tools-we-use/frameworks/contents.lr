@@ -5,7 +5,7 @@ title: Frameworks
 SubNav:
 
 #### subnav-item ####
-body: Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+body: [Django](https://www.djangoproject.com/) is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
 ----
 images:
 
@@ -16,7 +16,28 @@ title:
 -----
 caption: https://www.djangoproject.com/
 #### subnav-item ####
-body: The PySide project provides LGPL-licensed Python bindings for the Qt cross-platform application and UI framework, as well as a complete toolchain for rapidly generating bindings for any Qt-based C++ class hierarchies.
+body:
+
+[Lektor](https://www.getlektor.com/) is a flexible and powerful static content management system for building complex and beautiful websites out of flat files — for people who do not want to make a compromise between a CMS and a static blog engine.
+
+Lektor learned from the huge range of static file generators like Jekyll, Pelican, Hugo, Middleman and many more about the value of generating a completely static website. This means that unlike WordPress or similar solutions it does not run on a server, but your local computer (or a build server), and generates static HTML that can be uploaded to any web server or content distribution platform like S3 with CloudFront.
+
+Lektor takes from content management systems like WordPress and provides a flexible browser-based admin interface from which you can edit your website's contents. Unlike traditional CMS solutions, however, it runs entirely on your own computer.
+
+Lastly, Lektor learns from experience in writing web frameworks. Lektor is much more than a website generator because it is based on a very flexible internal flat file database which can be used to model any website content. Unlike static blog generators which are based on some markdown content and “front matter” metadata Lektor's content is 100% configurable.
+
+If you have ever used a web framework like Django or Ruby on Rails you might feel right at home in how you can model and query your data.
+----
+images:
+
+##### select-image #####
+image: lektor-logo.png
+-----
+title: 
+-----
+caption: https://www.getlektor.com/
+#### subnav-item ####
+body: The [PySide](https://wiki.qt.io/PySide) project provides LGPL-licensed Python bindings for the Qt. It also includes complete toolchain for rapidly generating bindings for any Qt-based C++ class hierarchies. PySide Qt bindings allow both free open source and proprietary software development and ultimately aim to support Qt platforms.
 ----
 images:
 
@@ -27,7 +48,7 @@ title:
 -----
 caption: http://wiki.qt.io/PySide
 #### subnav-item ####
-body: jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.
+body: [jQuery](https://jquery.com/) is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
 ----
 images:
 
