@@ -157,7 +157,7 @@ body {
 }
 .slide {
   position: relative;
-  height: 75px;
+  min-height: 75px;
   width: 786px;
   float: left;
   margin-left: 67px;
