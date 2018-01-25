@@ -18,6 +18,21 @@ caption: https://www.djangoproject.com/
 #### subnav-item ####
 body:
 
+[Flask](http://flask.pocoo.org/) is a micro web framework written in Python and based on the Werkzeug toolkit and Jinja2 template engine.
+
+Flask is called a micro framework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions. However, Flask supports extensions that can add application features as if they were implemented in Flask itself. Extensions exist for object-relational mappers, form validation, upload handling, various open authentication technologies and several common framework related tools. Extensions are updated far more regularly than the core Flask program.
+----
+images:
+
+##### select-image #####
+image: flask.png
+-----
+title: 
+-----
+caption: 
+#### subnav-item ####
+body:
+
 [Lektor](https://www.getlektor.com/) is a flexible and powerful static content management system for building complex and beautiful websites out of flat files — for people who do not want to make a compromise between a CMS and a static blog engine.
 
 Lektor learned from the huge range of static file generators like Jekyll, Pelican, Hugo, Middleman and many more about the value of generating a completely static website. This means that unlike WordPress or similar solutions it does not run on a server, but your local computer (or a build server), and generates static HTML that can be uploaded to any web server or content distribution platform like S3 with CloudFront.
@@ -37,17 +52,6 @@ title:
 -----
 caption: https://www.getlektor.com/
 #### subnav-item ####
-body: The [PySide](https://wiki.qt.io/PySide) project provides LGPL-licensed Python bindings for the Qt. It also includes complete toolchain for rapidly generating bindings for any Qt-based C++ class hierarchies. PySide Qt bindings allow both free open source and proprietary software development and ultimately aim to support Qt platforms.
-----
-images:
-
-##### select-image #####
-image: pyside_logo_200x200.png
------
-title: 
------
-caption: http://wiki.qt.io/PySide
-#### subnav-item ####
 body: [jQuery](https://jquery.com/) is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
 ----
 images:
@@ -58,6 +62,32 @@ image: jquery_logo_200x200.png
 title: 
 -----
 caption: http://jquery.com/
+#### subnav-item ####
+body:
+
+[React](https://reactjs.org/) is a JavaScript library for building user interfaces.
+
+React allows developers to create large web-applications that use data and can change over time without reloading the page. It aims primarily to provide speed, simplicity, and scalability. React processes only user interfaces in applications. This corresponds to View in the Model-View-Controller (MVC) pattern, and can be used in combination with other JavaScript libraries or frameworks in MVC, such as AngularJS.
+----
+images:
+
+##### select-image #####
+image: react.png
+-----
+title: 
+-----
+caption: https://reactjs.org/
+#### subnav-item ####
+body: The [PySide](https://wiki.qt.io/PySide) project provides LGPL-licensed Python bindings for the Qt. It also includes complete toolchain for rapidly generating bindings for any Qt-based C++ class hierarchies. PySide Qt bindings allow both free open source and proprietary software development and ultimately aim to support Qt platforms.
+----
+images:
+
+##### select-image #####
+image: pyside_logo_200x200.png
+-----
+title: 
+-----
+caption: http://wiki.qt.io/PySide
 ---
 _template: content_rows.html
 ---
