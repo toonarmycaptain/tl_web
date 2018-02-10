@@ -8,4 +8,4 @@ body:
 
 This page does not exist. Did you have a typo in the address or copy it incorrectly? 
 ---
-_template: standard.html
+_template: flat.html
