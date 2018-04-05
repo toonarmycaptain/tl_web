@@ -8,7 +8,7 @@ class NaturalLanguagePlugin(Plugin):
     name = 'Natural Language'
     description = u'Template filters to do a little language processing with nltk.'
 
-    def on_setup_env(self, **extra) :
+    def on_setup_env(self, **extra):
         def sentences_filter(txt):
             '''Accept a string of text and return a list of sentences in that text.
             '''
