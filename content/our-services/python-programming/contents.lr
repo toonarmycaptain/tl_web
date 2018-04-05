@@ -2,7 +2,7 @@ _model: page
 ---
 title: Python Programming
 ---
-_template: standard.html
+_template: with_subnav.html
 ---
 body:
 

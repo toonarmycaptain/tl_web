@@ -11,6 +11,11 @@
       {% if this._path == '/' %} {# display homepage art #}
         {% include "includes/homepage_body.html" %}
       {% endif %}
+      <div class="content_box">
+        {% block body_content %}
+          {{ this.body }}
+        {% endblock body_content %}
+      </div>
     {% endblock content %}
   </body>
   {% include "includes/footer.html" %}

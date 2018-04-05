@@ -10,6 +10,6 @@ Our skills can be enlisted to manage and maintain the servers no matter their ph
 ---
 position: 4
 ---
-_template: standard.html
+_template: with_subnav.html
 ---
 page_thumb: our-services-server-administration.png

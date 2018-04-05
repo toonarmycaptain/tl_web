@@ -2,7 +2,7 @@ _model: page
 ---
 title: Who We Are
 ---
-_template: standard.html
+_template: with_subnav.html
 ---
 body: We are Terminal Labs.  Founded in 2007, we strive to create, through the usage of modern, open-source technologies,  solutions to complex and challenging problems.
 ---

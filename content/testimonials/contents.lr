@@ -2,8 +2,6 @@ _model: page
 ---
 title: Testimonials
 ---
-_template: flat.html
----
 body:
 
 <div style="font-size: 20px; text-align: center;">Testimonials</div>

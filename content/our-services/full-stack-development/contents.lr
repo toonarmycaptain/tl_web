@@ -2,7 +2,7 @@ _model: page
 ---
 title: Full-Stack Development
 ---
-_template: standard.html
+_template: with_subnav.html
 ---
 body:
 
