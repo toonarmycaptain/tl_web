@@ -172,6 +172,22 @@ a img {
 .hide {
   display: none;
 }
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.flex-ends {
+  width: 150px;
+}
+.careers {
+  text-align: center;
+}
+.left {
+  margin-right: auto;
+}
+.right {
+  margin-left: auto;
+}
 .code-highlights .tl-green {
   color: #2f9a41;
 }
