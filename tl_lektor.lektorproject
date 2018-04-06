@@ -9,6 +9,7 @@ url_style = external
 lektor-htmlmin = 1.0.2
 lektor-s3 = 0.5.0
 lektor-disqus-comments = 0.2
+lektor-natural-language = 0.1
 
 [servers.s3]
 name = S3
