@@ -3,9 +3,9 @@ import re
 
 from lektor.pluginsystem import Plugin
 
-class TlTagsPlugin(Plugin):
-    name = 'TL Tags'
-    description = u'Some template tags made by Terminal Labs.'
+class StripHTMLTagsPlugin(Plugin):
+    name = 'Strip HTML Tags'
+    description = u'Strip HTML tags, effectively turning HTML into plain text.'
 
     def on_setup_env(self, **extra):
         def striphtmltags_filter(raw_html):
