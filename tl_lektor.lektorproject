@@ -12,7 +12,7 @@ lektor-disqus-comments = 0.2
 # Our plugins, yay!
 lektor-natural-language = 0.1
 lektor-strip-html-tags = 0.1
-lektor-jinja-content = 0.1
+lektor-jinja-content = 0.2
 lektor-slugify = 0.2
 
 [servers.s3]

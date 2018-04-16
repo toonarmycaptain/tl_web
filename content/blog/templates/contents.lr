@@ -4,7 +4,7 @@ author: Joseph Nix
 ---
 body:
 
-To generator pages into HTML, Lektor uses the Jinja2 templating language as well as Lektor's Template API. All templates are stored in `templates/` and typically carry the .html extension. By convention, the template matches the model name. For example, the templates `blog.html` and `page.html` match the `blog` and `page` models, respectively.
+{% raw %}To generate pages into HTML, Lektor uses the Jinja2 templating language as well as Lektor's Template API. All templates are stored in `templates/` and typically carry the .html extension. By convention, the template matches the model name. For example, the templates `blog.html` and `page.html` match the `blog` and `page` models, respectively.
 
 This can be customized by setting a specific template for a page in the CMS. Templates can also be made to break up sections of template code and make it more flexible, by extending or including files, and by using macros. For instance, in the Quickstart state, `blog-post.html` extends the `layout.html` file, and imports code from `macros/blog.html`. `blog-post.html` includes starts out as the following:
 
@@ -51,7 +51,7 @@ This can be customized by setting a specific template for a page in the CMS. Tem
 </body>
 ```
 
-You now have a basic exposure to Lektor! For more info please visit Get Lektor!
+You now have a basic exposure to Lektor! For more info please visit Get Lektor! {% endraw %}
 ---
 pub_date: 2017-04-26
 ---
