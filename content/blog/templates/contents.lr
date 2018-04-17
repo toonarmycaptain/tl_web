@@ -51,7 +51,7 @@ This can be customized by setting a specific template for a page in the CMS. Tem
 </body>
 ```
 
-You now have a basic exposure to Lektor! For more info please visit Get Lektor! {% endraw %}
+You now have a basic exposure to Lektor! For more info please visit [Get Lektor](https://www.getlektor.com/)! {% endraw %}
 ---
 pub_date: 2017-04-26
 ---

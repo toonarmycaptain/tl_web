@@ -1,0 +1,3 @@
+[submodule "themes/lektor-theme-terminal"]
+	path = themes/lektor-theme-terminal
+	url = git@github.com:terminal-labs/lektor-theme-terminal.git
