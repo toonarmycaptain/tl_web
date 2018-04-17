@@ -1,0 +1,98 @@
+title: New Lektor Plugins and a Theme!
+---
+author: Joseph Nix
+---
+body:
+
+Last week I was prompted and inspired to make a fun new Lektor Plugin,  and promised more
+
+<blockquote style="text-align: center;" class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I just made another <a href="https://twitter.com/getlektor?ref_src=twsrc%5Etfw">@getlektor</a> plugin! Upon request, kind of. This one was a fun one; Jinja-ified Content. This makes 3 or 4 I need to put on that list! I better get to it! <a href="https://t.co/hpoj3eHqJr">https://t.co/hpoj3eHqJr</a></p>&mdash; Joseph Nix (@nixjdm) <a href="https://twitter.com/nixjdm/status/984647884317523968?ref_src=twsrc%5Etfw">April 13, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+so now I'm delivering! Today I unveil four shiny new Lektor plugins, and a new Lektor theme!
+
+## The Plugins:
+
+All of these plugins I've added to the [plugin list on getlektor.com](https://www.getlektor.com/docs/plugins/list/).
+
+### Jinja-Content
+
+[link](https://github.com/terminal-labs/lektor-jinja-content)
+
+This was the kick-in-the-pants motivator for all of this. It got my blood pumping.
+
+Jinja is a super useful tool, and Lektor makes great use of it already. Even when I was starting out with Lektor I saw that not only can you use Jinja inside your [template files](https://www.getlektor.com/docs/templates/#the-first-template), but in your [models too](https://www.getlektor.com/docs/models/#models). That's really cool! But... I couldn't use them in Content. :( "Oh well, I don't really need that. I'll make do." I said to myself at the time. And time slipped on by.
+
+Until just last week someone came to the Lektor docs page listing the plugins, and [wanted the same thing](http://disq.us/p/1rpcner). Suddenly it all came back to me, and now, with the validation that I at least half-way normal for wanting the feature in the first at all. Others were out there like me. So I got to work, and now you can use the result. You can now use Jinja in any Content field that is string-like, i.e. strings, HTML, Markdown, reStructuredText, Asciidocs, etc. The Content has access to the normal [Lektor Template Context](https://www.getlektor.com/docs/templates/#template-context) and any other filters provided by other plugins. The Content is rendered with Jinja first, and then formatted if that's relevant, as it would be for Markdown.
+
+I find this plugin very useful when I quickly want to sling some Jinja, and test some syntax or expression. Instead of tracking down which template needs modifying, and where in the page a given section of HTML or `{% raw %}{% block %}{% endraw %}` even is, I an just open a fresh page and throw something in the body content. Much faster test.
+
+This happens to be, in my opinion,  the fanciest of the plugins I'm publishing today. If you're curious about plugin development, check out my source code for it.
+
+The next three plugins we've had internally here at Terminal Labs, using them for this website. We just broke them out.
+
+### Natural-Language
+
+[link](https://github.com/terminal-labs/lektor-natural-language)
+
+The Natrual Language Toolkit is pretty cool, and used a lot in Data Science and Machine Learning. Here, we give it perhaps one its most trivial tasks of helping to build a static sites `<meta>` for SEO ;)
+
+This plugin offers three "simple" Jinja filters that use nltk to allow you determine a string's keywords, sentences, and first sentence. That last one is just a little sugar on the second, of course. This was born out of a combination of wanting a little better SEO on our site, classic programming "laziness", plus a desire to have a little more fun with nltk. Instead of using our brains to actually come up with keywords and descriptions for our html `<meta>` tags, especially on many old pages, we generate them from the content of the page with these tags.
+
+### Slugify
+
+[link](https://github.com/terminal-labs/lektor-slugify)
+
+Of all of Django's builtin template tags, over the years I think I've had to use [slugify](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#slugify) the most. It's a staple, and indispensable. Any time I work on a project that uses Jinja instead, I end up making it. This Lektor site was no exception. It's just too common to need to slugify some string. You can now use `{{ "___This is a test ---"|slug }}` to get `this-is-a-test`.
+
+### Strip-HTML-Tags
+
+[link](https://github.com/terminal-labs/lektor-strip-html-tags)
+
+Going hand in hand with the Natural Language plugin, we needed to take our content fields, that had HTML all mixed up in them, and treat turn them into text before NLTK could take over. Not doing that resulted in some very unuseful keywords from some alien language. You can use this plugin to transform
+
+{% set var = '</head>
+  <body>
+    <div class="top_row">
+      <a draggable="false" href="/">
+  <div id="logo_box">
+    <img draggable="false" src="/static/images/terminal_labs.png?h=95b371de" alt="terminal labs">
+    <div class="logo_subtext">Python Mercenaries</div>
+  </div>
+</a>' %}
+
+```html
+{{ var }}
+```
+
+into `{{ var|striphtmltags }}`. Pretty nifty, right? Because of the handiness of the Jinja-Content plugin, I just tested this and tried it right here in this page. [Proof](). That really is useful.
+
+## New Lektor Theme - Terminal
+
+[link](https://github.com/terminal-labs/lektor-theme-terminal)
+
+We've grabbed the Number #2 Theme spot over at https://github.com/lektor/lektor-themes !
+
+Theming is still pretty new to Lektor, so I thought change this site wot use a theme of it's own style. Now anyone can easily use this retro terminal style too! It's got a fully functional example-site you can trivially get up and running. Just download it, navigate into the `example-site` dir, and run `lektor server`. I took a few [screenshots too](https://github.com/terminal-labs/lektor-theme-terminal/tree/master/images).
+
+This got me a little more exposure to the theming system by getting my hands dirty with it, which feels nice. I like to get dirty. It's food for thought as the Lektor Themes continues to develop. I encourage going through this exercise for your websites :)
+
+That's a wrap! Go [Get Lektor](https://getlektor.com)!
+
+
+
+
+
+
+
+
+
+
+
+
+---
+meta_keywords: Lektor, plugins, theme, terminal, terminallabs, nltk, jinja, jinja2, content, markdown, slug, slugify, strip html, tags, natural language, minimal, dark, new
+---
+pub_date: 2018-04-17
+---
+twitter_handle: nixjdm
