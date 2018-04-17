@@ -15,6 +15,14 @@ lektor-strip-html-tags = 0.1
 lektor-jinja-content = 0.2
 lektor-slugify = 0.2
 
+[theme_settings]
+  googleanalytics = "UA-36783686-1"
+  linkedInURL = "http://www.linkedin.com/company/terminal-labs"
+  twitterID = "terminal_labs"
+  pinterestID = "terminallabs"
+  facebookID = "terminallabs"
+  sticky_flat_page = "Repos/Downloads"
+
 [servers.s3]
 name = S3
 enabled = yes
