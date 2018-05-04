@@ -1,0 +1,32 @@
+_model: page
+---
+title: Careers
+---
+body:
+
+## We're always looking to grow!
+
+We are looking for people who have great communication skills, are friendly, and skilled in their craft. If you are a skilled developer who works well in a team, we want to here from you.
+
+In particular, if you know and love any of the following:
+
+- Python
+- Python Web Frameworks such as Django, Flask, and Pyramid
+- Data Science
+- Machine Learning
+- Jupyter
+- AWS
+- GCE
+- SaltStack
+- Docker
+- Kubernetes
+- Vagrant
+- JavaScript
+- NodeJS
+- React
+
+We appreciate broad skill-sets and expertise. We like people who can get things done. If you're intrigued and would like to work with us, please reach out to us at solutions@terminallabs.com. Send us your résumé or CV, GitHub links, or anything else that you think might make us want to bring you on board.
+---
+meta_description: We're hiring!
+---
+meta_keywords: developers, hiring, python, web frameworks, django, flask, pyramid, javascript, nodejs, react, saltstack, docker, kubernetes, vagrant, aws, gce, data science, machine learning, jupyter
