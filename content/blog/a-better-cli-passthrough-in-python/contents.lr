@@ -1,0 +1,136 @@
+title: A Better CLI Passthrough in Python
+---
+author: Joseph Nix
+---
+meta_description: Do you need to call something over a CLI with Python, and display the results? Start with this.
+---
+pub_date: 2018-05-10
+---
+subtitle: Do you need to call something over a CLI with Python, and display the results? Start with this.
+---
+twitter_handle: nixjdm
+---
+body:
+
+Yesterday I gave a lightning talk at [APUG](https://www.meetup.com/austinpython/events/wfkrdpyxhbmb/) about a better `subprocess`. Python's `subprocess` can do a lot, but the more basic uses fall short in various ways when you want to build a CLI passthrough. In the talk, I presented on the best way to do that that I'm aware of.
+<img src="lightningtalk-2018-05-09.jpg" width="900px" alt="APUG lightning talk 2018-05-09.jpg"/> 
+
+### [Rambo](http://terminallabs-rambo.readthedocs.io/en/latest/#what-s-rambo-for) started out as Vagrant code, and then turned into a wrapper around Vagrant.
+
+When this happened, I was for a few reasons unsatisfied with the first attempt. In Python, [subprocess](https://docs.python.org/3/library/subprocess.html) is the standard, tried and true, way of spawning other processes in Python, and that was what we used.
+
+It's pretty easy to have a basic call to `subprocess` that simply runs the process. If you want to do fancier things though, it starts getting a bit more complicated and the implementation you might be looking for becomes a bit less obvious. There's often a few ways of doing the same thing, and several potential features you might want, most of which you don't get with the most basic call. I have to write a subprocess call infrequently enough, and it can be complicated enough, that I often end up searching for the implementation I'm looking for on Stack Overflow.
+
+### Say you want to use to log stdout and stderr. Easy! Just use the pretty basic, normal use of `Popen` with `communicate` [link](https://stackoverflow.com/questions/31833897/python-read-from-subprocess-stdout-and-stderr-separately-while-preserving-order/31867499#31867499):
+
+```python
+from subprocess import Popen, PIPE
+
+process = Popen(command, stdout=PIPE, stderr=PIPE)
+output, err = process.communicate()
+```
+
+Excellent. Perfect for a CLI, right? Wait. No really, you'll have to wait. The above code is blocking and doesn't give you the results as they come, but only when the subprocess is completely done. That's not very handy if you want to dump the output back to a screen for a user to see.
+
+### How do we not wait?
+
+We can try pexpect, but this doesn't give us stdout and stderr separately.
+
+```python
+import pexpect
+
+proc = pexpect.spawn('/bin/bash', ['-c', command])
+```
+
+Back to Popen, what if we add in some threading and queues? [link](https://stackoverflow.com/questions/31833897/python-read-from-subprocess-stdout-and-stderr-separately-while-preserving-order/31867499#31867499)
+
+```python
+from subprocess import Popen, PIPE
+from threading import Thread
+from Queue import Queue # Python 2
+
+def reader(pipe, queue):
+    try:
+        with pipe:
+            for line in iter(pipe.readline, b''):
+                queue.put((pipe, line))
+    finally:
+        queue.put(None)
+
+process = Popen(command, stdout=PIPE, stderr=PIPE, bufsize=1)
+q = Queue()
+Thread(target=reader, args=[process.stdout, q]).start()
+Thread(target=reader, args=[process.stderr, q]).start()
+for _ in range(2):
+    for source, line in iter(q.get, None):
+        print "%s: %s" % (source, line)
+```
+
+That's closer. It doesn't make us wait *as long*, but it still can make us wait some, depending on how the child process handles it's buffering and what amount of output there is. Odds are, we won't be seeing some things in "real time" as we'd like while we're waiting for buffers to flush. It also will not at all keep the proper order of the stdout and stderr. They're separate, but what if we wanted to compile a total history of both of them with they're order preserved? Because of the buffering issue, there may be, for instance, stdout waiting in an as-yet un-flushed buffer while some stderr comes along later and has it's buffer flushed first. This could make the output garbled.
+
+### Popen with pyt & select
+
+Here is the best solution I've found. It can read the stdout and stderr mostly in order. pyt is Python's Pseudo-terminal utility lib, in the Standard Library. This example uses two Ptys as a way to catch the stdout and stderr separately, and because we're using `select` with the `pty`s, we can read from the slave file descriptors in the pty almost immediately. To create a combined log history, we can write out the stdout and stderr as we get it. Unlike the much higher likelihood of garbling that combined history due to waiting on buffer flushes, this is much more likely to work. It still isn't guaranteed, but it's been fine for me, and is the best I've found.
+
+The solution:
+
+```python
+import errno
+import os
+import pty
+import subprocess
+import sys
+from select import select
+from subprocess import Popen
+
+import click
+
+def passthrough(cmd=None, interactive=False):
+    masters, slaves = zip(pty.openpty(), pty.openpty())
+    cmd = cmd.split()
+
+    with Popen(cmd, stdin=slaves[0], stdout=slaves[0], stderr=slaves[1]) as p:
+        for fd in slaves:
+            os.close(fd) # no input
+            readable = {
+                masters[0]: sys.stdout.buffer, # store buffers seperately
+                masters[1]: sys.stderr.buffer,
+            }
+        while readable:
+            for fd in select(readable, [], [])[0]:
+                try:
+                    data = os.read(fd, 1024) # read available
+                except OSError as e:
+                    if e.errno != errno.EIO:
+                        raise #XXX cleanup
+                    del readable[fd] # EIO means EOF on some systems
+                else:
+                    if not data: # EOF
+                        del readable[fd]
+                    else:
+                        if fd == masters[0]: # We caught stdout
+                            click.echo(data.rstrip())
+                        else: # We caught stderr
+                            click.echo(data.rstrip(), err=True)
+                        readable[fd].flush()
+    for fd in masters:
+        os.close(fd)
+    return p.returncode
+```
+
+This is almost a straight copy and paste an [answer to a similar question on Stack Overflow by J.F. Sebastian](https://stackoverflow.com/questions/31926470/run-command-and-get-its-stdout-stderr-separately-in-near-real-time-like-in-a-te/31953436#31953436). I wrapped this function with up into a lib you can download and use available on [GitHub and PyPI](https://github.com/terminal-labs/cli-passthrough). The `click.echo` as shown here simply prints to the screen, but can be replaced with a tool that also handles logging however you wish, which is what I did in my package. `cli-passthrough` is easy to install and play with. Once installed, it offers a `$ cli-passthrough` command you can pass anything to, to try out. It will log a total history and stderr separately.
+
+A bonus of this particular method is that it even captures the ANSI codes that a subprocess is intending to render to the terminal, thus, we can pass it along and they will still be rendered. This almost completely preserves the formatting of the original command. My cli-passthrough python package logs the ANSI too, but if that's not desired I'm sure there are many ways to filter it out, before or after it's saved to the log file.
+
+### What can't it do?
+
+There are still a few limitations with this solution that I'm aware of.
+
+1. It doesn't *garauntee* the correct order of reading stdout and stderr. In practice though, I find it plenty good enough. I haven't actually seen it miss the mark in this regard.
+2. It isn't interactive. For instance, you can't run a command that will prompt the user for any kind of input and have it work as you'd like. Perhaps a modification can fix this, but as is, a different solution would be needed for that situation.
+3. It doesn't determin the proper terminal window dimensions of the parent python process. This isn't a huge problem, because it makes reasonable assumptions under the hood. As an example, often for me it will assume a screen width that is smaller than what I actually am using to run `cli-passthrough`, so the text wrapping occurs a little sooner than I'd like.
+4. Maybe only works on Unix? I'm not a Windows guy, I haven't tested this. Doesn't it strike you as maybe OS dependent though?
+
+I am not the one who came up with most of this code, that's J.F. Sebastian. I merely looked for a long time to find it and got lucky! I understand it partially, but, I suspect like many of you, most of the Python I deal with has nothing to do with fancy output to a terminal, so I've not had an impetus to learn the arcane inner workings of terminal emulators and ttys. This was sufficient for me at the time.
+---
+meta_keywords: CLI Python passthrough stdout stderr subprocess pty

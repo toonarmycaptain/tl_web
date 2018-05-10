@@ -3,4 +3,5 @@
 {% block head %}
   {{ super() }}
   <link rel="stylesheet" href="{{ '/static/css/style.css'|asseturl }}" type="text/css" media="all">
+  <link rel="stylesheet" href="{{ get_pygments_stylesheet()|url }}">
 {% endblock head %}
