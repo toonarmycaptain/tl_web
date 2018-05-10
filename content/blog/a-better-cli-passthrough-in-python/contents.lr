@@ -132,5 +132,7 @@ There are still a few limitations with this solution that I'm aware of.
 4. Maybe only works on Unix? I'm not a Windows guy, I haven't tested this. Doesn't it strike you as maybe OS dependent though?
 
 I am not the one who came up with most of this code, that's J.F. Sebastian. I merely looked for a long time to find it and got lucky! I understand it partially, but, I suspect like many of you, most of the Python I deal with has nothing to do with fancy output to a terminal, so I've not had an impetus to learn the arcane inner workings of terminal emulators and ttys. This was sufficient for me at the time.
+
+Got something better? Let me know, or better yet submit a pull request! https://github.com/terminal-labs/cli-passthrough
 ---
 meta_keywords: CLI Python passthrough stdout stderr subprocess pty
