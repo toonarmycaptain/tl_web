@@ -10,12 +10,13 @@
     {% block content %}
       {% if this._path == '/' %} {# display homepage art #}
         {% include "includes/homepage_body.html" %}
-      {% endif %}
+      {% else %}
       <div class="content_box">
         {% block body_content %}
           {{ this.body }}
         {% endblock body_content %}
       </div>
+      {% endif %}
     {% endblock content %}
   </body>
   {% include "includes/custom_footer.html" %}
