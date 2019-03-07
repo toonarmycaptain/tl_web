@@ -9,19 +9,39 @@
   color: @lightest_gray !important;
 }
 
-// Older stuff used before lektor-markdown-highlighter and Pygments
+// Older & custom stuff used before lektor-markdown-highlighter and Pygments
+// or where custom styling is needed.
 .code-highlights {
   .tl-green {
     color: @std_green;
   }
+  .blue {
+    color: #0087d7; // blue
+  }
+  .burnt-orange {
+    color: #c4a000; // burnt orange
+  }
+  .green {
+    color: @std_green;
+  }
+  .orange {
+    color: #af5f00; // orange
+  }
+  .pink {
+    color: #ff5f87; // pink
+  }
+  .purple {
+    color: #af00ff; // white
+  }
+  .white {
+    color: white; // white
+  }
+  // Use-descriptive
   .host {
     color: #8ae234; // green
   }
   .path {
     color: #729fcf; // blue
-  }
-  .quote {
-    color: #ff5f87; // pink
   }
   .method {
     color: #af5f00; // orange
@@ -54,7 +74,6 @@ code {
   border: 1px solid;
   border-color: @light_gray;
   border-radius: 3px;
-  font: @std_font;
   max-width: 100%;
   overflow-x: auto;
 }
@@ -63,4 +82,6 @@ pre {
     display: block;
     padding: 5px 10px;
   }
+
+  white-space: pre-wrap;
 }

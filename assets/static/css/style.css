@@ -21,7 +21,7 @@
   width: 440px;
   padding: 10px;
   min-height: 300px;
-  border-right: 1px solid #2F9A41;
+  border-right: 1px solid #2f9a41;
 }
 .content_col_right {
   display: inline-block;
@@ -40,7 +40,7 @@
 }
 .row_border {
   line-height: 30px;
-  border-bottom: 1px solid #2F9A41;
+  border-bottom: 1px solid #2f9a41;
 }
 .contact_info {
   position: absolute;
@@ -118,7 +118,7 @@ a img {
 .competitor-boxes a:link,
 .competitor-boxes a:visited {
   text-decoration: none;
-  color: #C0C0C0;
+  color: #c0c0c0;
 }
 .gallery_tool_img {
   float: left;
@@ -153,19 +153,12 @@ a img {
 .large_tech_text_upper {
   padding: 0 10px;
 }
-.testimonials {
-  width: 100%;
-  display: block;
-  overflow: hidden;
-  padding-top: 30px;
-  line-height: 1.2;
-}
 #testimonial_link {
   margin: 0 auto;
   width: 200px;
   text-align: center;
   display: block;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
   line-height: 1.2;
   font-size: 20px;
 }
@@ -194,19 +187,37 @@ a img {
   border: 1px solid !important;
   border-color: #808080 !important;
   border-radius: 3px !important;
-  color: #C0C0C0 !important;
+  color: #c0c0c0 !important;
 }
 .code-highlights .tl-green {
-  color: #2F9A41;
+  color: #2f9a41;
+}
+.code-highlights .blue {
+  color: #0087d7;
+}
+.code-highlights .burnt-orange {
+  color: #c4a000;
+}
+.code-highlights .green {
+  color: #2f9a41;
+}
+.code-highlights .orange {
+  color: #af5f00;
+}
+.code-highlights .pink {
+  color: #ff5f87;
+}
+.code-highlights .purple {
+  color: #af00ff;
+}
+.code-highlights .white {
+  color: white;
 }
 .code-highlights .host {
   color: #8ae234;
 }
 .code-highlights .path {
   color: #729fcf;
-}
-.code-highlights .quote {
-  color: #ff5f87;
 }
 .code-highlights .method {
   color: #af5f00;
@@ -236,21 +247,38 @@ code {
   border: 1px solid;
   border-color: #808080;
   border-radius: 3px;
-  font: 16px prime_regular;
   max-width: 100%;
   overflow-x: auto;
 }
 code .tl-green {
-  color: #2F9A41;
+  color: #2f9a41;
+}
+code .blue {
+  color: #0087d7;
+}
+code .burnt-orange {
+  color: #c4a000;
+}
+code .green {
+  color: #2f9a41;
+}
+code .orange {
+  color: #af5f00;
+}
+code .pink {
+  color: #ff5f87;
+}
+code .purple {
+  color: #af00ff;
+}
+code .white {
+  color: white;
 }
 code .host {
   color: #8ae234;
 }
 code .path {
   color: #729fcf;
-}
-code .quote {
-  color: #ff5f87;
 }
 code .method {
   color: #af5f00;
@@ -273,6 +301,9 @@ code .import {
 }
 code .bold {
   font-weight: 600;
+}
+pre {
+  white-space: pre-wrap;
 }
 pre code {
   display: block;

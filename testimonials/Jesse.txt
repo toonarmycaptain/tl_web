@@ -1,15 +1,3 @@
-<pre><code><span class="white"><span class="code-highlights">(tl_website)<span class="host"><b>workstation@debian</b></span>:<span class="path"><b>~/tl_website/testimonials</b></span>$ python
-Python 3.7.2 (default, Dec 29 2018, 06:19:36)
-[GCC 7.3.0] :: Anaconda, Inc. on linux
-Type "help", "copyright", "credits" or "license" for more information.
-<span class="green">>>></span><b><span class="green"> import</span> <span class="blue">os</span></b>
-<span class="green">>>></span> testimonial = <span class="orange"><b>"Jesse.txt"</b></span>
-<span class="green">>>> <b>with</b> open</span> (os.path.join(<span class="orange">"testimonials"</span>, testimonial)) <span class="green">as</span> file:
-<span class="green">... &nbsp;&nbsp;&nbsp; print</span>(f<span class="orange "><b>"</b></span><span class="pink"><b>{testimonial}</b></span><span class="orange"><b>:\n"</b></span>)
-<span class="green">... &nbsp;&nbsp;&nbsp; print</span>(file.read(),<span class="orange"><b> "\n--------"</b></span>)
-<span class="green">... </span>
-Jesse.txt:
-
 Terminal Labs has been an integral partner and instrumental to our embedded teams at Cox Media Group for nearly 2 years. In particular, they have provided a wealth of knowledge and expertise at a crucial time to our efforts around performance engineering and tooling for existing and emerging products. They have also helped us establish new standards and best practices in our engineering of secure, stable, and performant web applications.
 
 Their expertise in python/django application performance and also deep understanding of front end technologies including complex JavaScript web applications has been invaluable to our team. Terminal Labs have assisted us across various project teams in our digital media business, delivering many features and improvements to our existing and developing platforms.
@@ -17,7 +5,3 @@ Their expertise in python/django application performance and also deep understan
 Terminal Labs works flawlessly in a high demand, agile environment with “in the weeds” tactical aptitude and high-level architectural and strategic thinking. I highly value our relationship and would recommend them without reservation to any project seeking professional and team oriented consultation. These guys all kick some serious ass.
 
 --Jesse Heady, Lead Performance Engineer at Cox Media Group
-
---------
-<span class="green">>>></span>
-</span></code></pre>

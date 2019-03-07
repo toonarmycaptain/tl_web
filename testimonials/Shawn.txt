@@ -1,0 +1,7 @@
+As a team lead, I had the pleasure of working with Joe Nix, Chris Smith, and Michael Verhulst, on a team, to manage the remaining updates for our soon to be end-of-life CMS (Django/Python.)
+
+These guys are very smart, friendly, and knowledgeable about their craft. Not only did they complete all of their assigned stories on time but they also helped troubleshoot and update our aging local/test environments.
+
+I would count myself lucky to work on another project with them.
+
+--Shawn Frame, Software Development Team Lead at Cox Media Group
