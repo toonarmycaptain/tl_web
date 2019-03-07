@@ -249,6 +249,7 @@ code {
   border-radius: 3px;
   max-width: 100%;
   overflow-x: auto;
+  font: 12px monospace;
 }
 code .tl-green {
   color: #2f9a41;
