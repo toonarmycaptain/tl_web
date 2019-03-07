@@ -1,0 +1,99 @@
+_model: subnav
+---
+title: DevOps
+---
+page_thumb: our-services-devops.png
+---
+position: 3
+---
+SubNav:
+
+#### subnav-item ####
+body: [Salt](https://www.saltstack.com/) is a Python-based open-source configuration management software and remote execution engine. Supporting the "Infrastructure as Code" approach to deployment and cloud management, it competes primarily with Puppet, Chef, and Ansible.
+----
+images:
+
+##### select-image #####
+image: saltstack.png
+-----
+title: 
+-----
+caption: https://www.saltstack.com/
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body:
+
+Works where you work
+
+[Vagrant](https://www.vagrantup.com/) works on Mac, Linux, Windows, and more. Remote development environments force users to give up their favorite editors and programs. Vagrant works on your local system with the tools you're already familiar with. Easily code in your favorite text editor, edit images in your favorite manipulation program, and debug using your favorite tools, all from the comfort of your local laptop.
+----
+images:
+
+##### select-image #####
+image: vagrant-color.svg
+-----
+title: 
+-----
+caption: https://www.vagrantup.com/
+-----
+background_color: #FCFCFC
+-----
+padding: 10px
+#### subnav-item ####
+body:
+
+[Kubernetes (k8s)](https://kubernetes.io/) is an open-source system for automating deployment, scaling, and management of containerized applications.
+
+It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience of running production workloads at Google, combined with best-of-breed ideas and practices from the community.
+----
+images:
+
+##### select-image #####
+image: Kubernetes_(container_engine).png
+-----
+title: 
+-----
+caption: https://kubernetes.io/
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body: [Docker](https://www.docker.com/) is used to run software packages called containers. Containers are isolated from each other and bundle their own application, tools, libraries and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single operating-system kernel and are thus more lightweight than virtual machines. Containers are created from images that specify their precise contents. Images are often created by combining and modifying standard images downloaded from public repositories.
+----
+images:
+
+##### select-image #####
+image: docker-logo.png
+-----
+title: 
+-----
+caption: 
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body:
+
+[LXC](https://linuxcontainers.org/) provides operating system-level virtualization through a virtual environment that has its own process and network space, instead of creating a full-fledged virtual machine. LXC relies on the Linux kernel cgroups functionality that was released in version 2.6.24. It also relies on other kinds of namespace isolation functionality, which were developed and integrated into the mainline Linux kernel. 
+----
+images:
+
+##### select-image #####
+image: lxc.png
+-----
+title: 
+-----
+caption: https://linuxcontainers.org/
+-----
+background_color: 
+-----
+padding: 
+---
+image_width: 200
+---
+_template: content_rows.html

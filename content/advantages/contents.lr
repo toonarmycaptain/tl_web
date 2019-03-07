@@ -6,8 +6,8 @@ icon: alarm-clock.png
 ---
 _slug: how-we-are-different
 ---
-_template: with_subnav.html
----
 position: 1
 ---
 nav_bar: yes
+---
+_template: subnav.html

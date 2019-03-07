@@ -2,8 +2,6 @@ _model: page
 ---
 title: Linux Solutions
 ---
-_template: with_subnav.html
----
 body:
 
 Linux is a free, open-source operating system.  Linux has been around for decades.  It is extremely stable, well supported, and used worldwide.  As an open-source operating system, virtually all aspects of Linux can be customized.

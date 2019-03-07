@@ -211,7 +211,7 @@ a img {
   color: #af00ff;
 }
 .code-highlights .white {
-  color: white;
+  color: #f5f5f5;
 }
 .code-highlights .host {
   color: #8ae234;
@@ -273,7 +273,7 @@ code .purple {
   color: #af00ff;
 }
 code .white {
-  color: white;
+  color: #f5f5f5;
 }
 code .host {
   color: #8ae234;

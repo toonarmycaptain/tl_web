@@ -10,6 +10,6 @@ A full description of all the services we provide can be downloaded here:  <a hr
 ---
 position: 2
 ---
-_template: with_subnav.html
----
 nav_bar: yes
+---
+_template: subnav.html

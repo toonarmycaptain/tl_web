@@ -2,8 +2,6 @@ _model: page
 ---
 title: Security
 ---
-_template: with_subnav.html
----
 body:
 
 Security is vital to create software that doesn't cause problems and cost money to fix in the future.  We strive to implement secure software on every project we embark.
