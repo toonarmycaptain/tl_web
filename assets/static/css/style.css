@@ -319,35 +319,35 @@ pre code {
   min-width: 200px;
   text-align: center;
 }
-#tree_django {
-  position: absolute;
-  top: 190px;
-  left: 20px;
-}
-#tree_jquery {
-  position: absolute;
-  top: 190px;
-  left: 240px;
-}
-#tree_python {
-  position: absolute;
-  top: 240px;
-  left: -10px;
-}
-#tree_ubuntu {
+#tree_left_top {
   position: absolute;
   top: 136px;
   left: 50px;
 }
-#tree_mysql {
+#tree_left_middle {
   position: absolute;
-  top: 136px;
-  left: 200px;
+  top: 190px;
+  left: 20px;
 }
-#tree_linux {
+#tree_left_bottom {
   position: absolute;
   top: 240px;
-  left: 276px;
+  left: -10px;
+}
+#tree_right_top {
+  position: absolute;
+  top: 136px;
+  left: 210px;
+}
+#tree_right_middle {
+  position: absolute;
+  top: 190px;
+  left: 220px;
+}
+#tree_right_bottom {
+  position: absolute;
+  top: 240px;
+  left: 250px;
 }
 /* Preload images */
 body:after {
