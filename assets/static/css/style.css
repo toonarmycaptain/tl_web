@@ -79,21 +79,8 @@
 .client_underline {
   display: none;
 }
-.slide {
-  position: relative;
-  min-height: 75px;
-  width: 786px;
-  float: left;
-  margin-left: 67px;
-}
 a img {
   border: none;
-}
-.tech_boxes {
-  position: relative;
-  top: 0px;
-  left: 67px;
-  width: 800px;
 }
 .competitor-boxes {
   position: relative;
@@ -120,12 +107,6 @@ a img {
   text-decoration: none;
   color: #c0c0c0;
 }
-.gallery_tool_img {
-  float: left;
-  width: 75px;
-  height: 75px;
-  cursor: pointer;
-}
 .slideshow_menu {
   width: 940px;
   text-align: center;
@@ -149,9 +130,6 @@ a img {
   padding-top: 0px;
   color: #060;
   text-decoration: none;
-}
-.large_tech_text_upper {
-  padding: 0 10px;
 }
 #testimonial_link {
   margin: 0 auto;
