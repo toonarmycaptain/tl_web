@@ -22,6 +22,8 @@ lektor-atom = 0.2
   facebookID = "terminallabs"
   googleanalytics = "UA-36783686-1"
   linkedInURL = "http://www.linkedin.com/company/terminal-labs"
+  # file in assets/static/images/
+  logo_file = "logo.svg"
   logo_subtext = "Python Mercenaries"
   logo_width = "275px"
   pinterestID = "terminallabs"
