@@ -18,17 +18,12 @@ lektor-slugify = 0.2
 lektor-atom = 0.2
 
 [theme_settings]
-  behanceID = "terminal_labs"
-  facebookID = "terminallabs"
   googleanalytics = "UA-36783686-1"
-  linkedInURL = "http://www.linkedin.com/company/terminal-labs"
   # file in assets/static/images/
   logo_file = "logo.svg"
   logo_subtext = "Python Mercenaries"
   logo_width = "275px"
-  pinterestID = "terminallabs"
   sticky_flat_page = "Repos/Downloads"
-  twitterID = "terminal_labs"
 
 [servers.s3]
 name = S3
