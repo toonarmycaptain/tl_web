@@ -1,6 +1,6 @@
 _model: subnav
 ---
-title: Programming Languages
+title: Machine Learning
 ---
 SubNav:
 
@@ -15,6 +15,10 @@ image: python_logo_200x200.png
 title: 
 -----
 caption: https://www.python.org/
+-----
+background_color: 
+-----
+padding: 
 #### subnav-item ####
 body: [Mathematica](http://www.wolfram.com/mathematica/) is a computational software program used in many scientific, engineering, mathematical and computing fields, based on symbolic mathematics.
 ----
@@ -26,11 +30,30 @@ image: mathematica_logo_200x200.png
 title: 
 -----
 caption: http://www.wolfram.com/mathematica/
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body: [TensorFlow](https://www.tensorflow.org/) is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML powered applications.
+----
+images:
+
+##### select-image #####
+image: tensorflow_200x200.png
+-----
+title: 
+-----
+caption: https://www.tensorflow.org/
+-----
+background_color: 
+-----
+padding: 
 ---
 _template: content_rows.html
 ---
 position: 5
 ---
-page_thumb: tools-we-use-programming-languages.png
+page_thumb: tools-we-use-machine-learning.png
 ---
 image_width: 200
