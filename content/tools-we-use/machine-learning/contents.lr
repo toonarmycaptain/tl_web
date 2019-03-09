@@ -20,21 +20,6 @@ background_color:
 -----
 padding: 
 #### subnav-item ####
-body: [Mathematica](http://www.wolfram.com/mathematica/) is a computational software program used in many scientific, engineering, mathematical and computing fields, based on symbolic mathematics.
-----
-images:
-
-##### select-image #####
-image: mathematica_logo_200x200.png
------
-title: 
------
-caption: http://www.wolfram.com/mathematica/
------
-background_color: 
------
-padding: 
-#### subnav-item ####
 body: [TensorFlow](https://www.tensorflow.org/) is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML powered applications.
 ----
 images:
@@ -45,6 +30,55 @@ image: tensorflow_200x200.png
 title: 
 -----
 caption: https://www.tensorflow.org/
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body:
+
+[Dask](https://dask.org/) natively scales Python
+
+Dask provides advanced parallelism for analytics, enabling performance at scale for the tools you love
+----
+images:
+
+##### select-image #####
+image: dask_logo_200x200.png
+-----
+title: 
+-----
+caption: https://dask.org/
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body: The  [Jupyter](https://jupyter.org/) is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+----
+images:
+
+##### select-image #####
+image: jupyter_logo_200x200.png
+-----
+title: 
+-----
+caption: https://jupyter.org/
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body: [Mathematica](http://www.wolfram.com/mathematica/) is a computational software program used in many scientific, engineering, mathematical and computing fields, based on symbolic mathematics.
+----
+images:
+
+##### select-image #####
+image: mathematica_logo_200x200.png
+-----
+title: 
+-----
+caption: http://www.wolfram.com/mathematica/
 -----
 background_color: 
 -----
