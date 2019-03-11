@@ -1,0 +1,93 @@
+_model: subnav
+---
+title: Machine Learning
+---
+SubNav:
+
+#### subnav-item ####
+body: [Python](https://www.python.org/) is a remarkably powerful dynamic programming language that is used in a wide variety of application domains. Python is often compared to Tcl, Perl, Ruby, Scheme or Java. Some of its key distinguishing features include: very clear, readable syntax strong introspection capabilities intuitive object orientation natural expression of procedural code full modularity, supporting hierarchical packages exception-based error handling very high level dynamic data types extensive standard libraries and third party modules for virtually every task extensions and modules easily written in C, C++ (or Java for Jython, or .NET languages for IronPython) embeddable within applications as a scripting interface.
+----
+images:
+
+##### select-image #####
+image: python_logo_200x200.png
+-----
+title: 
+-----
+caption: https://www.python.org/
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body: [TensorFlow](https://www.tensorflow.org/) is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML powered applications.
+----
+images:
+
+##### select-image #####
+image: tensorflow_200x200.png
+-----
+title: 
+-----
+caption: https://www.tensorflow.org/
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body:
+
+[Dask](https://dask.org/) natively scales Python
+
+Dask provides advanced parallelism for analytics, enabling performance at scale for the tools you love
+----
+images:
+
+##### select-image #####
+image: dask_logo_200x200.png
+-----
+title: 
+-----
+caption: https://dask.org/
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body: The  [Jupyter](https://jupyter.org/) is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+----
+images:
+
+##### select-image #####
+image: jupyter_logo_200x200.png
+-----
+title: 
+-----
+caption: https://jupyter.org/
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body: [Mathematica](http://www.wolfram.com/mathematica/) is a computational software program used in many scientific, engineering, mathematical and computing fields, based on symbolic mathematics.
+----
+images:
+
+##### select-image #####
+image: mathematica_logo_200x200.png
+-----
+title: 
+-----
+caption: http://www.wolfram.com/mathematica/
+-----
+background_color: 
+-----
+padding: 
+---
+_template: content_rows.html
+---
+position: 5
+---
+page_thumb: tools-we-use-machine-learning.png
+---
+image_width: 200
