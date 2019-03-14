@@ -11,28 +11,42 @@ Social:
 #### social ####
 link_text: Repos/Downloads
 ----
+external: no
+----
 url: /repos-downloads
 #### social ####
 link_text: in
+----
+external: true
 ----
 url: http://www.linkedin.com/company/terminal-labs
 #### social ####
 link_text: t
 ----
+external: true
+----
 url: https://twitter.com/terminal_labs
 #### social ####
 link_text: g
+----
+external: true
 ----
 url: https://github.com/terminal-labs/
 #### social ####
 link_text: p
 ----
+external: true
+----
 url: https://www.pinterest.com/terminallabs
 #### social ####
 link_text: b
 ----
+external: true
+----
 url: https://www.behance.net/terminal_labs
 #### social ####
 link_text: f
+----
+external: true
 ----
 url: https://www.facebook.com/terminallabs/
