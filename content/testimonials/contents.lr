@@ -6,13 +6,12 @@ body:
 
 # Testimonials
 <pre><code><span class="white"><span class="code-highlights">(tl_website)<span class="host"><b>workstation@debian</b></span>:<span class="path"><b>~/tl_website/testimonials</b></span>$ python
-Python 3.7.2 (default, Dec 29 2018, 06:19:36)
+Python 3.7.3 (default, Mar 27 2019, 22:11:17)
 [GCC 7.3.0] :: Anaconda, Inc. on linux
 Type "help", "copyright", "credits" or "license" for more information.
 <span class="green">>>></span><b><span class="green"> import</span> <span class="blue">os</span></b>
-<span class="green">>>></span> testimonials = (os.path.join(file) <span class="green"><b>for</b></span> file <span class="purple"><b>in</b></span> os.listdir("testimonials"))
-<span class="green">>>> <b>for</b></span> testimonial <span class="purple"><b>in</b></span> testimonials:
-<span class="green">... &nbsp;&nbsp;&nbsp; <b>with</b> open</span>(os.path.join(<span class="orange">"testimonials"</span>, testimonial)) <span class="green">as</span> file:
+<span class="green">>>> <b>for</b></span> testimonial <span class="purple"><b>in</b></span> os.listdir(<span class="orange">"testimonials"</span>):
+<span class="green">... &nbsp;&nbsp;&nbsp; <b>with</b> open</span>(os.path.join(<span class="orange">"testimonials"</span>, testimonial)) <span class="green"><b>as</b></span> file:
 <span class="green">... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print</span>(f<span class="orange "><b>"</b></span><span class="pink"><b>{testimonial}</b></span><span class="orange"><b>:\n"</b></span>)
 <span class="green">... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print</span>(file.read(),<span class="orange"><b> "\n--------"</b></span>)
 <span class="green">... </span>
