@@ -11,11 +11,11 @@ lektor-s3 = 0.5.0
 lektor-disqus-comments = 0.2
 lektor-markdown-highlighter = 0.2
 # Our plugins, yay!
-lektor-natural-language = 0.1
-lektor-strip-html-tags = 0.2
-lektor-jinja-content = 0.2
-lektor-slugify = 0.2
-lektor-atom = 0.2
+lektor-natural-language = 0.3
+lektor-strip-html-tags = 0.3
+lektor-jinja-content = 0.4.2
+lektor-slugify = 0.4
+lektor-atom = 0.3
 
 [theme_settings]
   googleanalytics = "UA-36783686-1"
