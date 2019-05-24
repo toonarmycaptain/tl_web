@@ -6,7 +6,7 @@ pub_date: 2017-05-23
 ---
 body:
 
-Terminal Labs has some exciting news! We're open sourcing a project called <a href="https://bitbucket.org/terminal_labs/rambo" target="_blank">Rambo</a>.
+Terminal Labs has some exciting news! We're open sourcing a project called <a href="https://github.com/terminal-labs/rambo" target="_blank">Rambo</a>.
 
 Rambo is a tool that allows you to simply provision new virtual machines on any provider and have them be nearly identical. To accomplish this Rambo makes heavy use of <a href="https://www.vagrantup.com/" target="_blank">Vagrant</a> and it's various plugins for different providers. This means that you can spin up a new local instance on VirtualBox with `vagrant up`, and another instance that is nearly identical on the cloud by passing in an argument for your cloud provider of choice, such as `vagrant --target=digitalocean up`.
 

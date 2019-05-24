@@ -99,30 +99,30 @@ Finally, uWSGI. uWSGI is a specialized programs that helps NGINX communicate wit
 Time for code.
 
 Vagrant needs a simple config file. You can use ours which is hosted here:
-<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/Vagrantfile?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/Vagrantfile?at=master&fileviewer=file-view-default</a>
+<a href="https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/Vagrantfile" target="_blank">https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/Vagrantfile</a>
 
 With the above config file you can run `vagrant up` and that should setup your virtual machine. Once the machine is up and running it will run a master bash script that in turn runs 6 other bash scripts. 
 
 The master script is hosted here:
-<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/deploy_all.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/deploy_all.sh?at=master&fileviewer=file-view-default</a>
+<a href="https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/deploy_all.sh" target="_blank">https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/deploy_all.sh</a>
 
 The first thing the scripts do is set up a new Linux user on the box. See:
-<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/users/deploy_users.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/users/deploy_users.sh?at=master&fileviewer=file-view-default</a>
+<a href="https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/users/deploy_users.sh" target="_blank">https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/users/deploy_users.sh</a>
 
 Then the core system dependencies are installed. See:
-<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/dependencies/deploy_dependencies.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/dependencies/deploy_dependencies.sh?at=master&fileviewer=file-view-default</a>
+<a href="https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/dependencies/deploy_dependencies.sh" target="_blank">https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/dependencies/deploy_dependencies.sh</a>
 
 Next, Postgres is installed. See:
-<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/postgresql/deploy_postgresql.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/postgresql/deploy_postgresql.sh?at=master&fileviewer=file-view-default</a>
+<a href="https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/postgresql/deploy_postgresql.sh" target="_blank">https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/postgresql/deploy_postgresql.sh</a>
 
 Next, NGINX is installed and it’s config files are copied into the machine. See:
-<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/nginx/?at=master" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/nginx/?at=master</a>
+<a href="https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/nginx/deploy_nginx.sh" target="_blank">https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/nginx/deploy_nginx.sh</a>
 
 Now for the Flask app. See:
-<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/app/deploy_app.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/app/deploy_app.sh?at=master&fileviewer=file-view-default</a>
+<a href="https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/app/deploy_app.sh" target="_blank">https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/app/deploy_app.sh</a>
 
 Finally, install Supervisor and it’s config file. See:
-<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/supervisord/deploy_supervisord.sh?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_local/deployment/supervisord/deploy_supervisord.sh?at=master&fileviewer=file-view-default</a>
+<a href="https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/supervisord/deploy_supervisord.sh" target="_blank">https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/deployment/supervisord/deploy_supervisord.sh</a>
 
 After all these scripts run the virtual machine running in VirtualBox should be serving your app at 127.0.0.1:8080
 
@@ -133,7 +133,7 @@ vagrant plugin install vagrant-digitalocean
 Then, just make an account at Digital Ocean, then download you API key and reconfigure your Vagrant config file.
 
 We have done that here:
-<a href="https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_public/Vagrantfile?at=master&fileviewer=file-view-default" target="_blank">https://bitbucket.org/terminal_labs/dev_to_prod_presentation/src/a15c0d2af7923339b557e226cc7c099589b44cc0/vagrant_public/Vagrantfile?at=master&fileviewer=file-view-default</a>
+<a href="https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/Vagrantfile" target="_blank">https://bitbucket.org/terminal_labs/dev-to-prod-presentation/src/master/vagrant_local/Vagrantfile</a>
 
 
 Finally, run `vagrant up --provider=digital_ocean`.

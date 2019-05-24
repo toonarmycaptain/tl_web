@@ -65,7 +65,7 @@ Going hand in hand with the Natural Language plugin, we needed to take our conte
 {{ var }}
 ```
 
-into `{{ var|striphtmltags }}`. Pretty nifty, right? Because of the handiness of the Jinja-Content plugin, I just tested this and tried it right here in this page. [Proof](https://bitbucket.org/terminal_labs/tl-lektor/src/abeabb68680a755b791f76c120b2efe7a57c5baa/content/blog/new-lektor-plugins-and-a-theme/contents.lr?at=master&fileviewer=file-view-default#contents.lr-54). That really is useful.
+into `{{ var|striphtmltags }}`. Pretty nifty, right? Because of the handiness of the Jinja-Content plugin, I just tested this and tried it right here in this page. [Proof](https://github.com/terminal-labs/tl_web/commit/abeabb68680a755b791f76c120b2efe7a57c5baa#diff-5537b72a5a3836655f8e2aa86ec4a92aR54). That really is useful.
 
 ## New Lektor Theme - Terminal
 

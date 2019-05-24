@@ -2,7 +2,7 @@
 
 ## Important Notes:
 
-1. To use, download **with the theme**: `git clone --recursive git@bitbucket.org:terminal_labs/tl-lektor.git`. This is needed to get and keep up to date with https://github.com/terminal-labs/lektor-theme-terminal.
+1. To use, download **with the theme**: `git clone --recursive git@github.com:terminal-labs/tl_web.git`. This is needed to get and keep up to date with https://github.com/terminal-labs/lektor-theme-terminal.
 2. To develop this, in the project file you need to change to toggle
 
     ```ini
