@@ -47,7 +47,7 @@ body: [CentOS](https://www.centos.org/) is a Linux distribution that provides a 
 images:
 
 ##### select-image #####
-image: centos_logo_200x200.png
+image: centos-logo.svg
 -----
 title: 
 -----
