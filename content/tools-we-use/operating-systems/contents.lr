@@ -14,7 +14,7 @@ Fast, free and incredibly easy to use, the Ubuntu operating system powers millio
 images:
 
 ##### select-image #####
-image: aubuntu_logo_200x200.png
+image: ubuntu.svg
 -----
 title: 
 -----
@@ -47,7 +47,7 @@ body: [CentOS](https://www.centos.org/) is a Linux distribution that provides a 
 images:
 
 ##### select-image #####
-image: centos_logo_200x200.png
+image: centos-logo.svg
 -----
 title: 
 -----
