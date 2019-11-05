@@ -21,7 +21,7 @@ When this happened, I was for a few reasons unsatisfied with the first attempt. 
 
 It's pretty easy to have a basic call to `subprocess` that simply runs the process. If you want to do fancier things though, it starts getting a bit more complicated and the implementation you might be looking for becomes a bit less obvious. There's often a few ways of doing the same thing, and several potential features you might want, most of which you don't get with the most basic call. I have to write a subprocess call infrequently enough, and it can be complicated enough, that I often end up searching for the implementation I'm looking for on Stack Overflow.
 
-### Say you want to use to log stdout and stderr. Easy! Just use the pretty basic, normal use of `Popen` with `communicate` [link](https://stackoverflow.com/questions/31833897/python-read-from-subprocess-stdout-and-stderr-separately-while-preserving-order/31867499#31867499):
+### Say you want to log stdout and stderr. Easy! Just use the pretty basic, normal use of `Popen` with `communicate` [link](https://stackoverflow.com/questions/31833897/python-read-from-subprocess-stdout-and-stderr-separately-while-preserving-order/31867499#31867499):
 
 ```python
 from subprocess import Popen, PIPE
