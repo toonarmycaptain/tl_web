@@ -13,7 +13,7 @@ twitter_handle: nixjdm
 body:
 
 Yesterday I gave a lightning talk at [APUG](https://www.meetup.com/austinpython/events/wfkrdpyxhbmb/) about a better `subprocess`. Python's `subprocess` can do a lot, but the more basic uses fall short in various ways when you want to build a CLI passthrough. In the talk, I presented on the best way to do that that I'm aware of.
-<img src="lightningtalk-2018-05-09.jpg" width="900px" alt="APUG lightning talk 2018-05-09.jpg"/> 
+<img src="lightningtalk-2018-05-09.jpg" width="900px" alt="APUG lightning talk 2018-05-09.jpg"/>
 
 ### [Rambo](http://terminallabs-rambo.readthedocs.io/en/latest/#what-s-rambo-for) started out as Vagrant code, and then turned into a wrapper around Vagrant.
 

@@ -16,11 +16,15 @@ Coding, math, and physics provide ample ways to be useful and help the world, an
 images:
 
 ##### select-image #####
-image: joe.jpg
+image: joe2.jpg
 -----
 title: 
 -----
 caption: 
+-----
+background_color: 
+-----
+padding: 
 #### subnav-item ####
 body:
 
@@ -38,6 +42,10 @@ image: chris.jpg
 title: 
 -----
 caption: 
+-----
+background_color: 
+-----
+padding: 
 #### subnav-item ####
 body:
 
@@ -53,7 +61,71 @@ image: mike.jpg
 title: 
 -----
 caption: 
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body:
+
+Alan Cugler is my name, and innovation is the game. I’ve grown up as a “do it yourselfer” learning to fix engines, renovate houses, and brainstorming up new inventions. I graduated high school early and joined the US Army to give myself a jumpstart in life. With the experience from the military, I grew to value teamwork and communication as much as my ability to do it myself.
+
+I have a healthy respect for history and make a point to study history in my free time. The history of discovery, and political and military history, have shown the human condition in how we react and grow. Learning from history has been beneficial in addressing everyday problems in work and life. Someone grappled with a similar situation and took action to the best of their ability. Whether good or bad, those experiences are now mine as second hand knowledge, and I can make a more informed decision.
+
+Material science really gets me excited as well. As an ongoing hobby I learn as much as I can about different materials, how to make them, and how those unique qualities in materials have often been the solutions to entire engineering problems. I’ve studied traditional and industrial methods for smelting, glass blowing, plastics, bio fuels, wood working, farming, recycling, etc.
+
+With all this interest in materials and history, I learned early in my teens that programming is also valuable. I am excited by the ability to potentially create technology whenever I have an idea. Often, when I find limitations in services or programs I get a sense of satisfaction knowing I have the ability to build upon what I am working with.
+----
+images:
+
+##### select-image #####
+image: alan.jpg
+-----
+title: 
+-----
+caption: 
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item ####
+body:
+
+Hi, my name is Jason Traub.
+
+My love and passion for music eventually led me to study Electrical Engineering while attending the University of Florida. I am a guitarist and song-writer, and have always had an aptitude for math, science, and philosophy. I originally just wanted to build a guitar amplifier. Through the curriculum however, I grew to appreciate the many applications we rely on in our everyday lives. Furthermore, it always seems like the latest and greatest music is taking advantage of the newest technology (from the electric guitar, to the Moog synthesizer, to the Yamaha DX7, and on...). The ability to draw a fundamental connection between music and technology, I believe, allows me to develop scientific applications with a greater intuition.
+
+My technical career has led me from consumer electronics, to building robot brains with an AI startup, to testing rocket components at SpaceX. It seems like I have carved myself a niche in computer science, with the help of my formal education, work experience, and the wealth of information available on the internet. And I really enjoy it! I’m at the point where I thoroughly understand the fundamentals of how to build computers; now I’d like to tell them what to do.
+----
+images:
+
+##### select-image #####
+image: jason.jpg
+-----
+title: 
+-----
+caption: 
+-----
+background_color: 
+-----
+padding: 
 ---
 _template: content_rows.html
 ---
 image_width: 300
+---
+_discoverable: 
+---
+_hidden: 
+---
+_slug: 
+---
+body: 
+---
+meta_description: 
+---
+meta_keywords: 
+---
+nav_bar: 
+---
+position: 
