@@ -1,0 +1,39 @@
+{% extends "page.html" %}
+
+{% block body_content %}
+  <div id="gallery">
+    <div id="slides">
+
+      <div class="client_slide" style="display: block;">
+        {% for partner in this.Partner.blocks %}
+          <div class="client_image">
+            {% set img = partner.image %}
+            {% if img.caption %}
+              {% set alt = img.caption %}
+            {% else %}
+              {% set alt = "" %}
+            {% endif %}
+            <a href="{{ partner.url }}" target="_blank">
+              <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}">
+            </a>
+          </div>
+        {% endfor %}
+        </div>
+
+    </div>
+    <div id="our_partners">
+      <div class="slideshow_menu" id="slideshow_menu">
+        <ul>
+          {% for partner in this.Partner.blocks %}
+          <li class="menu_item green_border unselectable" id="{{ partner.title|slug }}">
+            <a href="{{ partner.url }}" target="_blank" style="color: inherit; font: inherit; text-decoration: none;">
+              {{ partner.title }}
+              <div class="link_underline"></div>
+            </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock body_content %}

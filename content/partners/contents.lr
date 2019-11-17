@@ -1,0 +1,92 @@
+_model: partners
+---
+title: Partners
+---
+nav_bar: yes
+---
+position: 7
+---
+_template: partners.html
+---
+Partner:
+
+#### partner ####
+title: Quansight
+----
+body: QS body
+----
+url: https://www.quansight.com/
+----
+image: freebsd_logo_200x200.png
+----
+image_title: 
+----
+image_caption: 
+----
+image_background_color: 
+----
+image_padding: 
+#### partner ####
+title: Kickdrum
+----
+body: 
+----
+url: https://www.kickdrum.com/
+----
+image: debian_logo_200x200.png
+----
+image_title: 
+----
+image_caption: 
+----
+image_background_color: 
+----
+image_padding: 
+#### partner ####
+title: SaltStack
+----
+body: 
+----
+url: https://www.saltstack.com/
+----
+image: freebsd_logo_200x200.png
+----
+image_title: 
+----
+image_caption: 
+----
+image_background_color: 
+----
+image_padding: 
+#### partner ####
+title: Wolfram
+----
+body: 
+----
+url: https://www.wolfram.com/
+----
+image: tools-we-use-operating-systems.png
+----
+image_title: 
+----
+image_caption: 
+----
+image_background_color: 
+----
+image_padding: 
+---
+_discoverable: 
+---
+_hidden: 
+---
+_slug: 
+---
+body: 
+---
+image_width: 
+---
+meta_description: 
+---
+meta_keywords: 
+---
+page_thumb: 

@@ -4,7 +4,7 @@ _template: blog.html
 ---
 title: Blog
 ---
-position: 7
+position: 8
 ---
 nav_bar: yes
 ---
