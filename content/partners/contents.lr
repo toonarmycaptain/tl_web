@@ -17,47 +17,17 @@ body: QS body
 ----
 url: https://www.quansight.com/
 ----
-image: freebsd_logo_200x200.png
+image: quansight.png
 ----
 image_title: 
 ----
-image_caption: 
+caption: 
 ----
-image_background_color: 
+background_color: #2a114d
 ----
-image_padding: 
-#### partner ####
-title: Kickdrum
+padding: 20px
 ----
-body: 
-----
-url: https://www.kickdrum.com/
-----
-image: debian_logo_200x200.png
-----
-image_title: 
-----
-image_caption: 
-----
-image_background_color: 
-----
-image_padding: 
-#### partner ####
-title: SaltStack
-----
-body: 
-----
-url: https://www.saltstack.com/
-----
-image: freebsd_logo_200x200.png
-----
-image_title: 
-----
-image_caption: 
-----
-image_background_color: 
-----
-image_padding: 
+image_width: 
 #### partner ####
 title: Wolfram
 ----
@@ -65,15 +35,53 @@ body:
 ----
 url: https://www.wolfram.com/
 ----
-image: tools-we-use-operating-systems.png
+image: wolfram.png
 ----
 image_title: 
 ----
-image_caption: 
+caption: 
 ----
-image_background_color: 
+background_color: #222222
 ----
-image_padding: 
+padding: 20px
+----
+image_width: 
+#### partner ####
+title: SaltStack
+----
+body: 
+----
+url: https://www.saltstack.com/
+----
+image: SaltStack_white.svg
+----
+image_title: 
+----
+caption: 
+----
+background_color: #000
+----
+padding: 20px
+----
+image_width: 400
+#### partner ####
+title: Kickdrum
+----
+body: 
+----
+url: https://www.kickdrum.com/
+----
+image: kickdrum.png
+----
+image_title: 
+----
+caption: 
+----
+background_color: #130739
+----
+padding: 20px
+----
+image_width: 
 ---
 _discoverable: 
 ---

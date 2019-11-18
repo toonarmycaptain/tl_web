@@ -7,14 +7,27 @@
       <div class="client_slide" style="display: block;">
         {% for partner in this.Partner.blocks %}
           <div class="client_image">
-            {% set img = partner.image %}
-            {% if img.caption %}
-              {% set alt = img.caption %}
+            {% if partner.image_width %}
+              {% set width = partner.image_width %}
+            {% else %}
+              {% set width = 250 %}
+            {% endif %}
+
+            {% set img = this.record.attachments.images.get(partner.image) %}
+            {% set style_beginning = ' style="padding: 20px; margin: 20px; width: '|safe
+            ~ width|string ~ 'px;'|safe %}
+            {% set img_style = style_beginning ~ ' background-color: '|safe
+            ~ partner.background_color
+            ~ ';"'|safe %}
+
+            {% if partner.caption %}
+              {% set alt = partner.caption %}
             {% else %}
               {% set alt = "" %}
             {% endif %}
+
             <a href="{{ partner.url }}" target="_blank">
-              <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}">
+              <img draggable="false" src="{{ img.thumbnail(width)|url }}" {{ img_style }} alt="{{ alt }}">
             </a>
           </div>
         {% endfor %}
