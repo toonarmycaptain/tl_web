@@ -1,9 +1,10 @@
 [project]
 name = tl_lektor
 url = https://terminallabs.com
+
 # Need external. # Switch to absolute in dev for static file paths.
-#url_style = absolute
 url_style = external
+#url_style = absolute
 
 [packages]
 lektor-htmlmin = 1.0.2
