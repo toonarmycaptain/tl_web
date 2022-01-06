@@ -22,7 +22,7 @@
     AWS_SECRET_ACCESS_KEY=[your personal secret]
     ```
 
-    Then you can deploy with `AWS_PROFILE=s3 lektor deploy`, or load export that env var for repeated use.
+    Then you can deploy with `AWS_PROFILE=s3 lektor deploy`, or export that env var for repeated use.
 
 This repo also uses lesscss. To install it, you can do:
 
