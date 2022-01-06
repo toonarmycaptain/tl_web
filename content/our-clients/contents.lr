@@ -9,9 +9,11 @@ title: Modavanti
 ----
 body:
 
-Modavanti is a sustainable fashion retailer. Modavanti markets organic and fairtrade clothing and cosmetics made by artisans around the world. 
+Modavanti was a sustainable fashion retailer. Modavanti markets organic and fairtrade clothing and cosmetics made by artisans around the world. 
 
-Technically, Modavanti’s e-commerce platform is made using Python Django and runs on a small cluster on Rackspace. Terminal Labs assisted Modavanti by adding features, expanding their user-interface system, optimizing performance, and maintaining servers.
+Modavanti’s e-commerce platform was made using Python Django and runs on a small cluster on Rackspace. Terminal Labs assisted Modavanti by adding features, expanding their user-interface system, optimizing performance, and maintaining servers.
+
+Modavanti has since joined DoneGood in [2019](https://donegood.co/blogs/news/modavanti-donegood-ethical-shopping-made-simple).
 
 <a href="http://modavanti.com/" target="_blank">modavanti.com</a>
 ----
