@@ -24,6 +24,17 @@
 
     Then you can deploy with `AWS_PROFILE=s3 lektor deploy`, or load export that env var for repeated use.
 
+This repo also uses lesscss. To install it, you can do:
+
+```shell
+npm install -g less
+```
+
+and to use it to compile css:
+
+```shell
+lessc less/main.less assets/static/css/terminal.css
+
 ## Handy links:
 
 grayscale: https://www.december.com/html/spec/color0.html
