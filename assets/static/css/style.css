@@ -21,7 +21,7 @@
   width: 440px;
   padding: 10px;
   min-height: 300px;
-  border-right: 1px solid #2f9a41;
+  border-right: 1px solid #2F9A41;
 }
 .content_col_right {
   display: inline-block;
@@ -40,7 +40,7 @@
 }
 .row_border {
   line-height: 30px;
-  border-bottom: 1px solid #2f9a41;
+  border-bottom: 1px solid #2F9A41;
 }
 .contact_info {
   position: absolute;
@@ -78,6 +78,11 @@
 }
 .client_underline {
   display: none;
+  position: relative;
+  top: -8px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #2F9A41;
 }
 a img {
   border: none;
@@ -105,7 +110,7 @@ a img {
 .competitor-boxes a:link,
 .competitor-boxes a:visited {
   text-decoration: none;
-  color: #c0c0c0;
+  color: #C0C0C0;
 }
 .slideshow_menu {
   width: 940px;
@@ -117,11 +122,12 @@ a img {
   text-align: center;
 }
 .slideshow_menu li {
-  width: 132px;
   display: inline-block;
+  padding: 0 10px;
   list-style: none;
   height: 40px;
   overflow: hidden;
+  min-width: 70px;
   line-height: 40px;
 }
 .slideshow_menu li a {
@@ -165,10 +171,10 @@ a img {
   border: 1px solid !important;
   border-color: #808080 !important;
   border-radius: 3px !important;
-  color: #c0c0c0 !important;
+  color: #C0C0C0 !important;
 }
 .code-highlights .tl-green {
-  color: #2f9a41;
+  color: #2F9A41;
 }
 .code-highlights .blue {
   color: #0087d7;
@@ -177,7 +183,7 @@ a img {
   color: #c4a000;
 }
 .code-highlights .green {
-  color: #2f9a41;
+  color: #2F9A41;
 }
 .code-highlights .orange {
   color: #af5f00;
@@ -189,7 +195,7 @@ a img {
   color: #af00ff;
 }
 .code-highlights .white {
-  color: #f5f5f5;
+  color: #F5F5F5;
 }
 .code-highlights .host {
   color: #8ae234;
@@ -230,7 +236,7 @@ code {
   font: 12px monospace;
 }
 code .tl-green {
-  color: #2f9a41;
+  color: #2F9A41;
 }
 code .blue {
   color: #0087d7;
@@ -239,7 +245,7 @@ code .burnt-orange {
   color: #c4a000;
 }
 code .green {
-  color: #2f9a41;
+  color: #2F9A41;
 }
 code .orange {
   color: #af5f00;
@@ -251,7 +257,7 @@ code .purple {
   color: #af00ff;
 }
 code .white {
-  color: #f5f5f5;
+  color: #F5F5F5;
 }
 code .host {
   color: #8ae234;

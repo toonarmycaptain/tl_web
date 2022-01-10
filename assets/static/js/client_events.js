@@ -7,7 +7,7 @@ function hide_clients() {
   });
 }
 
-function load_modavanti() {
+function load_first() {
   $("#modavanti_underline").show();
   $("#client_modavanti").show();
 }

@@ -5,6 +5,27 @@ title: Our Clients
 SubNav:
 
 #### subnav-item-title ####
+title: Raytheon Technologies
+----
+body:
+
+Raytheon Technologies Corporation is an aerospace and defense company that provides advanced systems and services for commercial, military and government customers worldwide. It includes four industry-leading businesses—Collins Aerospace, Pratt & Whitney, Raytheon Intelligence & Space and Raytheon Missiles & Defense. With 195,000 employees, the company is pushing the boundaries of avionics, cybersecurity, directed energy, electric propulsion, hypersonics, quantum physics and more. Raytheon Technologies formed in 2020 through the combination of Raytheon Company and the United Technologies Corporation aerospace businesses.
+
+[Raytheon Technologies](https://www.rtx.com/)
+----
+images:
+
+##### select-image #####
+image: rtx_logo.svg
+-----
+title: logo
+-----
+caption: 
+-----
+background_color: 
+-----
+padding: 
+#### subnav-item-title ####
 title: Modavanti
 ----
 body:
@@ -13,9 +34,7 @@ Modavanti was a sustainable fashion retailer. Modavanti markets organic and fair
 
 Modavanti’s e-commerce platform was made using Python Django and runs on a small cluster on Rackspace. Terminal Labs assisted Modavanti by adding features, expanding their user-interface system, optimizing performance, and maintaining servers.
 
-Modavanti has since joined DoneGood in [2019](https://donegood.co/blogs/news/modavanti-donegood-ethical-shopping-made-simple).
-
-<a href="http://modavanti.com/" target="_blank">modavanti.com</a>
+Modavanti joined DoneGood in [2019](https://donegood.co/blogs/news/modavanti-donegood-ethical-shopping-made-simple).
 ----
 images:
 
@@ -107,7 +126,7 @@ body:
 
 Mobius Medical Systems is a medical technology company that focuses on radiation oncology software solutions. Mobius develops and markets a Treatment Planning System.  Terminal Labs assisted Mobius with the addition of many new features to their sophisticated code base.
 
-<a href="http://www.mobiusmed.com/" target="_blank">mobiusmed.com</a>
+Mobius was acquired by Varian Medical in [2018](https://www.massdevice.com/varian-medical-acquires-mobius-medical-systems/).
 ----
 images:
 

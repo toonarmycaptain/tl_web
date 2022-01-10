@@ -13,7 +13,7 @@
               {% else %}
                 {% set alt = "" %}
               {% endif %}
-              <a draggable="false" href="{{ img|url }}" data-title="{{ alt }}" data-lightbox="image-{{ client.title|slug }}">
+              <a draggable="false" href="{{ img|url }}" data-title="{{ alt }}" data-lightbox="image-{{ client.title|slug }}" class="client_link">
                 <img draggable="false" src="{{ this.record.attachments.images.get(img).thumbnail(250)|url }}" alt="{{ alt }}">
               </a>
             </div>
@@ -28,8 +28,8 @@
       <div class="slideshow_menu" id="slideshow_menu">
         <ul>
           {% for client in this.SubNav.blocks %}
-            <li class="menu_item green_border unselectable" id="{{ client.title|slug }}">{{ client.title }}
-              <div class="link_underline client_underline" id="{{ client.title|slug }}_underline"></div>
+            <li class="menu_item green_border client_link" id="{{ client.title|slug }}">{{ client.title }}
+              <div class="client_underline" id="{{ client.title|slug }}_underline"></div>
             </li>
           {% endfor %}
         </ul>
@@ -37,3 +37,27 @@
     </div>
   </div>
 {% endblock body_content %}
+
+{% block additional_footer %}
+  <script>
+   if (window.location.hash) {
+     $(window.location.hash + "_underline").show();
+     $("#client_" + window.location.hash.slice(1)).show();
+   } else {
+     $($(".client_slide")[0]).show();
+     $($(".client_underline")[0]).show();
+   }
+
+   $('.menu_item').click(function() {
+     $.each($(".client_slide"), function(index, value) {
+       $(value).hide();
+     });
+     $.each($(".client_underline"), function(index, value) {
+       $(value).hide();
+     });
+     $("#" + this.id + "_underline").show();
+     $("#client_" + this.id).show();
+     window.location.hash = "#" + this.id;
+   });
+  </script>
+{% endblock additional_footer %}

@@ -38,7 +38,7 @@
       <div class="slideshow_menu" id="slideshow_menu">
         <ul>
           {% for partner in this.Partner.blocks %}
-          <li class="menu_item green_border unselectable" id="{{ partner.title|slug }}">
+          <li class="menu_item green_border" id="{{ partner.title|slug }}">
             <a href="{{ partner.url }}" target="_blank" style="color: inherit; font: inherit; text-decoration: none;">
               {{ partner.title }}
               <div class="link_underline"></div>

@@ -86,6 +86,11 @@
 }
 .client_underline {
   display: none;
+  position: relative;
+  top: -8px;
+  height: @border_width;
+  margin: 0 auto;
+  background-color: @std_green;
 }
 a img {
   border:none;
@@ -98,7 +103,7 @@ a img {
 }
 .competitor-box {
   float: left;
-  width: @med_width / 5 - 2 * @border_width;
+  width: (@med_width / 5 - 2 * @border_width);
   height: 50px;
 }
 .competitor {
@@ -124,11 +129,12 @@ a img {
   text-align: center;
 }
 .slideshow_menu li {
-  width: 132px;
   display: inline-block;
+  padding: 0 10px;
   list-style: none;
   height: 40px;
   overflow: hidden;
+  min-width: 70px;
   line-height: @default_line_height;
 }
 .slideshow_menu li a {
