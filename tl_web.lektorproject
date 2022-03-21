@@ -2,9 +2,15 @@
 name = tl_lektor
 url = https://terminallabs.com
 
-# Need external. # Switch to absolute in dev for static file paths.
-url_style = external
-#url_style = absolute
+# URL concerns
+# We'd prefer external since it's supposedly better for SEO, but
+# external links targeting the real site will continue to do so when doing local development
+# which means we'd need to toggle this all the time.
+# Plus, atm, we don't have the redirect set up to www from the no-subdomain site,
+# meaning there's a CORS error for using the font.
+# So absolute is the cheap solution until we can sink a little more time into this.
+# url_style = external
+url_style = absolute
 
 [packages]
 lektor-htmlmin = 1.0.2
@@ -30,5 +36,5 @@ lektor-slugify = 0.4
 [servers.s3]
 name = S3
 enabled = yes
-target = s3://terminallabs.com
-cloudfront = E2NMU6DL3M256M
+target = s3://static.terminallabs.com
+cloudfront = E26CG4ERHZZOUY
