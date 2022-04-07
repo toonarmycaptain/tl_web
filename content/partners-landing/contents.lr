@@ -1,0 +1,34 @@
+_model: partners-page
+---
+title: Partner Landing Page
+---
+hero_main_section:
+
+This is a big placeholder hero! Take a look at our new partner. 
+---
+hero_sub_section: Bring in a Ringer to drive Growth & Innovation.
+---
+_template: partners-landing.html
+---
+tl_logo_image: favicon.png
+---
+tl_logo_image_width: 50
+---
+partner_flow:
+
+#### partner-content ####
+first_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+----
+second_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#### partner-content ####
+first_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+----
+second_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#### partner-content ####
+first_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+----
+second_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+---
+partner_logo_image: ringer-sciences.png
+---
+partner_logo_image_width: 50
