@@ -14,21 +14,75 @@ tl_logo_image: favicon.png
 ---
 tl_logo_image_width: 50
 ---
-partner_flow:
-
-#### partner-content ####
-first_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-----
-second_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#### partner-content ####
-first_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-----
-second_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#### partner-content ####
-first_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-----
-second_body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
----
 partner_logo_image: ringer-sciences.png
 ---
 partner_logo_image_width: 50
+---
+partner_flow:
+
+#### partner-content ####
+content_title: Great Achievements
+----
+content_image: ringer-sciences.png
+----
+content_body:
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit 
+- Sed do eiusmod tempor incididunt ut labore
+- Et dolore magna aliqua.
+#### partner-content ####
+content_title: Great Achievements
+----
+content_image: favicon.png
+----
+content_body:
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit 
+- Sed do eiusmod tempor incididunt ut labore
+- Et dolore magna aliqua.
+#### partner-content ####
+content_title: Great Achievements
+----
+content_image: ringer-sciences.png
+----
+content_body:
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit 
+- Sed do eiusmod tempor incididunt ut labore
+- Et dolore magna aliqua.
+#### partner-content ####
+content_title: Great Achievements
+----
+content_image: favicon.png
+----
+content_body:
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit 
+- Sed do eiusmod tempor incididunt ut labore
+- Et dolore magna aliqua.
+#### partner-content ####
+content_title: Great Achievements
+----
+content_image: ringer-sciences.png
+----
+content_body:
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit 
+- Sed do eiusmod tempor incididunt ut labore
+- Et dolore magna aliqua.
+#### partner-content ####
+content_title: Great Achievements
+----
+content_image: favicon.png
+----
+content_body:
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit 
+- Sed do eiusmod tempor incididunt ut labore
+- Et dolore magna aliqua.

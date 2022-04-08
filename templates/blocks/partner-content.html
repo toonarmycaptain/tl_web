@@ -1,8 +1,11 @@
-<div class="flex row">
-    <div class="content_box margin-15 width-half partner-content">
-        {{ this.first_body }}
+{% set img = this.record.attachments.images.get(this.content_image) %}
+
+<div class="content_box margin-15 width-half partner-content">
+    <div class="partner-content-header">
+        {% if img %}
+            <img draggable="false" src="{{ img.thumbnail(50)|url }}" />
+        {% endif %}
+        <h4>{{ this.content_title }}</h4>
     </div>
-    <div class="content_box margin-15 width-half partner-content">
-        {{ this.second_body }}
-    </div>
+    <p>{{ this.content_body }}</p>
 </div>

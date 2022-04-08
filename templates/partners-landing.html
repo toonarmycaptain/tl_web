@@ -21,8 +21,13 @@
     <img draggable="false" src="{{ img.thumbnail(this.tl_logo_image_width)|url }}" {{img_style}} />
 </div>
 
-{% for blk in this.partner_flow.blocks %}
-    {{ blk }}
-{% endfor %}
+<div class="flex row">
+    {% for blk in this.partner_flow.blocks %}
+        {{ blk }}
+        {% if loop.index % 2 == 0 %}
+            </div><div class="flex row">
+        {% endif %}
+    {% endfor %}
+</div>
 
 {% endblock %}
