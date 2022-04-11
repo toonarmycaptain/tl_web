@@ -4,7 +4,7 @@ title: Partner Landing Page
 ---
 hero_main_section:
 
-This is a big placeholder hero! Take a look at our new partner. 
+This is a big placeholder hero! Take a look at our new partner.
 ---
 hero_sub_section: Bring in a Ringer to drive Growth & Innovation.
 ---
@@ -12,11 +12,11 @@ _template: partners-landing.html
 ---
 tl_logo_image: favicon.png
 ---
-tl_logo_image_width: 50
+tl_logo_image_width: 80
 ---
 partner_logo_image: ringer-sciences.png
 ---
-partner_logo_image_width: 50
+partner_logo_image_width: 80
 ---
 partner_flow:
 

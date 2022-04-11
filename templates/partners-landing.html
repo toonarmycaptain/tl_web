@@ -9,8 +9,8 @@
     <img draggable="false" src="{{ img.thumbnail(this.tl_logo_image_width)|url }}" {{img_style}} />
 
     <center>
-        <p>{{ this.hero_main_section }}</p>
-        <p>{{ this.hero_sub_section }}</p>
+        <h3>{{ this.hero_main_section }}</h3>
+        <h4>{{ this.hero_sub_section }}</h4>
     </center>
 
     {% set img = this.record.attachments.images.get(this.partner_logo_image) %}
@@ -18,7 +18,7 @@
     ~ this.partner_logo_image_width|string ~ 'px; float: right;"'|safe %}
     {% set img_style = style_beginning %}
 
-    <img draggable="false" src="{{ img.thumbnail(this.tl_logo_image_width)|url }}" {{img_style}} />
+    <img draggable="false" src="{{ img.thumbnail(this.partner_logo_image_width)|url }}" {{img_style}} />
 </div>
 
 <div class="flex row">
