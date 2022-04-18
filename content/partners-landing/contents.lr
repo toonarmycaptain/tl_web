@@ -2,9 +2,7 @@ _model: partners-page
 ---
 title: Partner Landing Page
 ---
-hero_main_section:
-
-This is a big placeholder hero! Take a look at our new partner.
+hero_main_section: This is a big placeholder hero! Take a look at our new partner.
 ---
 hero_sub_section: Bring in a Ringer to drive Growth & Innovation.
 ---
@@ -31,6 +29,8 @@ content_body:
 - Consectetur adipiscing elit 
 - Sed do eiusmod tempor incididunt ut labore
 - Et dolore magna aliqua.
+----
+border_color: #203864
 #### partner-content ####
 content_title: Great Achievements
 ----
@@ -42,6 +42,8 @@ content_body:
 - Consectetur adipiscing elit 
 - Sed do eiusmod tempor incididunt ut labore
 - Et dolore magna aliqua.
+----
+border_color: #203864
 #### partner-content ####
 content_title: Great Achievements
 ----
@@ -53,6 +55,8 @@ content_body:
 - Consectetur adipiscing elit 
 - Sed do eiusmod tempor incididunt ut labore
 - Et dolore magna aliqua.
+----
+border_color: #203864
 #### partner-content ####
 content_title: Great Achievements
 ----
@@ -64,6 +68,8 @@ content_body:
 - Consectetur adipiscing elit 
 - Sed do eiusmod tempor incididunt ut labore
 - Et dolore magna aliqua.
+----
+border_color: #203864
 #### partner-content ####
 content_title: Great Achievements
 ----
@@ -75,6 +81,8 @@ content_body:
 - Consectetur adipiscing elit 
 - Sed do eiusmod tempor incididunt ut labore
 - Et dolore magna aliqua.
+----
+border_color: #203864
 #### partner-content ####
 content_title: Great Achievements
 ----
@@ -86,3 +94,5 @@ content_body:
 - Consectetur adipiscing elit 
 - Sed do eiusmod tempor incididunt ut labore
 - Et dolore magna aliqua.
+----
+border_color: #203864

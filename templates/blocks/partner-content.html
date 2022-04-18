@@ -1,9 +1,9 @@
 {% set img = this.record.attachments.images.get(this.content_image) %}
 
-<div class="content_box margin-15 width-half partner-content">
+<div class="content_box margin-15 width-half partner-content" style="border-color: {{this.border_color}}">
     <div class="partner-content-header">
         {% if img %}
-            <img draggable="false" src="{{ img.thumbnail(50)|url }}" />
+            <img draggable="false" src="{{ img.thumbnail(50)|url }}"/>
         {% endif %}
         <h4>{{ this.content_title }}</h4>
     </div>
