@@ -18,7 +18,7 @@ partner_logo_image_width: 80
 ---
 partner_flow:
 
-#### partner-content ####
+#### small-card ####
 content_title: Great Achievements
 ----
 content_image: ringer-sciences.png
@@ -31,7 +31,7 @@ content_body:
 - Et dolore magna aliqua.
 ----
 border_color: #203864
-#### partner-content ####
+#### small-card ####
 content_title: Great Achievements
 ----
 content_image: favicon.png
@@ -44,7 +44,7 @@ content_body:
 - Et dolore magna aliqua.
 ----
 border_color: #203864
-#### partner-content ####
+#### small-card ####
 content_title: Great Achievements
 ----
 content_image: ringer-sciences.png
@@ -57,7 +57,7 @@ content_body:
 - Et dolore magna aliqua.
 ----
 border_color: #203864
-#### partner-content ####
+#### small-card ####
 content_title: Great Achievements
 ----
 content_image: favicon.png
@@ -70,7 +70,7 @@ content_body:
 - Et dolore magna aliqua.
 ----
 border_color: #203864
-#### partner-content ####
+#### small-card ####
 content_title: Great Achievements
 ----
 content_image: ringer-sciences.png
@@ -83,7 +83,7 @@ content_body:
 - Et dolore magna aliqua.
 ----
 border_color: #203864
-#### partner-content ####
+#### small-card ####
 content_title: Great Achievements
 ----
 content_image: favicon.png
