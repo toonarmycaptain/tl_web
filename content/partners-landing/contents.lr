@@ -1,6 +1,6 @@
 _model: partners-page
 ---
-title: Partner Landing Page
+title: Partners
 ---
 hero_main_section: This is a big placeholder hero! Take a look at our new partner.
 ---
@@ -19,6 +19,8 @@ partner_logo_image_width: 80
 partner_flow:
 
 #### small-card ####
+link: http://www.google.com
+----
 content_title: Great Achievements
 ----
 content_image: ringer-sciences.png
@@ -32,6 +34,8 @@ content_body:
 ----
 border_color: #203864
 #### small-card ####
+link: 
+----
 content_title: Great Achievements
 ----
 content_image: favicon.png
@@ -45,6 +49,8 @@ content_body:
 ----
 border_color: #203864
 #### small-card ####
+link: 
+----
 content_title: Great Achievements
 ----
 content_image: ringer-sciences.png
@@ -58,6 +64,8 @@ content_body:
 ----
 border_color: #203864
 #### small-card ####
+link: 
+----
 content_title: Great Achievements
 ----
 content_image: favicon.png
@@ -71,6 +79,8 @@ content_body:
 ----
 border_color: #203864
 #### small-card ####
+link: 
+----
 content_title: Great Achievements
 ----
 content_image: ringer-sciences.png
@@ -84,6 +94,8 @@ content_body:
 ----
 border_color: #203864
 #### small-card ####
+link: 
+----
 content_title: Great Achievements
 ----
 content_image: favicon.png
@@ -96,3 +108,11 @@ content_body:
 - Et dolore magna aliqua.
 ----
 border_color: #203864
+---
+body: test 123
+---
+link: https://www.google.com
+---
+_hidden: no
+---
+nav_bar: no
