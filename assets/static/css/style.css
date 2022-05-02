@@ -522,13 +522,7 @@ body.lb-disable-scrolling {
 .partner-main-content {
   min-height: 200px;
   margin: 15px;
-  border-color: #e7ff6e !important;
   border-width: 4px;
-}
-.partner-content {
-  min-height: 100px;
-  border-color: #203864;
-  border-width: 3px;
 }
 .partner-content-header {
   display: flex;
@@ -540,7 +534,4 @@ body.lb-disable-scrolling {
 }
 .margin-15 {
   margin: 15px;
-}
-.width-half {
-  width: 482px;
 }
