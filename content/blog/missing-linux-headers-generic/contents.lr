@@ -23,3 +23,5 @@ Now, this prompted some rearranging of drives that caused me to reinstall the OS
 **TL;DR** on Ubuntu, run `sudo apt-get install linux-headers-generic` before attempting to install any Nvidia drivers, or do much of anything really.
 ---
 pub_date: 2012-11-25
+---
+thumbnail: ef3-placeholder-image.jpeg
