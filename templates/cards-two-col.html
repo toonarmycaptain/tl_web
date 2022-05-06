@@ -1,0 +1,8 @@
+{% extends "page.html" %}
+{% block body_content %}
+<div class="flex row" style="display: flex; flex-wrap: wrap;">
+{% for blk in this.partner_flow.blocks %}
+    {{ blk }}
+{% endfor %}
+</div>
+{% endblock %}

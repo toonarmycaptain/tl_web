@@ -1,0 +1,120 @@
+_model: cards-two-col
+---
+title: Partners
+---
+partner_flow:
+
+#### large-card ####
+link: 
+----
+tl_logo_image: favicon.png
+----
+tl_logo_image_width: 80
+----
+partner_logo_image: ringer-sciences.png
+----
+partner_logo_image_width: 80
+----
+hero_main_section: This is a big placeholder hero! Take a look at our new partner.
+----
+hero_sub_section: Bring in a Ringer to drive Growth & Innovation.
+----
+border_color: #e7ff6e
+#### small-card ####
+link: http://www.google.com
+----
+content_title: Great Achievements
+----
+content_image: ringer-sciences.png
+----
+content_body:
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit 
+- Sed do eiusmod tempor incididunt ut labore
+- Et dolore magna aliqua.
+----
+border_color: #203864
+#### small-card ####
+link: 
+----
+content_title: Great Achievements
+----
+content_image: favicon.png
+----
+content_body:
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit 
+- Sed do eiusmod tempor incididunt ut labore
+- Et dolore magna aliqua.
+----
+border_color: #203864
+#### small-card ####
+link: 
+----
+content_title: Great Achievements
+----
+content_image: ringer-sciences.png
+----
+content_body:
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit 
+- Sed do eiusmod tempor incididunt ut labore
+- Et dolore magna aliqua.
+----
+border_color: #203864
+#### small-card ####
+link: 
+----
+content_title: Great Achievements
+----
+content_image: favicon.png
+----
+content_body:
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit 
+- Sed do eiusmod tempor incididunt ut labore
+- Et dolore magna aliqua.
+----
+border_color: #203864
+#### small-card ####
+link: 
+----
+content_title: Great Achievements
+----
+content_image: ringer-sciences.png
+----
+content_body:
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit 
+- Sed do eiusmod tempor incididunt ut labore
+- Et dolore magna aliqua.
+----
+border_color: #203864
+#### small-card ####
+link: 
+----
+content_title: Great Achievements
+----
+content_image: favicon.png
+----
+content_body:
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit 
+- Sed do eiusmod tempor incididunt ut labore
+- Et dolore magna aliqua.
+----
+border_color: #203864
+---
+body: test 123
+---
+link: https://www.google.com
+---
+_hidden: no
+---
+nav_bar: no

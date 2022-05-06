@@ -12,7 +12,7 @@
 
     "External" is what is in prod and what should be committed, but it will break all your links (including styles, fonts, and page links) when developing. **Do not commit `url_style = absolute`**. See https://github.com/lektor/lektor/issues/377 if you want to fix this.
 
-1. Currently this uses LessCSS, so you need to install that to compile new CSS. To compile, use a command like `lessc less/main.less assets/static/css/terminal.css`. Note that **you need to call main.less** to compile all the styles, not style.less.
+1. Currently this uses LessCSS, so you need to install that to compile new CSS. To compile, use a command like `lessc less/main.less assets/static/css/style.css`. Note that **you need to call main.less** to compile all the styles, not style.less.
 1. Have installed [Git LFS](https://git-lfs.github.com/), since it is used to manage some binary assets, like the marketing pack.
 1. To deploy, you need a `~/.aws/credentials` file with the following contents:
 
