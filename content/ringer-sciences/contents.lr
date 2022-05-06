@@ -1,11 +1,11 @@
 _model: cards-two-col
 ---
-title: Partners
+title: Ringer Sciences
 ---
 partner_flow:
 
 #### large-card ####
-link: 
+link:
 ----
 tl_logo_image: favicon.png
 ----
@@ -30,13 +30,13 @@ content_image: ringer-sciences.png
 content_body:
 
 - Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit 
+- Consectetur adipiscing elit
 - Sed do eiusmod tempor incididunt ut labore
 - Et dolore magna aliqua.
 ----
 border_color: #203864
 #### small-card ####
-link: 
+link:
 ----
 content_title: Great Achievements
 ----
@@ -45,13 +45,13 @@ content_image: favicon.png
 content_body:
 
 - Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit 
+- Consectetur adipiscing elit
 - Sed do eiusmod tempor incididunt ut labore
 - Et dolore magna aliqua.
 ----
 border_color: #203864
 #### small-card ####
-link: 
+link:
 ----
 content_title: Great Achievements
 ----
@@ -60,13 +60,13 @@ content_image: ringer-sciences.png
 content_body:
 
 - Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit 
+- Consectetur adipiscing elit
 - Sed do eiusmod tempor incididunt ut labore
 - Et dolore magna aliqua.
 ----
 border_color: #203864
 #### small-card ####
-link: 
+link:
 ----
 content_title: Great Achievements
 ----
@@ -75,13 +75,13 @@ content_image: favicon.png
 content_body:
 
 - Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit 
+- Consectetur adipiscing elit
 - Sed do eiusmod tempor incididunt ut labore
 - Et dolore magna aliqua.
 ----
 border_color: #203864
 #### small-card ####
-link: 
+link:
 ----
 content_title: Great Achievements
 ----
@@ -90,13 +90,13 @@ content_image: ringer-sciences.png
 content_body:
 
 - Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit 
+- Consectetur adipiscing elit
 - Sed do eiusmod tempor incididunt ut labore
 - Et dolore magna aliqua.
 ----
 border_color: #203864
 #### small-card ####
-link: 
+link:
 ----
 content_title: Great Achievements
 ----
@@ -105,16 +105,20 @@ content_image: favicon.png
 content_body:
 
 - Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit 
+- Consectetur adipiscing elit
 - Sed do eiusmod tempor incididunt ut labore
 - Et dolore magna aliqua.
 ----
 border_color: #203864
 ---
-body: test 123
+body:
 ---
 link: https://www.google.com
 ---
-_hidden: no
+_hidden: yes
 ---
 nav_bar: no
+---
+page_thumb: ringer-sciences.png
+---
+position:
