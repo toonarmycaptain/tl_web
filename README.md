@@ -38,3 +38,12 @@ lessc less/main.less assets/static/css/terminal.css
 ## Handy links:
 
 grayscale: https://www.december.com/html/spec/color0.html
+```
+
+Create the file `content/tags/contents.lr` with the following content
+to activate the "All Tags" page:
+```
+_model: tags
+title: tags
+_template: tags.html
+```

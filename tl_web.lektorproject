@@ -23,6 +23,7 @@ lektor-natural-language = 0.3
 lektor-strip-html-tags = 0.3
 lektor-jinja-content = 0.4.3
 lektor-slugify = 0.4
+lektor-tags = 0.5.0
 
 
 [theme_settings]

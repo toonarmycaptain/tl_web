@@ -1,0 +1,13 @@
+.partner-main-content {
+  min-height: 200px;
+  margin: 15px;
+  border-width: 4px;
+}
+.partner-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.partner-content-header img {
+  margin-right: 100px;
+}
