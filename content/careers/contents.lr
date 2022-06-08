@@ -6,26 +6,35 @@ body:
 
 ## We're always looking to grow!
 
-We are looking for people who have great communication skills, are friendly, and skilled in their craft. If you are a skilled developer who works well in a team, we want to here from you.
+We are looking for people who have great communication skills, are friendly, and skilled in their craft. If you are skilled and work well in a team, we want to here from you.
 
-In particular, if you know and love any of the following:
+### Specific openings we're looking for right now:
+
+{% for child in this.children %}
+- [ {{ child.title }} ]( {{ child.path }} )
+{% endfor %}
+
+### General needs:
+
+We're always looking for skilled technologists. Are you skilled with the some of the following? If you are, let us know!
 
 - Python
-- Python Web Frameworks such as Django, Flask, and Pyramid
+- Web Python: Django, Flask, Fast API, Pydantic
 - Data Science
 - Machine Learning
-- Jupyter
-- AWS
-- GCE
-- SaltStack
+- DevOps, DevSecOps, MLOps
+- Jupyter, Databricks
+- Networking and Network Devices: Juniper, Arista, Cisco
+- Cloud compute platforms: AWS, GCP, Azure, Digital Ocean
+- VMware: NSX-T, Tanzu, vRA, etc.
+- Salt, Ansible, Terraform
 - Docker
 - Kubernetes
 - Vagrant
-- JavaScript
-- Node.js
-- React
+- JavaScript, React, VueJS, Svelte
+- Node
 
-We appreciate broad skill-sets and expertise. We like people who can get things done. If you're intrigued and would like to work with us, please reach out to us at solutions@terminallabs.com. Send us your résumé or CV, GitHub links, or anything else that you think might make us want to bring you on board.
+We appreciate broad skill-sets and deep expertise. We like people who can get things done. If you're intrigued and would like to work with us, please reach out to us at careers _ at _ terminallabs.com. Send us your résumé or CV, GitHub links, or anything else that you think might make us want to bring you on board.
 ---
 meta_description: We're hiring!
 ---

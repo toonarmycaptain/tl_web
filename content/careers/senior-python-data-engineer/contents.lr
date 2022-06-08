@@ -1,0 +1,32 @@
+_model: page
+---
+title: Senior Python Data Engineer
+---
+body:
+
+## Opening: Senior Python Data Engineer
+
+We are looking for a Python developer who has experience as a data engineer to support data scientists on a mature project. This role will involve working with a team of data engineers to consume a variety of data streams, and maintain critical ETL on them to ensure reliable automated processing performs in a timely manner.
+
+This role will have an expectation of technical competence and good communication, as this role has real-world impact. This individual should be able to take instruction and either work cooperatively on a task or work independently, and manage their time effectively.
+
+### Required:
+
+- Senior Proficiency with Python
+- Experience with numpy and pandas
+- Experience with Spark and PySpark
+- Experience with ETL
+- Experience with writing automated tests in Python
+- Experience with SQL databases such as MSSQL, Apache Hive, etc.
+- Experience with git, issue tracking, submitting, and reviewing pull requests
+- Experience working in a team, with good communication, and time management
+
+### Nice to haves:
+
+- Experience with Databricks
+- Experience with CICD tools such as Jenkins and GitHub Actions
+- Experience with maintaining Python packages as consumable libraries
+- Experience with Docker
+- Experience with Kubernetes
+- Experience with microservices
+- Experience dealing with scaling concerns
