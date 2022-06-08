@@ -1,0 +1,15 @@
+{% extends "page.html" %}
+
+{% block title %}Sitemap{% endblock %}
+
+{% block body_content %}
+<ul class="sitemap">
+  {% for page in [site.root] if page.record_label recursive %}
+  <li><a href="{{ page|url(external=True) }}">{{ page.record_label }}</a>
+    {% if page.children %}
+      <ul>{{ loop(page.children|sort(attribute='path')) }}</ul>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock body_content %}
