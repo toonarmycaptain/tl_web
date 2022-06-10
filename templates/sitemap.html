@@ -4,10 +4,15 @@
 
 {% block body_content %}
 <ul class="sitemap">
-  {% for page in [site.root] if page.record_label recursive %}
+  {% for page in [site.root] if page.record_label and page.path not in ["/404.html"] recursive %}
   <li><a href="{{ page|url(external=True) }}">{{ page.record_label }}</a>
     {% if page.children %}
-      <ul>{{ loop(page.children|sort(attribute='path')) }}</ul>
+      {% if page.record_label == 'Blog' %}
+        {# this should be the same order as listed in blog.html #}
+        <ul>{{ loop(page.children.order_by('-pub_date', '-title')) }}</ul>
+      {% else %}
+        <ul>{{ loop(page.children|sort(attribute='path')) }}</ul>
+      {% endif %}
     {% endif %}
   </li>
   {% endfor %}
