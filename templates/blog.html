@@ -10,7 +10,11 @@
       <div id='rss-link'><p><a type=application/atom+xml href="{{ '@atom/feed'|url }}">Atom RSS Feed</a></p></div>
     {% endif %}
     {{ this.body }}
-    {% for child in this.pagination.items.order_by('-pub_date', '-title') %}
+    {%
+      for child in this.pagination.items
+      .filter(F._path != "/blog/tags")
+      .order_by('-pub_date', '-title')
+    %}
     <a href="{{child.path}}" style="text-decoration: none; color: gainsboro;width: 100%;  border-width: 4px; border-color:#e7ff6e;">
       <div style="border-width: 4px; border-color:#e7ff6e;display:grid;grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));margin:2rem 1rem; flex-wrap: wrap; border-style: solid; padding:2rem">
         <div style="margin-top:auto;margin-bottom: auto;display: flex; flex-direction: column">
