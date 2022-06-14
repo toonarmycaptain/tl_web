@@ -32,3 +32,5 @@ subtitle: Contents
 meta_keywords: Lektor,CMS,static file generator,Framework,tutorial,contents
 ---
 meta_description: How Lektor stores it's content data. One Folder — One Page.
+---
+thumbnail: lektor-logo.png

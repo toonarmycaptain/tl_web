@@ -36,3 +36,5 @@ subtitle: Content Format
 meta_keywords: Lektor,CMS,static file generator,Framework,tutorial,contents,content format
 ---
 meta_description: Explanation of Lektor's content file format.
+---
+thumbnail: lektor-logo.png
