@@ -38,3 +38,10 @@ meta_keywords: Lektor,CMS,static file generator,Framework,tutorial,contents,cont
 meta_description: Explanation of Lektor's content file format.
 ---
 thumbnail: lektor-logo.png
+---
+tags:
+
+lektor
+tutorial
+webdev
+

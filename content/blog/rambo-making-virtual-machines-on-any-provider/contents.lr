@@ -22,3 +22,10 @@ Why is this useful? Rambo is useful to get your project up and running faster, a
 meta_keywords: Rambo,Vagrant,SaltStack,DevOps,virtual machine,cloud,AWS,DigitalOcean,LXC,VirtualBox
 ---
 meta_description: Rambo: using Vagrant & SaltStack to easily create the same virtual machines locally and on the cloud.
+---
+tags:
+
+repo
+news
+utility
+virtualization

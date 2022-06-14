@@ -74,3 +74,10 @@ meta_keywords: Lektor,CMS,static file generator,Framework,tutorial,models
 meta_description: What Lektor Models look like and how to use them.
 ---
 thumbnail: lektor-logo.png
+---
+tags:
+
+lektor
+tutorial
+webdev
+

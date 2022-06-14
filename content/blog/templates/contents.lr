@@ -62,3 +62,10 @@ meta_keywords: Lektor,CMS,static file generator,Framework,tutorial,templates,jin
 meta_description: Explanation of Lektor's template structure and language.
 ---
 thumbnail: lektor-logo.png
+---
+tags:
+
+lektor
+tutorial
+webdev
+

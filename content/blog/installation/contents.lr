@@ -114,3 +114,10 @@ meta_keywords: Lektor,CMS,static file generator,Framework,tutorial,install,quick
 meta_description: Instructions for installing Lektor with pip on a Debian based system.
 ---
 thumbnail: lektor-logo.png
+---
+tags:
+
+lektor
+tutorial
+webdev
+

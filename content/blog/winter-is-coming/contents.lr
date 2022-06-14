@@ -7,3 +7,5 @@ body: <p>It's starting to get cold enough to turn the heat on now. So when messi
 pub_date: 2012-11-19
 ---
 _template: blog-post.html
+---
+tags: misc
