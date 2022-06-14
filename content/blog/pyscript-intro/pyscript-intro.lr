@@ -1,0 +1,112 @@
+title: PyScript!
+---
+author: David Antonini
+---
+meta_description: PyScript: a plethora of possibilities
+---
+pub_date: 2022-06-20 ?
+---
+subtitle: Oh the things PyScript can let us do
+---
+twitter_handle: toonarmycaptain
+---
+body:
+
+
+# This intro needs work
+
+When working with the frontend, logic is written in Javascript. However, most kids, and a lot of backend engineers learn and use python as their primary language. This, coupled with machine learning and datascience being dominated by python, now we can bring a frontend logic alternative using PyScript. 
+
+Fear js no more - PyScript is here. 
+
+
+PyScript is a framework that allows python code to run in the browser with near-native speed.
+
+This is a accomplished with a toolchain of Pyodide-Emscripten-WASM. Pyodide takes CPython, adds an interfact between python and Typecript/JavaScript, and using Emscripten compiles it down to WASM (WebAssembly). WASM binaries executes at near-native speed and is supported by all major browsers. 
+
+
+With PyScript we can:
+    - run python in the browser
+    - import stdlib, PyPI, and user-authored dependencies. 
+    - interact with JavaScript/DOM and browser APIs
+
+To use PyScript you just add these lines to your HTML:
+# include graphic with <html><head> tags    
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+
+
+PyScript defines several custom HTML tags:
+
+<py-script> - this is where you type your Python code!
+
+# example graphic
+
+You can specify dependencies from PyPI or your own code:
+
+# graphic:
+<py-env>
+  - numpy
+  - pandas
+  - pytorch
+  - pyparsing
+  </py-env>
+  
+  Yes, numpy, pandas, matplotlib are all pre-compiled for WASM(get details), so none of the portability issues often experienced with data libraries with a lot of C code exist: it compiles to WASM and runs at near-native speed. 
+  
+ You can specify your own files too:
+ 
+ # graphic
+<py-env>
+  - matplotlib
+  - paths:
+      - my_code.py
+      - my_data.csv
+      - plot_background.jpg
+</py-env>
+  
+<py-script>
+from my_code import my_algorithm
+
+with open('my_data.csv') as f:
+    data = f.readlines()
+
+output = my_algorithm(data)
+
+# code plotting with matplotlib with plot_background.jpg  
+matplotlib.blah(output, 'plot_background.jpg')
+  
+# write to html div
+#code that writes output to html div div = Element(whatever) \ div.output(something)
+</py-script>
+
+# whatever <div> etc is needed for pyscript to output
+
+
+Yep, you can pull your own code along for the ride and import it inside your <py-script> tags. You can actually bundle files of any type and use them in your code.
+We can also see here how you can output from code to the browser # detail through an xyz
+ [find out how these are loaded to the client, does pyscript make server calls when they're needed, or are they automatically loaded like other assets as the page loads, what's the methodology there?]
+ 
+ 
+ 
+py-repl
+
+Pyscript also comes with a built-in repl tag:
+
+# side by side graphic with basic py-repl> tag/ouput div with a visual of the repl.
+
+
+
+There are also the py-button and py-inputbox widgets that alow you to call python code from click and keypress events respectively, and PyBox, a container object that can define how it's elements are arranged and displayed à CSS Flexbox. 
+
+
+Despite warnings (link) that PyScript is "very alpha" and changes should be expected, the possibilities it enables have the potential for it to prove one of the most pivotal developments of the decade in frontend development, and web development generally.
+
+
+#### Detail stuff you can do, possibilities. 
+
+
+
+Terminal Labs has been enthralled to be a part of bringing PyScript to a browser near you, please reach out to us if we can help you 
+
