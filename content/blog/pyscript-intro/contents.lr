@@ -64,7 +64,8 @@ Yes, numpy, pandas, matplotlib are all pre-compiled for WASM(get details), so no
   
 You can specify your own files too:
  
- # graphic
+# graphic
+```
 <py-env>
   - matplotlib
   - paths:
@@ -72,8 +73,11 @@ You can specify your own files too:
       - my_data.csv
       - plot_background.jpg
 </py-env>
-  
+```
+And then use them:
+```
 <py-script>
+import matplotlib.pyplot as plt
 from my_code import my_algorithm
 
 with open('my_data.csv') as f:
@@ -82,17 +86,13 @@ with open('my_data.csv') as f:
 output = my_algorithm(data)
 
 # code plotting with matplotlib with plot_background.jpg  
-matplotlib.blah(output, 'plot_background.jpg')
-  
-# write to html div
-#code that writes output to html div div = Element(whatever) \ div.output(something)
+plt.plot(output, 'plot_background.jpg')
+plt # Like print() this will display the plot.
 </py-script>
-
-# whatever <div> etc is needed for pyscript to output
-
+```
 
 Yep, you can pull your own code along for the ride and import it inside your <py-script> tags. You can actually bundle files of any type and use them in your code.
-We can also see here how you can output from code to the browser # detail through an xyz
+We can also see here how you can display output from code to the browser.
  [find out how these are loaded to the client, does pyscript make server calls when they're needed, or are they automatically loaded like other assets as the page loads, what's the methodology there?]
  
  
