@@ -44,15 +44,15 @@ To use PyScript you just add these lines to your HTML:
 
 PyScript defines several custom HTML tags:
 
-###<py-script>###
+###<py-script>
 This is where you type your Python code!
-# example graphic
+# example graphic side by side with output (do we need the full <html><head> boilerplate?)
 ```
 <py-script>
 print('Hello from py-script!')
 </py-script>
 ```
-###<py-env>###
+###<py-env>
 
 You can specify dependencies from PyPI or your own code:
 
@@ -69,7 +69,7 @@ Yes, numpy, pandas, matplotlib are all pre-compiled for WASM(get details), so no
   
 You can specify your own files too:
  
-# graphic
+# graphic  side by side with a pretty plot:
 ```
 <py-env>
   - matplotlib
@@ -84,6 +84,8 @@ And then use them:
 <py-script>
 import matplotlib.pyplot as plt
 from my_code import my_algorithm
+
+print('Here's the plot of my data:')
 
 with open('my_data.csv') as f:
     data = f.readlines()
@@ -102,7 +104,7 @@ We can also see here how you can display output from code to the browser.
  
  
  
-###<py-repl>###
+###<py-repl>
 
 Pyscript also comes with a built-in repl tag:
 
@@ -110,7 +112,7 @@ Pyscript also comes with a built-in repl tag:
 
 
 
-There are also the py-button and py-inputbox widgets that allow you to call python code from click and keypress events respectively, and PyBox, a container object that can define how it's elements are arranged and displayed à CSS Flexbox. 
+There are also the `<py-button>` and `<py-inputbox>` widgets that allow you to call python code from click and keypress events respectively, and PyBox, a container object that can define how it's elements are arranged and displayed à CSS Flexbox. 
 
 
 What does this mean, aside from being able to write Python instead of JavaScript on the frontend?
