@@ -120,7 +120,5 @@ This ability to offer native cross-platform experiences with Python frees ML and
 Any code that can run on a client, but generally doesn't because of installation/dependency issues, can be clientside with PyScript. Numpy is infamous for being difficult to install, but it's already compiled for WASM everywhere. Any tools or code that can be compiled to WASM that Python can hook into can be leveraged together, client-side. As (link) Peter Wang demonstrated at PyCon, motion-control married to software emulation married to GUI can be delivered in-browser.
 Even with large packages, browser-nativity shines, as caching can preserve these resources in the client, handily also enabling offline utility. 
 
-easy coding edu, remote interfaces
-
 
 Terminal Labs has been enthralled to be a part of bringing PyScript to a browser near you, please reach out to us; we can help you bring your special sauce to the plate of your client's browsers.
