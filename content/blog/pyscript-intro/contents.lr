@@ -31,10 +31,15 @@ With PyScript we can:
     - interact with JavaScript/DOM and browser APIs
 
 To use PyScript you just add these lines to your HTML:
-# include graphic with <html><head> tags    
-<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-
+# include graphic with <html><head> tags
+```html
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    </head>
+</html>
+```
 
 
 PyScript defines several custom HTML tags:
