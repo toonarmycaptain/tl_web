@@ -110,9 +110,11 @@ Python has always had portability and GUI challenges. PyScript offers both a GUI
 In addition to GUI, PyScript in the browser is a single target platform for Python developers to deliver native cross-platform applications, even offering the prospect of relatively trivial mobile develoment, by wrapping PyScript based web applications with mobile-native lanaguages, (similar to what Electron has done for JavaScript?). 
 
 This ability to offer native cross-platform experiences with Python frees ML and Datascience developers to ship their computation-heavy applications off servers and in to client devices. Got an application that runs on sensitive data that clients would rather keep on their machines? Ship the application with PyScript, and clients can leverage your application without their data ever leaving their machine. 
-Any code that can run on a client, but generally doesn't because of installation/dependency issues, can be clientside with PyScript. Numpy is infamous for being difficult to install, but it's already compiled for WASM everywhere. Any tool or code that can be compiled to WASM that Python can hook into can be leveraged together, client-side. As (link) Peter Wang demonstrated at PyCon, motion-control married with software emulation married with GUI can be delivered in-browser.
+Any code that can run on a client, but generally doesn't because of installation/dependency issues, can be clientside with PyScript. Numpy is infamous for being difficult to install, but it's already compiled for WASM everywhere. Any tools or code that can be compiled to WASM that Python can hook into can be leveraged together, client-side. As (link) Peter Wang demonstrated at PyCon, motion-control married with software emulation married with GUI can be delivered in-browser.
 Even with large packages, browser-nativity shines, as caching can preserve these resources in the client, handily also enabling offline utility. 
 
+easy coding edu, remote intefaces
 
-Terminal Labs has been enthralled to be a part of bringing PyScript to a browser near you, please reach out to us; we can help you bring your 
+
+Terminal Labs has been enthralled to be a part of bringing PyScript to a browser near you, please reach out to us; we can help you bring your special sauce to the plate of your client's browsers.
 
