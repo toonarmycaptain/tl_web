@@ -62,7 +62,7 @@ You can specify dependencies from PyPI or your own code:
   - pandas
   - pytorch
   - pyparsing
-  </py-env>
+</py-env>
 ``` 
 Yes, numpy, pandas, matplotlib are all pre-compiled for WASM(get details), so none of the portability issues often experienced with data libraries with a lot of C code exist: it compiles to WASM and runs at near-native speed. 
   
