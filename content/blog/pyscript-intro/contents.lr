@@ -4,7 +4,7 @@ author: David Antonini
 ---
 meta_description: PyScript: a plethora of possibilities
 ---
-pub_date: 2022-06-20 ?
+pub_date: 2022-06-20
 ---
 subtitle: Oh the things PyScript can let us do
 ---
@@ -136,7 +136,7 @@ Pyscript also comes with a built-in repl tag:
 <br>If you type python code in the repl above, and then hit `Shift+enter` or click the red arrow to run it, you can see output under either the `std-out` or `std-err` headings. 
 
 
-There are also the `<py-button>` and `<py-inputbox>` widgets that allow you to call python code from click and keypress events respectively, and PyBox, a container object that can define how it's elements are arranged and displayed à CSS Flexbox. 
+There are also the `<py-button>` and `<py-inputbox>` widgets that allow you to call python code from click and keypress events respectively, and PyBox, a container object that can define how it's elements are arranged and displayed à la CSS Flexbox. 
 
 
 What does this mean, aside from being able to write Python instead of JavaScript on the frontend?
