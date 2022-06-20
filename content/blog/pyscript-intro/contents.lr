@@ -106,9 +106,34 @@ We can also see here how you can display output from code to the browser.
 ### &lt;py-repl>
 
 Pyscript also comes with a built-in repl tag:
+```html
+<py-repl std-out="pyrepl-std-out" std-err="pyrepl-std-err">
+</py-repl>
 
-# side by side graphic with basic py-repl> tag/output div with a visual of the repl.
+<div id=repl-output>
+    <b>std-out</b>
+    <div id="pyrepl-std-out"></div>
+    <b>std-err</b>
+    <div id="pyrepl-std-err"></div>
+</div>
+```
 
+
+<div id="pyrepl">
+
+[//]: # (<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />)
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  
+  <py-repl std-out="pyrepl-std-out" std-err="pyrepl-std-err"></py-repl>
+ 
+  <div id=repl-output>
+    <b>std-out</b>
+    <div id="pyrepl-std-out"></div>
+    <b>std-err</b>
+    <div id="pyrepl-std-err"></div>
+  </div>
+</div>
+<br>If you type python code in the repl above, and then hit `Shift+enter` or click the red arrow to run it, you can see output under either the `std-out` or `std-err` headings. 
 
 
 There are also the `<py-button>` and `<py-inputbox>` widgets that allow you to call python code from click and keypress events respectively, and PyBox, a container object that can define how it's elements are arranged and displayed à CSS Flexbox. 
