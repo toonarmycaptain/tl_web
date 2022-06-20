@@ -26,9 +26,9 @@ This is accomplished with a toolchain of Pyodide-Emscripten-WASM. Pyodide takes 
 
 
 With PyScript we can:
-    - run python in the browser
-    - import stdlib, PyPI, and user-authored dependencies. 
-    - interact with JavaScript/DOM and browser APIs
+  - run python in the browser
+  - import stdlib, PyPI, and user-authored dependencies. 
+  - interact with JavaScript/DOM and browser APIs
 
 To use PyScript you just add these lines to your HTML:
 # include graphic with <html><head> tags
