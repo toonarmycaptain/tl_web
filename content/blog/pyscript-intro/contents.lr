@@ -31,7 +31,6 @@ With PyScript we can:
   - interact with JavaScript/DOM and browser APIs
 
 To use PyScript you just add these lines to your HTML:
-# include graphic with <html><head> tags
 ```html
 <html>
     <head>
