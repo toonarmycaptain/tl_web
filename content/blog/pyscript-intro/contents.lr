@@ -46,7 +46,7 @@ PyScript defines several custom HTML tags:
 ###<py-script>
 This is where you type your Python code!
 # example graphic side by side with output (do we need the full <html><head> boilerplate?)
-```
+```html
 <py-script>
 print('Hello from py-script!')
 </py-script>
@@ -56,7 +56,7 @@ print('Hello from py-script!')
 You can specify dependencies from PyPI or your own code:
 
 # graphic:
-```
+```html
 <py-env>
   - numpy
   - pandas
@@ -69,7 +69,7 @@ Yes, numpy, pandas, matplotlib are all pre-compiled for WASM(get details), so no
 You can specify your own files too:
  
 # graphic  side by side with a pretty plot:
-```
+```html
 <py-env>
   - matplotlib
   - paths:
@@ -79,7 +79,7 @@ You can specify your own files too:
 </py-env>
 ```
 And then use them:
-```
+```html
 <py-script>
 import matplotlib.pyplot as plt
 from my_code import my_algorithm
