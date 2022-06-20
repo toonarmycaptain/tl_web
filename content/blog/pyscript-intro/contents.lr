@@ -97,7 +97,7 @@ plt # Like print() this will display the plot.
 </py-script>
 ```
 
-Yep, you can pull your own code along for the ride and import it inside your <py-script> tags. You can actually bundle files of any type and use them in your code.
+Yep, you can pull your own code along for the ride and import it inside your `<py-script>` tags. You can actually bundle files of any type and use them in your code.
 We can also see here how you can display output from code to the browser.
  [find out how these are loaded to the client, does pyscript make server calls when they're needed, or are they automatically loaded like other assets as the page loads, what's the methodology there?]
  
