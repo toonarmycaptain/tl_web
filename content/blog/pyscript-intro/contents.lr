@@ -43,7 +43,7 @@ To use PyScript you just add these lines to your HTML:
 
 PyScript defines several custom HTML tags:
 
-###&lt;py-script>
+##&lt;py-script>
 This is where you type your Python code!
 # example graphic side by side with output (do we need the full <html><head> boilerplate?)
 ```html
@@ -53,7 +53,7 @@ print('Hello from py-script!')
 ```
 <img src="hello-world.png" alt="hello-world.png"/>
 
-###&lt;py-env>
+##&lt;py-env>
 
 You can specify dependencies from PyPI or your own code:
 
@@ -103,7 +103,7 @@ Yep, you can pull your own code along for the ride and import it inside your `<p
 We can also see here how you can display output from code to the browser.
  
  
-### &lt;py-repl>
+## &lt;py-repl>
 
 Pyscript also comes with a built-in repl tag:
 ```html
