@@ -98,6 +98,7 @@ plt.plot(output, 'plot_background.jpg')
 plt # Like print() this will display the plot.
 </py-script>
 ```
+<img src="https://i.stack.imgur.com/oyl6c.jpg" width=900px alt="placeholder image from https://stackoverflow.com/questions/13570287/image-overlay-in-3d-plot-using-python"/>
 
 Yep, you can pull your own code along for the ride and import it inside your `<py-script>` tags. You can actually bundle files of any type and use them in your code.
 We can also see here how you can display output from code to the browser.
