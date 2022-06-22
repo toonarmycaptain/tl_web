@@ -45,13 +45,15 @@ PyScript defines several custom HTML tags:
 
 ##&lt;py-script>
 This is where you type your Python code!
-# example graphic side by side with output (do we need the full <html><head> boilerplate?)
+# example graphic side by side with output (do we need the full <html><head> boilerplate? )
+<div id="hello-world" style="float: right; width: 50%">
+    <img src="hello-world.png" alt="hello-world.png" alt="hello-world.png" style="float: left; "/>
+</div>
 ```html
 <py-script>
 print('Hello from py-script!')
 </py-script>
 ```
-<img src="hello-world.png" alt="hello-world.png"/>
 
 ##&lt;py-env>
 
