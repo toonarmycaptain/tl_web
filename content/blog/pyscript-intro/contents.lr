@@ -51,6 +51,8 @@ This is where you type your Python code!
 print('Hello from py-script!')
 </py-script>
 ```
+<img src="hello-world.png" alt="hello-world.png"/>
+
 ###&lt;py-env>
 
 You can specify dependencies from PyPI or your own code:
