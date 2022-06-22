@@ -155,4 +155,4 @@ Any code that can run on a client, but generally doesn't because of installation
 Even with large packages, browser-nativity shines, as caching can preserve these resources in the client, handily also enabling offline utility. 
 
 
-Terminal Labs has been enthralled to be a part of bringing PyScript to a browser near you, please reach out to us; we can help you bring your special sauce to the plate of your client's browsers.
+Terminal Labs has been enthralled to be a part of bringing PyScript to a browser near you, please reach out to us; we can help you bring your special sauce to the plate of your clients' browsers.
