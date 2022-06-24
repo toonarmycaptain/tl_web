@@ -22,6 +22,8 @@ frontend
 pyscript
 webdev
 ---
+_discoverable: yes
+---
 body:
 
 
