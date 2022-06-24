@@ -161,7 +161,7 @@ There are also the `<py-button>` and `<py-inputbox>` widgets that allow you to c
 What does this mean, aside from being able to write Python instead of JavaScript on the frontend?
 
 
-Despite <a href="https://pyscript.net/">warnings</a> that PyScript is "very alpha" and changes should be expected, the possibilities it enables have the potential for it to prove one of the most pivotal developments of the decade in frontend development, and web development generally.
+Despite [warnings](https://pyscript.net/) that PyScript is "very alpha" and changes should be expected, the possibilities it enables have the potential for it to prove one of the most pivotal developments of the decade in frontend development, and web development generally.
 
 Python has always had portability and GUI challenges. PyScript offers both a GUI for Python that is both portable wherever there is a web browser and leverages existing frontend technologies with the extensibility of Python's power as a glue between tools. 
 In addition to GUI, PyScript in the browser is a single target platform for Python developers to deliver native cross-platform applications, even offering the prospect of relatively trivial mobile development, by wrapping PyScript based web applications with mobile-native languages, (similar to what Electron has done for JavaScript?). 
