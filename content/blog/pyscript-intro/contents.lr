@@ -143,7 +143,8 @@ Pyscript also comes with a built-in repl tag:
 
 <div id="pyrepl">
 # uncommenting this stylesheet breaks the lektor css, and when uncommented makes the std-err out weird colours compared to when rendered by itself.
-[//]: # (  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />)
+
+<!-- (  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
   <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
   
   <py-repl std-out="pyrepl-std-out" std-err="pyrepl-std-err"></py-repl>
