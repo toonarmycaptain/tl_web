@@ -58,11 +58,13 @@ To use PyScript you just add these lines to your HTML:
 PyScript defines several custom HTML tags:
 
 ##&lt;py-script>
+
 This is where you type your Python code!
 # example graphic side by side with output (do we need the full <html><head> boilerplate? )
-<div id="hello-world" style="float: right; width: 50%">
+<div id="hello-world" style="float: right; width: 50%;">
     <img src="hello-world.png" alt="hello-world.png" alt="hello-world.png" style="float: left; "/>
 </div>
+
 ```html
 <py-script>
 print('Hello from py-script!')
@@ -73,7 +75,6 @@ print('Hello from py-script!')
 
 You can specify dependencies from PyPI or your own code:
 
-
 ```html
 <py-env>
   - numpy
@@ -81,12 +82,14 @@ You can specify dependencies from PyPI or your own code:
   - pytorch
   - plusminus
 </py-env>
-``` 
+```
+
 Yes, numpy, pandas, matplotlib are all pre-compiled for WASM(get details), so none of the portability issues often experienced with data libraries with a lot of C code exist: it compiles to WASM and runs at near-native speed. 
   
 You can specify your own files too:
  
 # graphic with a pretty plot below the matplotlib code:
+
 ```html
 <py-env>
   - matplotlib
@@ -96,7 +99,9 @@ You can specify your own files too:
       - plot_background.jpg
 </py-env>
 ```
+
 And then use them:
+
 ```html
 <py-script>
 import matplotlib.pyplot as plt
@@ -113,16 +118,17 @@ output = my_algorithm(data)
 plt.plot(output, 'plot_background.jpg')
 plt # Like print() this will display the plot.
 </py-script>
+
 ```
 <img src="https://i.stack.imgur.com/oyl6c.jpg" width=900px alt="placeholder image from https://stackoverflow.com/questions/13570287/image-overlay-in-3d-plot-using-python"/>
 
 Yep, you can pull your own code along for the ride and import it inside your `<py-script>` tags. You can actually bundle files of any type and use them in your code.
-We can also see here how you can display output from code to the browser.
+We can also see here how you can display output from code to the browser.  
  
- 
-## &lt;py-repl>
+##&lt;py-repl>
 
 Pyscript also comes with a built-in repl tag:
+
 ```html
 <py-repl std-out="pyrepl-std-out" std-err="pyrepl-std-err">
 </py-repl>
@@ -134,7 +140,6 @@ Pyscript also comes with a built-in repl tag:
     <div id="pyrepl-std-err"></div>
 </div>
 ```
-
 
 <div id="pyrepl">
 # uncommenting this stylesheet breaks the lektor css, and when uncommented makes the std-err out weird colours compared to when rendered by itself.
