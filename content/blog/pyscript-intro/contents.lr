@@ -141,21 +141,7 @@ Pyscript also comes with a built-in repl tag:
 </div>
 ```
 
-<div id="pyrepl">
-# uncommenting this stylesheet breaks the lektor css, and when uncommented makes the std-err out weird colours compared to when rendered by itself.
-
-<!-- (  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
-  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-  
-  <py-repl std-out="pyrepl-std-out" std-err="pyrepl-std-err"></py-repl>
- 
-  <div id=repl-output>
-    <b>std-out</b>
-    <div id="pyrepl-std-out"></div>
-    <b>std-err</b>
-    <div id="pyrepl-std-err"></div>
-  </div>
-</div>
+<iframe src="py-repl-iframe.html" width=900px align=center>py-repl</iframe>
 
 # Why are these closing div tags rendering, and why is there a py-repl closing tag in my repl input box? NB it breaks if I omit the closing tag
 # also I don't know how to make the repl wider and to style/format the output divs
