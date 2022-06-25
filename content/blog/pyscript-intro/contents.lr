@@ -155,7 +155,8 @@ Pyscript also comes with a built-in repl tag:
     <b>std-err</b>
     <div id="pyrepl-std-err"></div>
   </div>
-</div>  
+</div>
+
 # Why are these closing div tags rendering, and why is there a py-repl closing tag in my repl input box? NB it breaks if I omit the closing tag
 # also I don't know how to make the repl wider and to style/format the output divs
 <br>If you type python code in the repl above, and then hit `Shift+enter` or click the red arrow to run it, you can see output under either the `std-out` or `std-err` headings. 
