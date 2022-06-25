@@ -3,11 +3,6 @@
         <title>PyScript REPL</title>
         <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-        <style>
-            body {
-                background-color: white;
-            }
-        </style>
     </head>
     <body>
         <div id="pyrepl">
@@ -15,12 +10,13 @@
 
           <py-repl std-out="pyrepl-std-out" std-err="pyrepl-std-err"></py-repl>
 
-          <div id=repl-output>
-            <b>std-out</b>
-            <div id="pyrepl-std-out"></div>
-            <b>std-err</b>
+          <div id=repl-output ">
+            <p style="color: gainsboro;"><b>std-out</b></p>
+            <div id="pyrepl-std-out" style="color: gainsboro";></div>
+            <p style="color: gainsboro;"><b>std-err</b></p>
             <div id="pyrepl-std-err"></div>
           </div>
+
         </div>
     </body>
 </html>
